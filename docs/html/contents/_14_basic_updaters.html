@@ -1,0 +1,529 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Basic Updaters &mdash; ManimCE Professional Course - Basics  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Basic 3D Graphs" href="_13_3d_graphs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_2_basic_mobjects.html">Basic attributes of Mobjects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_3_camera_options.html">Basic Camera and render settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_4_layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_5_rate_functions.html">Rate functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_6_assets.html">Import assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_7_groups.html">Groups and VGroups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_8_text_and_tex.html">Text and Tex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_9_transformations.html">Transformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_10_methods_as_animations.html">Methods as animations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_11_manim_utils.html">Manim utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_12_2d_graphs.html">Basic 2D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_13_3d_graphs.html">Basic 3D Graphs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Updaters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-theory">Basic theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#become"><code class="docutils literal notranslate"><span class="pre">.become</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#valuetracker">ValueTracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#decimalnumber">DecimalNumber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#group-updaters">Group Updaters</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ManimCE Professional Course - Basics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Basic Updaters</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/contents/_14_basic_updaters.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-updaters">
+<h1>Basic Updaters<a class="headerlink" href="#basic-updaters" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="basic-theory">
+<h2>Basic theory<a class="headerlink" href="#basic-theory" title="Permalink to this headline">¶</a></h2>
+<p>Updaters are <strong>functions</strong> that are applied to a Mobject and that are updated every frame.</p>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0;
+     overflow: hidden; max-width: 100%; height: auto;
+     border-width: 4px; border-style: solid; border-color: red;
+ ">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/Updaters1.mp4" type="video/mp4">
+ </video>
+</div>
+<br/><p><span class="underbold">Question</span>: How would we make sure that the square is always above the circle without having to manipulate the square?</p>
+<p>Basically, we need the <code class="docutils literal notranslate"><span class="pre">square.next_to(circle,UP)</span></code> to apply each frame of the animation, for this we can use the Updaters.</p>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0;
+     overflow: hidden; max-width: 100%; height: auto;
+     border-width: 4px; border-style: solid; border-color: red;
+ ">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/Updaters2.mp4" type="video/mp4">
+ </video>
+</div>
+<br/><p>If the functions are simple then we can use anonymous functions to make it shorter.</p>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0;
+     overflow: hidden; max-width: 100%; height: auto;
+     border-width: 4px; border-style: solid; border-color: red;
+ ">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/Updaters3.mp4" type="video/mp4">
+ </video>
+</div>
+<br/><p>And this updater is going to run until we pause and delete it.</p>
+<ul class="simple">
+<li><p>Pause updaters: <code class="docutils literal notranslate"><span class="pre">Mobject.suspend_updating()</span></code></p></li>
+<li><p>Restore updaters: <code class="docutils literal notranslate"><span class="pre">Mobject.resume_updating()</span></code></p></li>
+<li><p>Delete all updaters: <code class="docutils literal notranslate"><span class="pre">Mobject.clear_updaters()</span></code></p></li>
+</ul>
+<p>Yes, you can add more updaters, each Mobject has an attribute (a list) where it stores its updaters, so you can add or remove more updaters.</p>
+</div>
+<div class="section" id="become">
+<h2><code class="docutils literal notranslate"><span class="pre">.become</span></code><a class="headerlink" href="#become" title="Permalink to this headline">¶</a></h2>
+<p>Now imagine that we want the <code class="docutils literal notranslate"><span class="pre">Brace</span></code> to change in size depending on the line.</p>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0;
+     overflow: hidden; max-width: 100%; height: auto;
+     border-width: 4px; border-style: solid; border-color: red;
+ ">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/TryBrace.mp4" type="video/mp4">
+ </video>
+</div>
+<br/><p>There are some Mobjects that you can change their shape through their methods, but the most general way is to use <code class="docutils literal notranslate"><span class="pre">.become</span></code>.</p>
+<p>The easiest way to understand <code class="docutils literal notranslate"><span class="pre">.become</span></code> is by making the analogy with <code class="docutils literal notranslate"><span class="pre">Transform</span></code>, basically <code class="docutils literal notranslate"><span class="pre">.become</span></code> is an instant <code class="docutils literal notranslate"><span class="pre">Transform</span></code>, and I can demonstrate it with the following code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">generate_target</span><span class="p">()</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">become</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="c1"># &lt;-- it&#39;s an instant transformation</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">MoveToTarget</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/become.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>Using this concept, we can instantly transform a Mobject each frame, so it will give the feeling that the transformation is smooth.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">LEFT</span><span class="p">,</span><span class="n">RIGHT</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_brace</span><span class="p">(</span><span class="n">mob</span><span class="p">):</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">become</span><span class="p">(</span>
+            <span class="n">Brace</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="n">UP</span><span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="n">brace</span> <span class="o">=</span> <span class="n">VMobject</span><span class="p">()</span> <span class="c1"># This is the initial status,</span>
+                       <span class="c1"># when we add the updater it will update</span>
+
+    <span class="n">brace</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="n">get_brace</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="n">brace</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.8</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.3</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/become2.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>Some Mobjects already have methods that help to deform them, for example, lines and vectors have the <code class="docutils literal notranslate"><span class="pre">put_start_and_end_on</span></code> method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">start_dot</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">LEFT</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span>
+    <span class="n">end_dot</span>   <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">TEAL</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">update_line</span><span class="p">(</span><span class="n">mob</span><span class="p">):</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">put_start_and_end_on</span><span class="p">(</span><span class="n">start_dot</span><span class="o">.</span><span class="n">get_center</span><span class="p">(),</span><span class="n">end_dot</span><span class="o">.</span><span class="n">get_center</span><span class="p">())</span>
+
+    <span class="n">line</span> <span class="o">=</span> <span class="n">Line</span><span class="p">()</span> <span class="c1"># Also it works with Arrow</span>
+    <span class="n">line</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="n">update_line</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">start_dot</span><span class="p">,</span> <span class="n">end_dot</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">start_dot</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">LEFT</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="n">UP</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">end_dot</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">RIGHT</span><span class="o">+</span><span class="n">DOWN</span><span class="o">*</span><span class="mf">0.5</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">start_dot</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">RIGHT</span><span class="o">*</span><span class="mf">0.5</span><span class="o">+</span><span class="n">DOWN</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span>
+        <span class="n">end_dot</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">RIGHT</span><span class="o">+</span><span class="n">UP</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">start_dot</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">LEFT</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span>
+        <span class="n">end_dot</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">DOWN</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/upd1.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="valuetracker">
+<h2>ValueTracker<a class="headerlink" href="#valuetracker" title="Permalink to this headline">¶</a></h2>
+<p>This class does not appear on the screen, it is simply a tool that allows us to increase or decrease numerical values.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">nl</span> <span class="o">=</span> <span class="n">NumberLine</span><span class="p">(</span><span class="n">include_numbers</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">selector</span> <span class="o">=</span> <span class="n">Triangle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+
+    <span class="n">vt</span> <span class="o">=</span> <span class="n">ValueTracker</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;-- needs a start value</span>
+
+    <span class="k">def</span> <span class="nf">update_selector</span><span class="p">(</span><span class="n">mob</span><span class="p">):</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">nl</span><span class="o">.</span><span class="n">n2p</span><span class="p">(</span><span class="n">vt</span><span class="o">.</span><span class="n">get_value</span><span class="p">()),</span><span class="n">UP</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="c1">#                  --------------</span>
+        <span class="c1">#  In this way we can acces to the ValueTracker value</span>
+
+    <span class="n">selector</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="n">update_selector</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nl</span><span class="p">,</span><span class="n">selector</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">vt</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">vt</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">vt</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">vt</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="mi">7</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/vt1.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>As an exercise try to duplicate this animation:</p>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/ex1.mp4" type="video/mp4">
+ </video>
+ </div>
+<br/><details>
+<summary> Solution </summary>
+ <a href="https://docs.manim.community/en/stable/examples.html#movingangle"> Official documentation </a>
+</details>
+<br/>
+<br/></div>
+<div class="section" id="decimalnumber">
+<h2>DecimalNumber<a class="headerlink" href="#decimalnumber" title="Permalink to this headline">¶</a></h2>
+<p>Now we will understand the value of <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code>, which is similar to <code class="docutils literal notranslate"><span class="pre">ValueTracker</span></code>, only that it can be displayed on the screen:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">nl</span> <span class="o">=</span> <span class="n">NumberLine</span><span class="p">(</span><span class="n">include_numbers</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">selector</span> <span class="o">=</span> <span class="n">Triangle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+
+    <span class="n">dn</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># &lt;-- needs a start value</span>
+
+    <span class="k">def</span> <span class="nf">update_selector</span><span class="p">(</span><span class="n">mob</span><span class="p">):</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">nl</span><span class="o">.</span><span class="n">n2p</span><span class="p">(</span><span class="n">dn</span><span class="o">.</span><span class="n">get_value</span><span class="p">()),</span><span class="n">UP</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="c1">#                  --------------</span>
+        <span class="c1">#  In this way we can acces to the DecimalNumber value</span>
+
+    <span class="k">def</span> <span class="nf">update_dn</span><span class="p">(</span><span class="n">mob</span><span class="p">):</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">selector</span><span class="p">,</span><span class="n">UP</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+
+    <span class="n">selector</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="n">update_selector</span><span class="p">)</span>
+    <span class="n">dn</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="n">update_dn</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nl</span><span class="p">,</span><span class="n">selector</span><span class="p">,</span><span class="n">dn</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ChangeDecimalToValue</span><span class="p">(</span><span class="n">dn</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ChangeDecimalToValue</span><span class="p">(</span><span class="n">dn</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ChangeDecimalToValue</span><span class="p">(</span><span class="n">dn</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ChangeDecimalToValue</span><span class="p">(</span><span class="n">dn</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/dn1.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="group-updaters">
+<h2>Group Updaters<a class="headerlink" href="#group-updaters" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes it is easier for us to create an updater that modifies several Mobjects, this can be done using Groups.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">nl</span> <span class="o">=</span> <span class="n">NumberLine</span><span class="p">(</span><span class="n">include_numbers</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">selector</span> <span class="o">=</span> <span class="n">Triangle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">dn</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="n">update_grp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">selector</span><span class="p">,</span> <span class="n">dn</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">update_vgrp</span><span class="p">(</span><span class="n">vgrp</span><span class="p">):</span>
+        <span class="n">s</span><span class="p">,</span><span class="n">d</span> <span class="o">=</span> <span class="n">vgrp</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">nl</span><span class="o">.</span><span class="n">n2p</span><span class="p">(</span><span class="n">dn</span><span class="o">.</span><span class="n">get_value</span><span class="p">()),</span><span class="n">UP</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">d</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">selector</span><span class="p">,</span><span class="n">UP</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+
+    <span class="n">update_grp</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="n">update_vgrp</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nl</span><span class="p">,</span><span class="n">update_grp</span><span class="p">)</span> <span class="c1"># &lt;-- add grp complete, not each element</span>
+    <span class="c1"># Not use self.add(nl, selecttor, dn)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ChangeDecimalToValue</span><span class="p">(</span><span class="n">dn</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ChangeDecimalToValue</span><span class="p">(</span><span class="n">dn</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ChangeDecimalToValue</span><span class="p">(</span><span class="n">dn</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ChangeDecimalToValue</span><span class="p">(</span><span class="n">dn</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/update_grp.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_13_3d_graphs.html" class="btn btn-neutral float-left" title="Basic 3D Graphs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Vázquez.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

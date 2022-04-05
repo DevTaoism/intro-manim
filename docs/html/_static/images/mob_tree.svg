@@ -1,0 +1,1974 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="996pt" height="868pt" viewBox="0.00 0.00 996.00 868.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 864)">
+<title>inheritancedfecb88da4</title>
+<!-- AbstractImageMobject -->
+<g id="node1" class="node">
+<title>AbstractImageMobject</title>
+<g id="a_node1"><a xlink:href="../../reference/manim.mobject.types.image_mobject.AbstractImageMobject.html#manim.mobject.types.image_mobject.AbstractImageMobject" xlink:title="Automatically filters out black pixels" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="179,-834 61,-834 61,-815 179,-815 179,-834"/>
+<text text-anchor="middle" x="120" y="-822" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">AbstractImageMobject</text>
+</a>
+</g>
+</g>
+<!-- ImageMobject -->
+<g id="node79" class="node">
+<title>ImageMobject</title>
+<g id="a_node79"><a xlink:href="../../reference/manim.mobject.types.image_mobject.ImageMobject.html#manim.mobject.types.image_mobject.ImageMobject" xlink:title="Displays an Image from a numpy array or a file." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="302,-860 224,-860 224,-841 302,-841 302,-860"/>
+<text text-anchor="middle" x="263" y="-848" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ImageMobject</text>
+</a>
+</g>
+</g>
+<!-- AbstractImageMobject&#45;&gt;ImageMobject -->
+<g id="edge62" class="edge">
+<title>AbstractImageMobject-&gt;ImageMobject</title>
+<path fill="none" stroke="#000000" d="M120,-834.1814C120,-841.5736 120,-850.5 120,-850.5 120,-850.5 218.9246,-850.5 218.9246,-850.5"/>
+<polygon fill="#000000" stroke="#000000" points="218.9247,-852.2501 223.9246,-850.5 218.9246,-848.7501 218.9247,-852.2501"/>
+</g>
+<!-- ImageMobjectFromCamera -->
+<g id="node80" class="node">
+<title>ImageMobjectFromCamera</title>
+<g id="a_node80"><a xlink:href="../../reference/manim.mobject.types.image_mobject.ImageMobjectFromCamera.html#manim.mobject.types.image_mobject.ImageMobjectFromCamera" xlink:title="ImageMobjectFromCamera" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="333,-834 193,-834 193,-815 333,-815 333,-834"/>
+<text text-anchor="middle" x="263" y="-822" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ImageMobjectFromCamera</text>
+</a>
+</g>
+</g>
+<!-- AbstractImageMobject&#45;&gt;ImageMobjectFromCamera -->
+<g id="edge63" class="edge">
+<title>AbstractImageMobject-&gt;ImageMobjectFromCamera</title>
+<path fill="none" stroke="#000000" d="M179.4026,-824.5C179.4026,-824.5 187.8762,-824.5 187.8762,-824.5"/>
+<polygon fill="#000000" stroke="#000000" points="187.8763,-826.2501 192.8762,-824.5 187.8762,-822.7501 187.8763,-826.2501"/>
+</g>
+<!-- Mobject -->
+<g id="node2" class="node">
+<title>Mobject</title>
+<g id="a_node2"><a xlink:href="../../reference/manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" xlink:title="Mathematical Object: base class for objects that can be displayed on screen." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="47,-261 0,-261 0,-242 47,-242 47,-261"/>
+<text text-anchor="middle" x="23.5" y="-249" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Mobject</text>
+</a>
+</g>
+</g>
+<!-- Mobject&#45;&gt;AbstractImageMobject -->
+<g id="edge1" class="edge">
+<title>Mobject-&gt;AbstractImageMobject</title>
+<path fill="none" stroke="#000000" d="M47.0497,-254.6667C58.152,-254.6667 69,-254.6667 69,-254.6667 69,-254.6667 69,-809.6095 69,-809.6095"/>
+<polygon fill="#000000" stroke="#000000" points="67.2501,-809.6094 69,-814.6095 70.7501,-809.6095 67.2501,-809.6094"/>
+</g>
+<!-- VMobject -->
+<g id="node4" class="node">
+<title>VMobject</title>
+<g id="a_node4"><a xlink:href="../../reference/manim.mobject.types.vectorized_mobject.VMobject.html#manim.mobject.types.vectorized_mobject.VMobject" xlink:title="A vectorized mobject." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="147,-415 93,-415 93,-396 147,-396 147,-415"/>
+<text text-anchor="middle" x="120" y="-403" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">VMobject</text>
+</a>
+</g>
+</g>
+<!-- Mobject&#45;&gt;VMobject -->
+<g id="edge126" class="edge">
+<title>Mobject-&gt;VMobject</title>
+<path fill="none" stroke="#000000" d="M24,-261.4305C24,-296.1848 24,-410.25 24,-410.25 24,-410.25 87.747,-410.25 87.747,-410.25"/>
+<polygon fill="#000000" stroke="#000000" points="87.7471,-412.0001 92.747,-410.25 87.747,-408.5001 87.7471,-412.0001"/>
+</g>
+<!-- ValueTracker -->
+<g id="node49" class="node">
+<title>ValueTracker</title>
+<g id="a_node49"><a xlink:href="../../reference/manim.mobject.value_tracker.ValueTracker.html#manim.mobject.value_tracker.ValueTracker" xlink:title="A mobject that can be used for tracking (real-valued) parameters." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="155.5,-261 84.5,-261 84.5,-242 155.5,-242 155.5,-261"/>
+<text text-anchor="middle" x="120" y="-249" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ValueTracker</text>
+</a>
+</g>
+</g>
+<!-- Mobject&#45;&gt;ValueTracker -->
+<g id="edge127" class="edge">
+<title>Mobject-&gt;ValueTracker</title>
+<path fill="none" stroke="#000000" d="M47.3539,-248.3333C47.3539,-248.3333 79.3839,-248.3333 79.3839,-248.3333"/>
+<polygon fill="#000000" stroke="#000000" points="79.384,-250.0834 84.3839,-248.3333 79.3839,-246.5834 79.384,-250.0834"/>
+</g>
+<!-- Group -->
+<g id="node78" class="node">
+<title>Group</title>
+<g id="a_node78"><a xlink:href="../../reference/manim.mobject.mobject.Group.html#manim.mobject.mobject.Group" xlink:title="Groups together multiple :class:`Mobjects &lt;.Mobject&gt;`." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="139,-235 101,-235 101,-216 139,-216 139,-235"/>
+<text text-anchor="middle" x="120" y="-223" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Group</text>
+</a>
+</g>
+</g>
+<!-- Mobject&#45;&gt;Group -->
+<g id="edge61" class="edge">
+<title>Mobject-&gt;Group</title>
+<path fill="none" stroke="#000000" d="M32,-241.8186C32,-234.4264 32,-225.5 32,-225.5 32,-225.5 95.9053,-225.5 95.9053,-225.5"/>
+<polygon fill="#000000" stroke="#000000" points="95.9053,-227.2501 100.9053,-225.5 95.9053,-223.7501 95.9053,-227.2501"/>
+</g>
+<!-- PMobject -->
+<g id="node92" class="node">
+<title>PMobject</title>
+<g id="a_node92"><a xlink:href="../../reference/manim.mobject.types.point_cloud_mobject.PMobject.html#manim.mobject.types.point_cloud_mobject.PMobject" xlink:title="A disc made of a cloud of Dots" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="146.5,-71 93.5,-71 93.5,-52 146.5,-52 146.5,-71"/>
+<text text-anchor="middle" x="120" y="-59" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">PMobject</text>
+</a>
+</g>
+</g>
+<!-- Mobject&#45;&gt;PMobject -->
+<g id="edge82" class="edge">
+<title>Mobject-&gt;PMobject</title>
+<path fill="none" stroke="#000000" d="M16,-241.8167C16,-203.0984 16,-61.5 16,-61.5 16,-61.5 88.4873,-61.5 88.4873,-61.5"/>
+<polygon fill="#000000" stroke="#000000" points="88.4874,-63.2501 93.4873,-61.5 88.4873,-59.7501 88.4874,-63.2501"/>
+</g>
+<!-- Angle -->
+<g id="node3" class="node">
+<title>Angle</title>
+<g id="a_node3"><a xlink:href="../../reference/manim.mobject.geometry.Angle.html#manim.mobject.geometry.Angle" xlink:title="A circular arc or elbow-type mobject representing an angle of two lines." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="281,-717 245,-717 245,-698 281,-698 281,-717"/>
+<text text-anchor="middle" x="263" y="-705" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Angle</text>
+</a>
+</g>
+</g>
+<!-- RightAngle -->
+<g id="node110" class="node">
+<title>RightAngle</title>
+<g id="a_node110"><a xlink:href="../../reference/manim.mobject.geometry.RightAngle.html#manim.mobject.geometry.RightAngle" xlink:title="An elbow-type mobject representing a right angle between two lines." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="436.5,-737 374.5,-737 374.5,-718 436.5,-718 436.5,-737"/>
+<text text-anchor="middle" x="405.5" y="-725" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">RightAngle</text>
+</a>
+</g>
+</g>
+<!-- Angle&#45;&gt;RightAngle -->
+<g id="edge96" class="edge">
+<title>Angle-&gt;RightAngle</title>
+<path fill="none" stroke="#000000" d="M281.0735,-707.75C314.3634,-707.75 382,-707.75 382,-707.75 382,-707.75 382,-712.625 382,-712.625"/>
+<polygon fill="#000000" stroke="#000000" points="380.2501,-712.625 382,-717.625 383.7501,-712.625 380.2501,-712.625"/>
+</g>
+<!-- VMobject&#45;&gt;Angle -->
+<g id="edge2" class="edge">
+<title>VMobject-&gt;Angle</title>
+<path fill="none" stroke="#000000" d="M111,-415.206C111,-466.8979 111,-707.5 111,-707.5 111,-707.5 239.9667,-707.5 239.9667,-707.5"/>
+<polygon fill="#000000" stroke="#000000" points="239.9667,-709.2501 244.9667,-707.5 239.9667,-705.7501 239.9667,-709.2501"/>
+</g>
+<!-- VGroup -->
+<g id="node6" class="node">
+<title>VGroup</title>
+<g id="a_node6"><a xlink:href="../../reference/manim.mobject.types.vectorized_mobject.VGroup.html#manim.mobject.types.vectorized_mobject.VGroup" xlink:title="A group of vectorized mobjects." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="285.5,-483 240.5,-483 240.5,-464 285.5,-464 285.5,-483"/>
+<text text-anchor="middle" x="263" y="-471" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">VGroup</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;VGroup -->
+<g id="edge125" class="edge">
+<title>VMobject-&gt;VGroup</title>
+<path fill="none" stroke="#000000" d="M143,-415.2427C143,-434.0453 143,-473.5 143,-473.5 143,-473.5 235.4289,-473.5 235.4289,-473.5"/>
+<polygon fill="#000000" stroke="#000000" points="235.429,-475.2501 240.4289,-473.5 235.4289,-471.7501 235.429,-475.2501"/>
+</g>
+<!-- TipableVMobject -->
+<g id="node13" class="node">
+<title>TipableVMobject</title>
+<g id="a_node13"><a xlink:href="../../reference/manim.mobject.geometry.TipableVMobject.html#manim.mobject.geometry.TipableVMobject" xlink:title="Meant for shared functionality between Arc and Line." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="308,-425 218,-425 218,-406 308,-406 308,-425"/>
+<text text-anchor="middle" x="263" y="-413" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">TipableVMobject</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;TipableVMobject -->
+<g id="edge117" class="edge">
+<title>VMobject-&gt;TipableVMobject</title>
+<path fill="none" stroke="#000000" d="M147.2338,-413.2C147.2338,-413.2 212.8689,-413.2 212.8689,-413.2"/>
+<polygon fill="#000000" stroke="#000000" points="212.869,-414.9501 217.8689,-413.2 212.8689,-411.4501 212.869,-414.9501"/>
+</g>
+<!-- ArcPolygon -->
+<g id="node17" class="node">
+<title>ArcPolygon</title>
+<g id="a_node17"><a xlink:href="../../reference/manim.mobject.geometry.ArcPolygon.html#manim.mobject.geometry.ArcPolygon" xlink:title="A generalized polygon allowing for points to be connected with arcs." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="294.5,-357 231.5,-357 231.5,-338 294.5,-338 294.5,-357"/>
+<text text-anchor="middle" x="263" y="-345" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArcPolygon</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;ArcPolygon -->
+<g id="edge10" class="edge">
+<title>VMobject-&gt;ArcPolygon</title>
+<path fill="none" stroke="#000000" d="M134,-395.9225C134,-379.4489 134,-347.5 134,-347.5 134,-347.5 226.443,-347.5 226.443,-347.5"/>
+<polygon fill="#000000" stroke="#000000" points="226.4431,-349.2501 231.443,-347.5 226.443,-345.7501 226.4431,-349.2501"/>
+</g>
+<!-- ArcPolygonFromArcs -->
+<g id="node18" class="node">
+<title>ArcPolygonFromArcs</title>
+<g id="a_node18"><a xlink:href="../../reference/manim.mobject.geometry.ArcPolygonFromArcs.html#manim.mobject.geometry.ArcPolygonFromArcs" xlink:title="A generalized polygon allowing for points to be connected with arcs." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="317,-331 209,-331 209,-312 317,-312 317,-331"/>
+<text text-anchor="middle" x="263" y="-319" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArcPolygonFromArcs</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;ArcPolygonFromArcs -->
+<g id="edge11" class="edge">
+<title>VMobject-&gt;ArcPolygonFromArcs</title>
+<path fill="none" stroke="#000000" d="M147.0401,-401.8C178.1509,-401.8 225,-401.8 225,-401.8 225,-401.8 225,-336.0268 225,-336.0268"/>
+<polygon fill="#000000" stroke="#000000" points="226.7501,-336.0268 225,-331.0268 223.2501,-336.0268 226.7501,-336.0268"/>
+</g>
+<!-- ArrowTip -->
+<g id="node25" class="node">
+<title>ArrowTip</title>
+<g id="a_node25"><a xlink:href="../../reference/manim.mobject.geometry.ArrowTip.html#manim.mobject.geometry.ArrowTip" xlink:title="Base class for arrow tips." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="558.5,-204 506.5,-204 506.5,-185 558.5,-185 558.5,-204"/>
+<text text-anchor="middle" x="532.5" y="-192" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArrowTip</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;ArrowTip -->
+<g id="edge20" class="edge">
+<title>VMobject-&gt;ArrowTip</title>
+<path fill="none" stroke="#000000" d="M92.8012,-400.75C90.4834,-400.75 89,-400.75 89,-400.75 89,-400.75 89,-427.3333 89,-427.3333 89,-427.3333 460,-427.3333 460,-427.3333 460,-427.3333 460,-193 460,-193 460,-193 501.3258,-193 501.3258,-193"/>
+<polygon fill="#000000" stroke="#000000" points="501.3259,-194.7501 506.3258,-193 501.3258,-191.2501 501.3259,-194.7501"/>
+</g>
+<!-- SVGPathMobject -->
+<g id="node39" class="node">
+<title>SVGPathMobject</title>
+<g id="a_node39"><a xlink:href="../../reference/manim.mobject.svg.svg_path.SVGPathMobject.html#manim.mobject.svg.svg_path.SVGPathMobject" xlink:title="SVGPathMobject" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="307,-305 219,-305 219,-286 307,-286 307,-305"/>
+<text text-anchor="middle" x="263" y="-293" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">SVGPathMobject</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;SVGPathMobject -->
+<g id="edge99" class="edge">
+<title>VMobject-&gt;SVGPathMobject</title>
+<path fill="none" stroke="#000000" d="M120,-395.7382C120,-368.8171 120,-295.5 120,-295.5 120,-295.5 213.9285,-295.5 213.9285,-295.5"/>
+<polygon fill="#000000" stroke="#000000" points="213.9285,-297.2501 218.9285,-295.5 213.9284,-293.7501 213.9285,-297.2501"/>
+</g>
+<!-- BraceLabel -->
+<g id="node41" class="node">
+<title>BraceLabel</title>
+<g id="a_node41"><a xlink:href="../../reference/manim.mobject.svg.brace.BraceLabel.html#manim.mobject.svg.brace.BraceLabel" xlink:title="BraceLabel" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="294.5,-227 231.5,-227 231.5,-208 294.5,-208 294.5,-227"/>
+<text text-anchor="middle" x="263" y="-215" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">BraceLabel</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;BraceLabel -->
+<g id="edge31" class="edge">
+<title>VMobject-&gt;BraceLabel</title>
+<path fill="none" stroke="#000000" d="M147.2664,-411.4C166.1845,-411.4 188,-411.4 188,-411.4 188,-411.4 188,-221.5 188,-221.5 188,-221.5 226.1932,-221.5 226.1932,-221.5"/>
+<polygon fill="#000000" stroke="#000000" points="226.1933,-223.2501 231.1932,-221.5 226.1932,-219.7501 226.1933,-223.2501"/>
+</g>
+<!-- CubicBezier -->
+<g id="node54" class="node">
+<title>CubicBezier</title>
+<g id="a_node54"><a xlink:href="../../reference/manim.mobject.geometry.CubicBezier.html#manim.mobject.geometry.CubicBezier" xlink:title="Example" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="296,-279 230,-279 230,-260 296,-260 296,-279"/>
+<text text-anchor="middle" x="263" y="-267" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">CubicBezier</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;CubicBezier -->
+<g id="edge41" class="edge">
+<title>VMobject-&gt;CubicBezier</title>
+<path fill="none" stroke="#000000" d="M107,-395.7552C107,-364.6862 107,-270 107,-270 107,-270 224.9164,-270 224.9164,-270"/>
+<polygon fill="#000000" stroke="#000000" points="224.9164,-271.7501 229.9164,-270 224.9164,-268.2501 224.9164,-271.7501"/>
+</g>
+<!-- Cutout -->
+<g id="node58" class="node">
+<title>Cutout</title>
+<g id="a_node58"><a xlink:href="../../reference/manim.mobject.geometry.Cutout.html#manim.mobject.geometry.Cutout" xlink:title="A shape with smaller cutouts." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="283.5,-253 242.5,-253 242.5,-234 283.5,-234 283.5,-253"/>
+<text text-anchor="middle" x="263" y="-241" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Cutout</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;Cutout -->
+<g id="edge45" class="edge">
+<title>VMobject-&gt;Cutout</title>
+<path fill="none" stroke="#000000" d="M147.2474,-400.4C167.2698,-400.4 191,-400.4 191,-400.4 191,-400.4 191,-249.3333 191,-249.3333 191,-249.3333 237.1746,-249.3333 237.1746,-249.3333"/>
+<polygon fill="#000000" stroke="#000000" points="237.1747,-251.0834 242.1746,-249.3333 237.1746,-247.5834 237.1747,-251.0834"/>
+</g>
+<!-- DashedVMobject -->
+<g id="node61" class="node">
+<title>DashedVMobject</title>
+<g id="a_node61"><a xlink:href="../../reference/manim.mobject.types.vectorized_mobject.DashedVMobject.html#manim.mobject.types.vectorized_mobject.DashedVMobject" xlink:title="A :class:`VMobject` composed of dashes instead of lines." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="308,-201 218,-201 218,-182 308,-182 308,-201"/>
+<text text-anchor="middle" x="263" y="-189" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">DashedVMobject</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;DashedVMobject -->
+<g id="edge48" class="edge">
+<title>VMobject-&gt;DashedVMobject</title>
+<path fill="none" stroke="#000000" d="M147.1892,-409.6C165.0009,-409.6 185,-409.6 185,-409.6 185,-409.6 185,-191.5 185,-191.5 185,-191.5 212.6271,-191.5 212.6271,-191.5"/>
+<polygon fill="#000000" stroke="#000000" points="212.6271,-193.2501 217.6271,-191.5 212.627,-189.7501 212.6271,-193.2501"/>
+</g>
+<!-- Matrix -->
+<g id="node63" class="node">
+<title>Matrix</title>
+<g id="a_node63"><a xlink:href="../../reference/manim.mobject.matrix.Matrix.html#manim.mobject.matrix.Matrix" xlink:title="A mobject that displays a matrix on the screen." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="282.5,-175 243.5,-175 243.5,-156 282.5,-156 282.5,-175"/>
+<text text-anchor="middle" x="263" y="-163" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Matrix</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;Matrix -->
+<g id="edge74" class="edge">
+<title>VMobject-&gt;Matrix</title>
+<path fill="none" stroke="#000000" d="M147.0137,-407.8C163.7215,-407.8 182,-407.8 182,-407.8 182,-407.8 182,-165.5 182,-165.5 182,-165.5 238.3922,-165.5 238.3922,-165.5"/>
+<polygon fill="#000000" stroke="#000000" points="238.3922,-167.2501 243.3922,-165.5 238.3921,-163.7501 238.3922,-167.2501"/>
+</g>
+<!-- DecimalNumber -->
+<g id="node64" class="node">
+<title>DecimalNumber</title>
+<g id="a_node64"><a xlink:href="../../reference/manim.mobject.numbers.DecimalNumber.html#manim.mobject.numbers.DecimalNumber" xlink:title="An mobject representing a decimal number." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="307,-149 219,-149 219,-130 307,-130 307,-149"/>
+<text text-anchor="middle" x="263" y="-137" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">DecimalNumber</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;DecimalNumber -->
+<g id="edge50" class="edge">
+<title>VMobject-&gt;DecimalNumber</title>
+<path fill="none" stroke="#000000" d="M92.524,-405.5C84.0967,-405.5 77,-405.5 77,-405.5 77,-405.5 77,-139.5 77,-139.5 77,-139.5 213.9206,-139.5 213.9206,-139.5"/>
+<polygon fill="#000000" stroke="#000000" points="213.9206,-141.2501 218.9206,-139.5 213.9206,-137.7501 213.9206,-141.2501"/>
+</g>
+<!-- Elbow -->
+<g id="node70" class="node">
+<title>Elbow</title>
+<g id="a_node70"><a xlink:href="../../reference/manim.mobject.geometry.Elbow.html#manim.mobject.geometry.Elbow" xlink:title="Two lines that create a right angle about each other: L-shape." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="282,-808 244,-808 244,-789 282,-789 282,-808"/>
+<text text-anchor="middle" x="263" y="-796" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Elbow</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;Elbow -->
+<g id="edge55" class="edge">
+<title>VMobject-&gt;Elbow</title>
+<path fill="none" stroke="#000000" d="M98,-415.2147C98,-475.7334 98,-798.5 98,-798.5 98,-798.5 238.7495,-798.5 238.7495,-798.5"/>
+<polygon fill="#000000" stroke="#000000" points="238.7495,-800.2501 243.7495,-798.5 238.7494,-796.7501 238.7495,-800.2501"/>
+</g>
+<!-- ParametricFunction -->
+<g id="node76" class="node">
+<title>ParametricFunction</title>
+<g id="a_node76"><a xlink:href="../../reference/manim.mobject.functions.ParametricFunction.html#manim.mobject.functions.ParametricFunction" xlink:title="A parametric curve." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="314,-782 212,-782 212,-763 314,-763 314,-782"/>
+<text text-anchor="middle" x="263" y="-770" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ParametricFunction</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;ParametricFunction -->
+<g id="edge84" class="edge">
+<title>VMobject-&gt;ParametricFunction</title>
+<path fill="none" stroke="#000000" d="M102,-415.3164C102,-473.6797 102,-772.5 102,-772.5 102,-772.5 206.6159,-772.5 206.6159,-772.5"/>
+<polygon fill="#000000" stroke="#000000" points="206.616,-774.2501 211.6159,-772.5 206.6159,-770.7501 206.616,-774.2501"/>
+</g>
+<!-- Graph -->
+<g id="node77" class="node">
+<title>Graph</title>
+<g id="a_node77"><a xlink:href="../../reference/manim.mobject.graph.Graph.html#manim.mobject.graph.Graph" xlink:title="An undirected graph (that is, a collection of vertices connected with edges)." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="282,-665 244,-665 244,-646 282,-646 282,-665"/>
+<text text-anchor="middle" x="263" y="-653" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Graph</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;Graph -->
+<g id="edge60" class="edge">
+<title>VMobject-&gt;Graph</title>
+<path fill="none" stroke="#000000" d="M116,-415.3003C116,-461.5217 116,-655.5 116,-655.5 116,-655.5 238.7823,-655.5 238.7823,-655.5"/>
+<polygon fill="#000000" stroke="#000000" points="238.7824,-657.2501 243.7823,-655.5 238.7823,-653.7501 238.7824,-657.2501"/>
+</g>
+<!-- SVGMobject -->
+<g id="node87" class="node">
+<title>SVGMobject</title>
+<g id="a_node87"><a xlink:href="../../reference/manim.mobject.svg.svg_mobject.SVGMobject.html#manim.mobject.svg.svg_mobject.SVGMobject" xlink:title="A SVGMobject is a Vector Mobject constructed from an SVG (or XDV) file." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="296.5,-756 229.5,-756 229.5,-737 296.5,-737 296.5,-756"/>
+<text text-anchor="middle" x="263" y="-744" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">SVGMobject</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;SVGMobject -->
+<g id="edge98" class="edge">
+<title>VMobject-&gt;SVGMobject</title>
+<path fill="none" stroke="#000000" d="M107,-415.3377C107,-471.2482 107,-746.5 107,-746.5 107,-746.5 224.1503,-746.5 224.1503,-746.5"/>
+<polygon fill="#000000" stroke="#000000" points="224.1504,-748.2501 229.1503,-746.5 224.1503,-744.7501 224.1504,-748.2501"/>
+</g>
+<!-- Polygram -->
+<g id="node106" class="node">
+<title>Polygram</title>
+<g id="a_node106"><a xlink:href="../../reference/manim.mobject.geometry.Polygram.html#manim.mobject.geometry.Polygram" xlink:title="A generalized :class:`Polygon`, allowing for disconnected sets of edges." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="290.5,-383 235.5,-383 235.5,-364 290.5,-364 290.5,-383"/>
+<text text-anchor="middle" x="263" y="-371" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Polygram</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;Polygram -->
+<g id="edge91" class="edge">
+<title>VMobject-&gt;Polygram</title>
+<path fill="none" stroke="#000000" d="M147.2338,-403.2C188.7239,-403.2 263,-403.2 263,-403.2 263,-403.2 263,-388.2249 263,-388.2249"/>
+<polygon fill="#000000" stroke="#000000" points="264.7501,-388.2249 263,-383.2249 261.2501,-388.2249 264.7501,-388.2249"/>
+</g>
+<!-- ThreeDVMobject -->
+<g id="node120" class="node">
+<title>ThreeDVMobject</title>
+<g id="a_node120"><a xlink:href="../../reference/manim.mobject.three_dimensions.ThreeDVMobject.html#manim.mobject.three_dimensions.ThreeDVMobject" xlink:title="ThreeDVMobject" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="307.5,-639 218.5,-639 218.5,-620 307.5,-620 307.5,-639"/>
+<text text-anchor="middle" x="263" y="-627" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ThreeDVMobject</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;ThreeDVMobject -->
+<g id="edge116" class="edge">
+<title>VMobject-&gt;ThreeDVMobject</title>
+<path fill="none" stroke="#000000" d="M120,-415.125C120,-458 120,-629.5 120,-629.5 120,-629.5 213.1463,-629.5 213.1463,-629.5"/>
+<polygon fill="#000000" stroke="#000000" points="213.1463,-631.2501 218.1463,-629.5 213.1462,-627.7501 213.1463,-631.2501"/>
+</g>
+<!-- TracedPath -->
+<g id="node123" class="node">
+<title>TracedPath</title>
+<g id="a_node123"><a xlink:href="../../reference/manim.mobject.changing.TracedPath.html#manim.mobject.changing.TracedPath" xlink:title="Traces the path of a point returned by a function call." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="293.5,-613 232.5,-613 232.5,-594 293.5,-594 293.5,-613"/>
+<text text-anchor="middle" x="263" y="-601" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">TracedPath</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;TracedPath -->
+<g id="edge120" class="edge">
+<title>VMobject-&gt;TracedPath</title>
+<path fill="none" stroke="#000000" d="M125,-415.05C125,-454.6012 125,-603.5 125,-603.5 125,-603.5 227.3733,-603.5 227.3733,-603.5"/>
+<polygon fill="#000000" stroke="#000000" points="227.3734,-605.2501 232.3733,-603.5 227.3733,-601.7501 227.3734,-605.2501"/>
+</g>
+<!-- VDict -->
+<g id="node126" class="node">
+<title>VDict</title>
+<g id="a_node126"><a xlink:href="../../reference/manim.mobject.types.vectorized_mobject.VDict.html#manim.mobject.types.vectorized_mobject.VDict" xlink:title="A VGroup-like class, also offering submobject access by" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="280.5,-587 245.5,-587 245.5,-568 280.5,-568 280.5,-587"/>
+<text text-anchor="middle" x="263" y="-575" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">VDict</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;VDict -->
+<g id="edge124" class="edge">
+<title>VMobject-&gt;VDict</title>
+<path fill="none" stroke="#000000" d="M129,-415.2403C129,-451.6258 129,-577.5 129,-577.5 129,-577.5 240.4818,-577.5 240.4818,-577.5"/>
+<polygon fill="#000000" stroke="#000000" points="240.4819,-579.2501 245.4818,-577.5 240.4818,-575.7501 240.4819,-579.2501"/>
+</g>
+<!-- Variable -->
+<g id="node127" class="node">
+<title>Variable</title>
+<g id="a_node127"><a xlink:href="../../reference/manim.mobject.numbers.Variable.html#manim.mobject.numbers.Variable" xlink:title="A class for displaying text that continuously updates to reflect the value of a python variable." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="287,-535 239,-535 239,-516 287,-516 287,-535"/>
+<text text-anchor="middle" x="263" y="-523" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Variable</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;Variable -->
+<g id="edge128" class="edge">
+<title>VMobject-&gt;Variable</title>
+<path fill="none" stroke="#000000" d="M134,-415.3201C134,-443.9796 134,-525.5 134,-525.5 134,-525.5 233.7361,-525.5 233.7361,-525.5"/>
+<polygon fill="#000000" stroke="#000000" points="233.7361,-527.2501 238.7361,-525.5 233.7361,-523.7501 233.7361,-527.2501"/>
+</g>
+<!-- VectorizedPoint -->
+<g id="node129" class="node">
+<title>VectorizedPoint</title>
+<g id="a_node129"><a xlink:href="../../reference/manim.mobject.types.vectorized_mobject.VectorizedPoint.html#manim.mobject.types.vectorized_mobject.VectorizedPoint" xlink:title="VectorizedPoint" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="305,-509 221,-509 221,-490 305,-490 305,-509"/>
+<text text-anchor="middle" x="263" y="-497" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">VectorizedPoint</text>
+</a>
+</g>
+</g>
+<!-- VMobject&#45;&gt;VectorizedPoint -->
+<g id="edge131" class="edge">
+<title>VMobject-&gt;VectorizedPoint</title>
+<path fill="none" stroke="#000000" d="M138,-415.2056C138,-439.2224 138,-499.5 138,-499.5 138,-499.5 215.6807,-499.5 215.6807,-499.5"/>
+<polygon fill="#000000" stroke="#000000" points="215.6807,-501.2501 220.6807,-499.5 215.6807,-497.7501 215.6807,-501.2501"/>
+</g>
+<!-- AnimatedBoundary -->
+<g id="node5" class="node">
+<title>AnimatedBoundary</title>
+<g id="a_node5"><a xlink:href="../../reference/manim.mobject.changing.AnimatedBoundary.html#manim.mobject.changing.AnimatedBoundary" xlink:title="Boundary of a :class:`.VMobject` with animated color change." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="456.5,-607 354.5,-607 354.5,-588 456.5,-588 456.5,-607"/>
+<text text-anchor="middle" x="405.5" y="-595" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">AnimatedBoundary</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;AnimatedBoundary -->
+<g id="edge3" class="edge">
+<title>VGroup-&gt;AnimatedBoundary</title>
+<path fill="none" stroke="#000000" d="M273,-463.9378C273,-458.355 273,-452.4 273,-452.4 273,-452.4 365,-452.4 365,-452.4 365,-452.4 365,-582.9796 365,-582.9796"/>
+<polygon fill="#000000" stroke="#000000" points="363.2501,-582.9795 365,-587.9796 366.7501,-582.9796 363.2501,-582.9795"/>
+</g>
+<!-- VectorField -->
+<g id="node33" class="node">
+<title>VectorField</title>
+<g id="a_node33"><a xlink:href="../../reference/manim.mobject.vector_field.VectorField.html#manim.mobject.vector_field.VectorField" xlink:title="A vector field." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="436.5,-581 374.5,-581 374.5,-562 436.5,-562 436.5,-581"/>
+<text text-anchor="middle" x="405.5" y="-569" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">VectorField</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;VectorField -->
+<g id="edge130" class="edge">
+<title>VGroup-&gt;VectorField</title>
+<path fill="none" stroke="#000000" d="M285.5025,-475.1429C307.5942,-475.1429 338,-475.1429 338,-475.1429 338,-475.1429 338,-574.5 338,-574.5 338,-574.5 369.1213,-574.5 369.1213,-574.5"/>
+<polygon fill="#000000" stroke="#000000" points="369.1213,-576.2501 374.1213,-574.5 369.1213,-572.7501 369.1213,-576.2501"/>
+</g>
+<!-- Axes -->
+<g id="node34" class="node">
+<title>Axes</title>
+<g id="a_node34"><a xlink:href="../../reference/manim.mobject.coordinate_systems.Axes.html#manim.mobject.coordinate_systems.Axes" xlink:title="Creates a set of axes." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="422,-711 389,-711 389,-692 422,-692 422,-711"/>
+<text text-anchor="middle" x="405.5" y="-699" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Axes</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;Axes -->
+<g id="edge25" class="edge">
+<title>VGroup-&gt;Axes</title>
+<path fill="none" stroke="#000000" d="M267,-463.7069C267,-456.2294 267,-447.2 267,-447.2 267,-447.2 335,-447.2 335,-447.2 335,-447.2 335,-701.25 335,-701.25 335,-701.25 383.7925,-701.25 383.7925,-701.25"/>
+<polygon fill="#000000" stroke="#000000" points="383.7925,-703.0001 388.7925,-701.25 383.7924,-699.5001 383.7925,-703.0001"/>
+</g>
+<!-- BarChart -->
+<g id="node38" class="node">
+<title>BarChart</title>
+<g id="a_node38"><a xlink:href="../../reference/manim.mobject.probability.BarChart.html#manim.mobject.probability.BarChart" xlink:title="This is a class for Bar Charts." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="431,-529 380,-529 380,-510 431,-510 431,-529"/>
+<text text-anchor="middle" x="405.5" y="-517" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">BarChart</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;BarChart -->
+<g id="edge28" class="edge">
+<title>VGroup-&gt;BarChart</title>
+<path fill="none" stroke="#000000" d="M285.8501,-471.4286C309.1818,-471.4286 342,-471.4286 342,-471.4286 342,-471.4286 342,-522.5 342,-522.5 342,-522.5 374.6721,-522.5 374.6721,-522.5"/>
+<polygon fill="#000000" stroke="#000000" points="374.6722,-524.2501 379.6721,-522.5 374.6721,-520.7501 374.6722,-524.2501"/>
+</g>
+<!-- Code -->
+<g id="node45" class="node">
+<title>Code</title>
+<g id="a_node45"><a xlink:href="../../reference/manim.mobject.svg.code_mobject.Code.html#manim.mobject.svg.code_mobject.Code" xlink:title="A highlighted source code listing." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="422,-503 389,-503 389,-484 422,-484 422,-503"/>
+<text text-anchor="middle" x="405.5" y="-491" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Code</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;Code -->
+<g id="edge35" class="edge">
+<title>VGroup-&gt;Code</title>
+<path fill="none" stroke="#000000" d="M285.6801,-469.5714C310.2549,-469.5714 346,-469.5714 346,-469.5714 346,-469.5714 346,-496.5 346,-496.5 346,-496.5 383.9259,-496.5 383.9259,-496.5"/>
+<polygon fill="#000000" stroke="#000000" points="383.926,-498.2501 388.9259,-496.5 383.9259,-494.7501 383.926,-498.2501"/>
+</g>
+<!-- Surface -->
+<g id="node51" class="node">
+<title>Surface</title>
+<g id="a_node51"><a xlink:href="../../reference/manim.mobject.three_dimensions.Surface.html#manim.mobject.three_dimensions.Surface" xlink:title="Creates a Parametric Surface using a checkerboard pattern." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="428,-477 383,-477 383,-458 428,-458 428,-477"/>
+<text text-anchor="middle" x="405.5" y="-465" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Surface</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;Surface -->
+<g id="edge108" class="edge">
+<title>VGroup-&gt;Surface</title>
+<path fill="none" stroke="#000000" d="M285.5795,-467.7143C285.5795,-467.7143 377.5542,-467.7143 377.5542,-467.7143"/>
+<polygon fill="#000000" stroke="#000000" points="377.5543,-469.4644 382.5542,-467.7143 377.5542,-465.9644 377.5543,-469.4644"/>
+</g>
+<!-- Cross -->
+<g id="node52" class="node">
+<title>Cross</title>
+<g id="a_node52"><a xlink:href="../../reference/manim.mobject.shape_matchers.Cross.html#manim.mobject.shape_matchers.Cross" xlink:title="Creates a cross." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="423.5,-451 387.5,-451 387.5,-432 423.5,-432 423.5,-451"/>
+<text text-anchor="middle" x="405.5" y="-439" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Cross</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;Cross -->
+<g id="edge39" class="edge">
+<title>VGroup-&gt;Cross</title>
+<path fill="none" stroke="#000000" d="M247,-463.9867C247,-452.8184 247,-435.8 247,-435.8 247,-435.8 382.318,-435.8 382.318,-435.8"/>
+<polygon fill="#000000" stroke="#000000" points="382.3181,-437.5501 387.318,-435.8 382.318,-434.0501 382.3181,-437.5501"/>
+</g>
+<!-- Cube -->
+<g id="node53" class="node">
+<title>Cube</title>
+<g id="a_node53"><a xlink:href="../../reference/manim.mobject.three_dimensions.Cube.html#manim.mobject.three_dimensions.Cube" xlink:title="Cube" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="422,-425 389,-425 389,-406 422,-406 422,-425"/>
+<text text-anchor="middle" x="405.5" y="-413" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Cube</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;Cube -->
+<g id="edge40" class="edge">
+<title>VGroup-&gt;Cube</title>
+<path fill="none" stroke="#000000" d="M285.5608,-465.8571C308.5972,-465.8571 341,-465.8571 341,-465.8571 341,-465.8571 341,-415.5 341,-415.5 341,-415.5 383.8896,-415.5 383.8896,-415.5"/>
+<polygon fill="#000000" stroke="#000000" points="383.8897,-417.2501 388.8896,-415.5 383.8896,-413.7501 383.8897,-417.2501"/>
+</g>
+<!-- CurvesAsSubmobjects -->
+<g id="node57" class="node">
+<title>CurvesAsSubmobjects</title>
+<g id="a_node57"><a xlink:href="../../reference/manim.mobject.types.vectorized_mobject.CurvesAsSubmobjects.html#manim.mobject.types.vectorized_mobject.CurvesAsSubmobjects" xlink:title="Convert a curve's elements to submobjects." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="464,-685 347,-685 347,-666 464,-666 464,-685"/>
+<text text-anchor="middle" x="405.5" y="-673" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">CurvesAsSubmobjects</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;CurvesAsSubmobjects -->
+<g id="edge44" class="edge">
+<title>VGroup-&gt;CurvesAsSubmobjects</title>
+<path fill="none" stroke="#000000" d="M254,-463.8763C254,-453.854 254,-439.6 254,-439.6 254,-439.6 351,-439.6 351,-439.6 351,-439.6 351,-660.9603 351,-660.9603"/>
+<polygon fill="#000000" stroke="#000000" points="349.2501,-660.9602 351,-665.9603 352.7501,-660.9603 349.2501,-660.9602"/>
+</g>
+<!-- Table -->
+<g id="node66" class="node">
+<title>Table</title>
+<g id="a_node66"><a xlink:href="../../reference/manim.mobject.table.Table.html#manim.mobject.table.Table" xlink:title="A mobject that displays a table on the screen." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="422.5,-659 388.5,-659 388.5,-640 422.5,-640 422.5,-659"/>
+<text text-anchor="middle" x="405.5" y="-647" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Table</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;Table -->
+<g id="edge110" class="edge">
+<title>VGroup-&gt;Table</title>
+<path fill="none" stroke="#000000" d="M260,-463.9762C260,-455.1578 260,-443.4 260,-443.4 260,-443.4 336,-443.4 336,-443.4 336,-443.4 336,-650.3333 336,-650.3333 336,-650.3333 383.3202,-650.3333 383.3202,-650.3333"/>
+<polygon fill="#000000" stroke="#000000" points="383.3203,-652.0834 388.3202,-650.3333 383.3202,-648.5834 383.3203,-652.0834"/>
+</g>
+<!-- ManimBanner -->
+<g id="node85" class="node">
+<title>ManimBanner</title>
+<g id="a_node85"><a xlink:href="../../reference/manim.mobject.logo.ManimBanner.html#manim.mobject.logo.ManimBanner" xlink:title="Convenience class representing Manim's banner." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="443.5,-633 367.5,-633 367.5,-614 443.5,-614 443.5,-633"/>
+<text text-anchor="middle" x="405.5" y="-621" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ManimBanner</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;ManimBanner -->
+<g id="edge70" class="edge">
+<title>VGroup-&gt;ManimBanner</title>
+<path fill="none" stroke="#000000" d="M280,-463.65C280,-458.725 280,-453.8 280,-453.8 280,-453.8 337,-453.8 337,-453.8 337,-453.8 337,-626.5 337,-626.5 337,-626.5 362.2445,-626.5 362.2445,-626.5"/>
+<polygon fill="#000000" stroke="#000000" points="362.2445,-628.2501 367.2445,-626.5 362.2445,-624.7501 362.2445,-628.2501"/>
+</g>
+<!-- Paragraph -->
+<g id="node98" class="node">
+<title>Paragraph</title>
+<g id="a_node98"><a xlink:href="../../reference/manim.mobject.svg.text_mobject.Paragraph.html#manim.mobject.svg.text_mobject.Paragraph" xlink:title="Display a paragraph of text." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="434,-555 377,-555 377,-536 434,-536 434,-555"/>
+<text text-anchor="middle" x="405.5" y="-543" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Paragraph</text>
+</a>
+</g>
+</g>
+<!-- VGroup&#45;&gt;Paragraph -->
+<g id="edge83" class="edge">
+<title>VGroup-&gt;Paragraph</title>
+<path fill="none" stroke="#000000" d="M285.6861,-473.2857C308.3992,-473.2857 340,-473.2857 340,-473.2857 340,-473.2857 340,-546.3333 340,-546.3333 340,-546.3333 371.9613,-546.3333 371.9613,-546.3333"/>
+<polygon fill="#000000" stroke="#000000" points="371.9613,-548.0834 376.9613,-546.3333 371.9613,-544.5834 371.9613,-548.0834"/>
+</g>
+<!-- AnnotationDot -->
+<g id="node7" class="node">
+<title>AnnotationDot</title>
+<g id="a_node7"><a xlink:href="../../reference/manim.mobject.geometry.AnnotationDot.html#manim.mobject.geometry.AnnotationDot" xlink:title="A dot with bigger radius and bold stroke to annotate scenes." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="827,-269 748,-269 748,-250 827,-250 827,-269"/>
+<text text-anchor="middle" x="787.5" y="-257" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">AnnotationDot</text>
+</a>
+</g>
+</g>
+<!-- Dot -->
+<g id="node8" class="node">
+<title>Dot</title>
+<g id="a_node8"><a xlink:href="../../reference/manim.mobject.geometry.Dot.html#manim.mobject.geometry.Dot" xlink:title="A circle with a very small radius." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="671.5,-282 645.5,-282 645.5,-263 671.5,-263 671.5,-282"/>
+<text text-anchor="middle" x="658.5" y="-270" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Dot</text>
+</a>
+</g>
+</g>
+<!-- Dot&#45;&gt;AnnotationDot -->
+<g id="edge4" class="edge">
+<title>Dot-&gt;AnnotationDot</title>
+<path fill="none" stroke="#000000" d="M671.6343,-271.3333C702.4873,-271.3333 777,-271.3333 777,-271.3333 777,-271.3333 777,-271.1052 777,-271.1052"/>
+<polygon fill="#000000" stroke="#000000" points="778.7502,-274.0517 777,-269.0517 775.2502,-274.0518 778.7502,-274.0517"/>
+</g>
+<!-- LabeledDot -->
+<g id="node84" class="node">
+<title>LabeledDot</title>
+<g id="a_node84"><a xlink:href="../../reference/manim.mobject.geometry.LabeledDot.html#manim.mobject.geometry.LabeledDot" xlink:title="A :class:`Dot` containing a label in its center." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="819.5,-295 755.5,-295 755.5,-276 819.5,-276 819.5,-295"/>
+<text text-anchor="middle" x="787.5" y="-283" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">LabeledDot</text>
+</a>
+</g>
+</g>
+<!-- Dot&#45;&gt;LabeledDot -->
+<g id="edge67" class="edge">
+<title>Dot-&gt;LabeledDot</title>
+<path fill="none" stroke="#000000" d="M671.7179,-273.6667C706.6934,-273.6667 799,-273.6667 799,-273.6667 799,-273.6667 799,-273.8948 799,-273.8948"/>
+<polygon fill="#000000" stroke="#000000" points="797.2502,-270.9482 799,-275.9483 800.7502,-270.9483 797.2502,-270.9482"/>
+</g>
+<!-- AnnularSector -->
+<g id="node9" class="node">
+<title>AnnularSector</title>
+<g id="a_node9"><a xlink:href="../../reference/manim.mobject.geometry.AnnularSector.html#manim.mobject.geometry.AnnularSector" xlink:title="Parameters" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="571,-282 494,-282 494,-263 571,-263 571,-282"/>
+<text text-anchor="middle" x="532.5" y="-270" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">AnnularSector</text>
+</a>
+</g>
+</g>
+<!-- Sector -->
+<g id="node113" class="node">
+<title>Sector</title>
+<g id="a_node113"><a xlink:href="../../reference/manim.mobject.geometry.Sector.html#manim.mobject.geometry.Sector" xlink:title="Examples" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="678,-334 639,-334 639,-315 678,-315 678,-334"/>
+<text text-anchor="middle" x="658.5" y="-322" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Sector</text>
+</a>
+</g>
+</g>
+<!-- AnnularSector&#45;&gt;Sector -->
+<g id="edge102" class="edge">
+<title>AnnularSector-&gt;Sector</title>
+<path fill="none" stroke="#000000" d="M571.0779,-275.6667C573.5059,-275.6667 575,-275.6667 575,-275.6667 575,-275.6667 575,-319.75 575,-319.75 575,-319.75 633.7117,-319.75 633.7117,-319.75"/>
+<polygon fill="#000000" stroke="#000000" points="633.7117,-321.5001 638.7117,-319.75 633.7116,-318.0001 633.7117,-321.5001"/>
+</g>
+<!-- Arc -->
+<g id="node10" class="node">
+<title>Arc</title>
+<g id="a_node10"><a xlink:href="../../reference/manim.mobject.geometry.Arc.html#manim.mobject.geometry.Arc" xlink:title="A circular arc." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="417.5,-373 393.5,-373 393.5,-354 417.5,-354 417.5,-373"/>
+<text text-anchor="middle" x="405.5" y="-361" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Arc</text>
+</a>
+</g>
+</g>
+<!-- Arc&#45;&gt;AnnularSector -->
+<g id="edge5" class="edge">
+<title>Arc-&gt;AnnularSector</title>
+<path fill="none" stroke="#000000" d="M417.5427,-361.75C433.8657,-361.75 461,-361.75 461,-361.75 461,-361.75 461,-275 461,-275 461,-275 488.8203,-275 488.8203,-275"/>
+<polygon fill="#000000" stroke="#000000" points="488.8203,-276.7501 493.8203,-275 488.8203,-273.2501 488.8203,-276.7501"/>
+</g>
+<!-- Circle -->
+<g id="node12" class="node">
+<title>Circle</title>
+<g id="a_node12"><a xlink:href="../../reference/manim.mobject.geometry.Circle.html#manim.mobject.geometry.Circle" xlink:title="A circle." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="550.5,-256 514.5,-256 514.5,-237 550.5,-237 550.5,-256"/>
+<text text-anchor="middle" x="532.5" y="-244" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Circle</text>
+</a>
+</g>
+</g>
+<!-- Arc&#45;&gt;Circle -->
+<g id="edge34" class="edge">
+<title>Arc-&gt;Circle</title>
+<path fill="none" stroke="#000000" d="M417.7434,-363.5C436.1958,-363.5 469,-363.5 469,-363.5 469,-363.5 469,-245 469,-245 469,-245 509.4733,-245 509.4733,-245"/>
+<polygon fill="#000000" stroke="#000000" points="509.4733,-246.7501 514.4733,-245 509.4733,-243.2501 509.4733,-246.7501"/>
+</g>
+<!-- ArcBetweenPoints -->
+<g id="node14" class="node">
+<title>ArcBetweenPoints</title>
+<g id="a_node14"><a xlink:href="../../reference/manim.mobject.geometry.ArcBetweenPoints.html#manim.mobject.geometry.ArcBetweenPoints" xlink:title="Inherits from Arc and additionally takes 2 points between which the arc is spanned." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="581,-230 484,-230 484,-211 581,-211 581,-230"/>
+<text text-anchor="middle" x="532.5" y="-218" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArcBetweenPoints</text>
+</a>
+</g>
+</g>
+<!-- Arc&#45;&gt;ArcBetweenPoints -->
+<g id="edge8" class="edge">
+<title>Arc-&gt;ArcBetweenPoints</title>
+<path fill="none" stroke="#000000" d="M417.6732,-365.25C440.6219,-365.25 488,-365.25 488,-365.25 488,-365.25 488,-235.4493 488,-235.4493"/>
+<polygon fill="#000000" stroke="#000000" points="489.7501,-235.4492 488,-230.4493 486.2501,-235.4493 489.7501,-235.4492"/>
+</g>
+<!-- Annulus -->
+<g id="node11" class="node">
+<title>Annulus</title>
+<g id="a_node11"><a xlink:href="../../reference/manim.mobject.geometry.Annulus.html#manim.mobject.geometry.Annulus" xlink:title="Region between two concentric :class:`Circles &lt;.Circle&gt;`." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="682.5,-256 634.5,-256 634.5,-237 682.5,-237 682.5,-256"/>
+<text text-anchor="middle" x="658.5" y="-244" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Annulus</text>
+</a>
+</g>
+</g>
+<!-- Circle&#45;&gt;Dot -->
+<g id="edge52" class="edge">
+<title>Circle-&gt;Dot</title>
+<path fill="none" stroke="#000000" d="M550.6113,-248.4C563.6677,-248.4 579,-248.4 579,-248.4 579,-248.4 579,-269.3333 579,-269.3333 579,-269.3333 640.3722,-269.3333 640.3722,-269.3333"/>
+<polygon fill="#000000" stroke="#000000" points="640.3722,-271.0834 645.3722,-269.3333 640.3722,-267.5834 640.3722,-271.0834"/>
+</g>
+<!-- Circle&#45;&gt;Annulus -->
+<g id="edge6" class="edge">
+<title>Circle-&gt;Annulus</title>
+<path fill="none" stroke="#000000" d="M550.5527,-244.6C550.5527,-244.6 629.4434,-244.6 629.4434,-244.6"/>
+<polygon fill="#000000" stroke="#000000" points="629.4434,-246.3501 634.4434,-244.6 629.4434,-242.8501 629.4434,-246.3501"/>
+</g>
+<!-- ArrowCircleTip -->
+<g id="node24" class="node">
+<title>ArrowCircleTip</title>
+<g id="a_node24"><a xlink:href="../../reference/manim.mobject.geometry.ArrowCircleTip.html#manim.mobject.geometry.ArrowCircleTip" xlink:title="Circular arrow tip." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="698.5,-230 618.5,-230 618.5,-211 698.5,-211 698.5,-230"/>
+<text text-anchor="middle" x="658.5" y="-218" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArrowCircleTip</text>
+</a>
+</g>
+</g>
+<!-- Circle&#45;&gt;ArrowCircleTip -->
+<g id="edge16" class="edge">
+<title>Circle-&gt;ArrowCircleTip</title>
+<path fill="none" stroke="#000000" d="M550.5664,-240.8C579.0025,-240.8 631,-240.8 631,-240.8 631,-240.8 631,-235.1744 631,-235.1744"/>
+<polygon fill="#000000" stroke="#000000" points="632.7501,-235.1743 631,-230.1744 629.2501,-235.1744 632.7501,-235.1743"/>
+</g>
+<!-- Ellipse -->
+<g id="node71" class="node">
+<title>Ellipse</title>
+<g id="a_node71"><a xlink:href="../../reference/manim.mobject.geometry.Ellipse.html#manim.mobject.geometry.Ellipse" xlink:title="A circular shape; oval, circle." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="679,-308 638,-308 638,-289 679,-289 679,-308"/>
+<text text-anchor="middle" x="658.5" y="-296" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Ellipse</text>
+</a>
+</g>
+</g>
+<!-- Circle&#45;&gt;Ellipse -->
+<g id="edge56" class="edge">
+<title>Circle-&gt;Ellipse</title>
+<path fill="none" stroke="#000000" d="M550.5999,-252.2C562.9199,-252.2 577,-252.2 577,-252.2 577,-252.2 577,-298.5 577,-298.5 577,-298.5 632.9341,-298.5 632.9341,-298.5"/>
+<polygon fill="#000000" stroke="#000000" points="632.9341,-300.2501 637.9341,-298.5 632.9341,-296.7501 632.9341,-300.2501"/>
+</g>
+<!-- TipableVMobject&#45;&gt;Arc -->
+<g id="edge7" class="edge">
+<title>TipableVMobject-&gt;Arc</title>
+<path fill="none" stroke="#000000" d="M299,-405.5685C299,-392.3848 299,-370.75 299,-370.75 299,-370.75 388.2831,-370.75 388.2831,-370.75"/>
+<polygon fill="#000000" stroke="#000000" points="388.2831,-372.5001 393.2831,-370.75 388.2831,-369.0001 388.2831,-372.5001"/>
+</g>
+<!-- Line -->
+<g id="node20" class="node">
+<title>Line</title>
+<g id="a_node20"><a xlink:href="../../reference/manim.mobject.geometry.Line.html#manim.mobject.geometry.Line" xlink:title="Line" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="420,-399 391,-399 391,-380 420,-380 420,-399"/>
+<text text-anchor="middle" x="405.5" y="-387" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Line</text>
+</a>
+</g>
+</g>
+<!-- TipableVMobject&#45;&gt;Line -->
+<g id="edge68" class="edge">
+<title>TipableVMobject-&gt;Line</title>
+<path fill="none" stroke="#000000" d="M304,-405.8186C304,-398.4264 304,-389.5 304,-389.5 304,-389.5 385.9575,-389.5 385.9575,-389.5"/>
+<polygon fill="#000000" stroke="#000000" points="385.9576,-391.2501 390.9575,-389.5 385.9575,-387.7501 385.9576,-391.2501"/>
+</g>
+<!-- CurvedArrow -->
+<g id="node55" class="node">
+<title>CurvedArrow</title>
+<g id="a_node55"><a xlink:href="../../reference/manim.mobject.geometry.CurvedArrow.html#manim.mobject.geometry.CurvedArrow" xlink:title="CurvedArrow" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="694.5,-204 622.5,-204 622.5,-185 694.5,-185 694.5,-204"/>
+<text text-anchor="middle" x="658.5" y="-192" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">CurvedArrow</text>
+</a>
+</g>
+</g>
+<!-- ArcBetweenPoints&#45;&gt;CurvedArrow -->
+<g id="edge42" class="edge">
+<title>ArcBetweenPoints-&gt;CurvedArrow</title>
+<path fill="none" stroke="#000000" d="M567,-210.8256C567,-205.5971 567,-200.2 567,-200.2 567,-200.2 617.3368,-200.2 617.3368,-200.2"/>
+<polygon fill="#000000" stroke="#000000" points="617.3368,-201.9501 622.3368,-200.2 617.3367,-198.4501 617.3368,-201.9501"/>
+</g>
+<!-- ArcBrace -->
+<g id="node15" class="node">
+<title>ArcBrace</title>
+<g id="a_node15"><a xlink:href="../../reference/manim.mobject.svg.brace.ArcBrace.html#manim.mobject.svg.brace.ArcBrace" xlink:title="Creates a :class:`~Brace` that wraps around an :class:`~.Arc`." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="558.5,-66 506.5,-66 506.5,-47 558.5,-47 558.5,-66"/>
+<text text-anchor="middle" x="532.5" y="-54" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArcBrace</text>
+</a>
+</g>
+</g>
+<!-- Brace -->
+<g id="node16" class="node">
+<title>Brace</title>
+<g id="a_node16"><a xlink:href="../../reference/manim.mobject.svg.brace.Brace.html#manim.mobject.svg.brace.Brace" xlink:title="Takes a mobject and draws a brace adjacent to it." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="423.5,-279 387.5,-279 387.5,-260 423.5,-260 423.5,-279"/>
+<text text-anchor="middle" x="405.5" y="-267" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Brace</text>
+</a>
+</g>
+</g>
+<!-- Brace&#45;&gt;ArcBrace -->
+<g id="edge9" class="edge">
+<title>Brace-&gt;ArcBrace</title>
+<path fill="none" stroke="#000000" d="M423.652,-271C441.4726,-271 466,-271 466,-271 466,-271 466,-59 466,-59 466,-59 501.2174,-59 501.2174,-59"/>
+<polygon fill="#000000" stroke="#000000" points="501.2175,-60.7501 506.2174,-59 501.2174,-57.2501 501.2175,-60.7501"/>
+</g>
+<!-- BraceBetweenPoints -->
+<g id="node40" class="node">
+<title>BraceBetweenPoints</title>
+<g id="a_node40"><a xlink:href="../../reference/manim.mobject.svg.brace.BraceBetweenPoints.html#manim.mobject.svg.brace.BraceBetweenPoints" xlink:title="Similar to Brace, but instead of taking a mobject it uses 2" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="587,-92 478,-92 478,-73 587,-73 587,-92"/>
+<text text-anchor="middle" x="532.5" y="-80" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">BraceBetweenPoints</text>
+</a>
+</g>
+</g>
+<!-- Brace&#45;&gt;BraceBetweenPoints -->
+<g id="edge30" class="edge">
+<title>Brace-&gt;BraceBetweenPoints</title>
+<path fill="none" stroke="#000000" d="M423.5675,-267C438.7539,-267 458,-267 458,-267 458,-267 458,-85 458,-85 458,-85 472.9646,-85 472.9646,-85"/>
+<polygon fill="#000000" stroke="#000000" points="472.9647,-86.7501 477.9646,-85 472.9646,-83.2501 472.9647,-86.7501"/>
+</g>
+<!-- Arrow -->
+<g id="node19" class="node">
+<title>Arrow</title>
+<g id="a_node19"><a xlink:href="../../reference/manim.mobject.geometry.Arrow.html#manim.mobject.geometry.Arrow" xlink:title="An arrow." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="551,-334 514,-334 514,-315 551,-315 551,-334"/>
+<text text-anchor="middle" x="532.5" y="-322" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Arrow</text>
+</a>
+</g>
+</g>
+<!-- DoubleArrow -->
+<g id="node69" class="node">
+<title>DoubleArrow</title>
+<g id="a_node69"><a xlink:href="../../reference/manim.mobject.geometry.DoubleArrow.html#manim.mobject.geometry.DoubleArrow" xlink:title="An arrow with tips on both ends." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="694.5,-360 622.5,-360 622.5,-341 694.5,-341 694.5,-360"/>
+<text text-anchor="middle" x="658.5" y="-348" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">DoubleArrow</text>
+</a>
+</g>
+</g>
+<!-- Arrow&#45;&gt;DoubleArrow -->
+<g id="edge54" class="edge">
+<title>Arrow-&gt;DoubleArrow</title>
+<path fill="none" stroke="#000000" d="M551.1702,-324.5C578.7104,-324.5 627,-324.5 627,-324.5 627,-324.5 627,-335.8186 627,-335.8186"/>
+<polygon fill="#000000" stroke="#000000" points="625.2501,-335.8185 627,-340.8186 628.7501,-335.8186 625.2501,-335.8185"/>
+</g>
+<!-- Vector -->
+<g id="node128" class="node">
+<title>Vector</title>
+<g id="a_node128"><a xlink:href="../../reference/manim.mobject.geometry.Vector.html#manim.mobject.geometry.Vector" xlink:title="A vector specialized for use in graphs." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="678,-386 639,-386 639,-367 678,-367 678,-386"/>
+<text text-anchor="middle" x="658.5" y="-374" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Vector</text>
+</a>
+</g>
+</g>
+<!-- Arrow&#45;&gt;Vector -->
+<g id="edge129" class="edge">
+<title>Arrow-&gt;Vector</title>
+<path fill="none" stroke="#000000" d="M551.3272,-329.25C561.9035,-329.25 573,-329.25 573,-329.25 573,-329.25 573,-376.5 573,-376.5 573,-376.5 633.6697,-376.5 633.6697,-376.5"/>
+<polygon fill="#000000" stroke="#000000" points="633.6697,-378.2501 638.6697,-376.5 633.6696,-374.7501 633.6697,-378.2501"/>
+</g>
+<!-- Line&#45;&gt;Arrow -->
+<g id="edge12" class="edge">
+<title>Line-&gt;Arrow</title>
+<path fill="none" stroke="#000000" d="M420.0097,-389.5C437.0436,-389.5 463,-389.5 463,-389.5 463,-389.5 463,-325.6667 463,-325.6667 463,-325.6667 508.8753,-325.6667 508.8753,-325.6667"/>
+<polygon fill="#000000" stroke="#000000" points="508.8753,-327.4168 513.8753,-325.6667 508.8752,-323.9168 508.8753,-327.4168"/>
+</g>
+<!-- DashedLine -->
+<g id="node60" class="node">
+<title>DashedLine</title>
+<g id="a_node60"><a xlink:href="../../reference/manim.mobject.geometry.DashedLine.html#manim.mobject.geometry.DashedLine" xlink:title="A dashed :class:`Line`." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="565.5,-308 499.5,-308 499.5,-289 565.5,-289 565.5,-308"/>
+<text text-anchor="middle" x="532.5" y="-296" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">DashedLine</text>
+</a>
+</g>
+</g>
+<!-- Line&#45;&gt;DashedLine -->
+<g id="edge47" class="edge">
+<title>Line-&gt;DashedLine</title>
+<path fill="none" stroke="#000000" d="M420.0502,-387.75C436.7907,-387.75 462,-387.75 462,-387.75 462,-387.75 462,-301 462,-301 462,-301 494.3144,-301 494.3144,-301"/>
+<polygon fill="#000000" stroke="#000000" points="494.3144,-302.7501 499.3144,-301 494.3143,-299.2501 494.3144,-302.7501"/>
+</g>
+<!-- NumberLine -->
+<g id="node96" class="node">
+<title>NumberLine</title>
+<g id="a_node96"><a xlink:href="../../reference/manim.mobject.number_line.NumberLine.html#manim.mobject.number_line.NumberLine" xlink:title="Creates a number line with tick marks. Number ranges that include both negative and" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="566.5,-412 498.5,-412 498.5,-393 566.5,-393 566.5,-412"/>
+<text text-anchor="middle" x="532.5" y="-400" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">NumberLine</text>
+</a>
+</g>
+</g>
+<!-- Line&#45;&gt;NumberLine -->
+<g id="edge79" class="edge">
+<title>Line-&gt;NumberLine</title>
+<path fill="none" stroke="#000000" d="M406,-399.1486C406,-402.1079 406,-404.6 406,-404.6 406,-404.6 493.2673,-404.6 493.2673,-404.6"/>
+<polygon fill="#000000" stroke="#000000" points="493.2673,-406.3501 498.2673,-404.6 493.2672,-402.8501 493.2673,-406.3501"/>
+</g>
+<!-- TangentLine -->
+<g id="node116" class="node">
+<title>TangentLine</title>
+<g id="a_node116"><a xlink:href="../../reference/manim.mobject.geometry.TangentLine.html#manim.mobject.geometry.TangentLine" xlink:title="Constructs a line tangent to a :class:`~.VMobject` at a specific point." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="566,-386 499,-386 499,-367 566,-367 566,-386"/>
+<text text-anchor="middle" x="532.5" y="-374" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">TangentLine</text>
+</a>
+</g>
+</g>
+<!-- Line&#45;&gt;TangentLine -->
+<g id="edge111" class="edge">
+<title>Line-&gt;TangentLine</title>
+<path fill="none" stroke="#000000" d="M406,-379.7804C406,-377.8997 406,-376.5 406,-376.5 406,-376.5 493.9324,-376.5 493.9324,-376.5"/>
+<polygon fill="#000000" stroke="#000000" points="493.9325,-378.2501 498.9324,-376.5 493.9324,-374.7501 493.9325,-378.2501"/>
+</g>
+<!-- Underline -->
+<g id="node124" class="node">
+<title>Underline</title>
+<g id="a_node124"><a xlink:href="../../reference/manim.mobject.shape_matchers.Underline.html#manim.mobject.shape_matchers.Underline" xlink:title="Creates an underline." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="560.5,-360 504.5,-360 504.5,-341 560.5,-341 560.5,-360"/>
+<text text-anchor="middle" x="532.5" y="-348" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Underline</text>
+</a>
+</g>
+</g>
+<!-- Line&#45;&gt;Underline -->
+<g id="edge122" class="edge">
+<title>Line-&gt;Underline</title>
+<path fill="none" stroke="#000000" d="M420.3148,-391.25C441.2576,-391.25 477,-391.25 477,-391.25 477,-391.25 477,-347.5 477,-347.5 477,-347.5 499.4248,-347.5 499.4248,-347.5"/>
+<polygon fill="#000000" stroke="#000000" points="499.4248,-349.2501 504.4248,-347.5 499.4248,-345.7501 499.4248,-349.2501"/>
+</g>
+<!-- Arrow3D -->
+<g id="node21" class="node">
+<title>Arrow3D</title>
+<g id="a_node21"><a xlink:href="../../reference/manim.mobject.three_dimensions.Arrow3D.html#manim.mobject.three_dimensions.Arrow3D" xlink:title="An arrow made out of a cylindrical line and a conical tip." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="813,-568 762,-568 762,-549 813,-549 813,-568"/>
+<text text-anchor="middle" x="787.5" y="-556" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Arrow3D</text>
+</a>
+</g>
+</g>
+<!-- Line3D -->
+<g id="node22" class="node">
+<title>Line3D</title>
+<g id="a_node22"><a xlink:href="../../reference/manim.mobject.three_dimensions.Line3D.html#manim.mobject.three_dimensions.Line3D" xlink:title="A cylindrical line, for use in ThreeDScene." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="679.5,-568 637.5,-568 637.5,-549 679.5,-549 679.5,-568"/>
+<text text-anchor="middle" x="658.5" y="-556" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Line3D</text>
+</a>
+</g>
+</g>
+<!-- Line3D&#45;&gt;Arrow3D -->
+<g id="edge13" class="edge">
+<title>Line3D-&gt;Arrow3D</title>
+<path fill="none" stroke="#000000" d="M679.5132,-558.5C679.5132,-558.5 756.5997,-558.5 756.5997,-558.5"/>
+<polygon fill="#000000" stroke="#000000" points="756.5998,-560.2501 761.5997,-558.5 756.5997,-556.7501 756.5998,-560.2501"/>
+</g>
+<!-- ArrowCircleFilledTip -->
+<g id="node23" class="node">
+<title>ArrowCircleFilledTip</title>
+<g id="a_node23"><a xlink:href="../../reference/manim.mobject.geometry.ArrowCircleFilledTip.html#manim.mobject.geometry.ArrowCircleFilledTip" xlink:title="Circular arrow tip with filled tip." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="840,-230 735,-230 735,-211 840,-211 840,-230"/>
+<text text-anchor="middle" x="787.5" y="-218" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArrowCircleFilledTip</text>
+</a>
+</g>
+</g>
+<!-- ArrowCircleTip&#45;&gt;ArrowCircleFilledTip -->
+<g id="edge14" class="edge">
+<title>ArrowCircleTip-&gt;ArrowCircleFilledTip</title>
+<path fill="none" stroke="#000000" d="M698.6093,-220.5C698.6093,-220.5 729.6033,-220.5 729.6033,-220.5"/>
+<polygon fill="#000000" stroke="#000000" points="729.6033,-222.2501 734.6033,-220.5 729.6032,-218.7501 729.6033,-222.2501"/>
+</g>
+<!-- ArrowTip&#45;&gt;ArrowCircleTip -->
+<g id="edge15" class="edge">
+<title>ArrowTip-&gt;ArrowCircleTip</title>
+<path fill="none" stroke="#000000" d="M558.7826,-196.4C577.3705,-196.4 599,-196.4 599,-196.4 599,-196.4 599,-220.5 599,-220.5 599,-220.5 613.4825,-220.5 613.4825,-220.5"/>
+<polygon fill="#000000" stroke="#000000" points="613.4826,-222.2501 618.4825,-220.5 613.4825,-218.7501 613.4826,-222.2501"/>
+</g>
+<!-- ArrowSquareTip -->
+<g id="node27" class="node">
+<title>ArrowSquareTip</title>
+<g id="a_node27"><a xlink:href="../../reference/manim.mobject.geometry.ArrowSquareTip.html#manim.mobject.geometry.ArrowSquareTip" xlink:title="Square arrow tip." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="830.5,-178 744.5,-178 744.5,-159 830.5,-159 830.5,-178"/>
+<text text-anchor="middle" x="787.5" y="-166" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArrowSquareTip</text>
+</a>
+</g>
+</g>
+<!-- ArrowTip&#45;&gt;ArrowSquareTip -->
+<g id="edge18" class="edge">
+<title>ArrowTip-&gt;ArrowSquareTip</title>
+<path fill="none" stroke="#000000" d="M558.6701,-192.6C574.2461,-192.6 591,-192.6 591,-192.6 591,-192.6 591,-172.6667 591,-172.6667 591,-172.6667 739.3772,-172.6667 739.3772,-172.6667"/>
+<polygon fill="#000000" stroke="#000000" points="739.3773,-174.4168 744.3772,-172.6667 739.3772,-170.9168 739.3773,-174.4168"/>
+</g>
+<!-- ArrowTriangleTip -->
+<g id="node30" class="node">
+<title>ArrowTriangleTip</title>
+<g id="a_node30"><a xlink:href="../../reference/manim.mobject.geometry.ArrowTriangleTip.html#manim.mobject.geometry.ArrowTriangleTip" xlink:title="Triangular arrow tip." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="832.5,-144 742.5,-144 742.5,-125 832.5,-125 832.5,-144"/>
+<text text-anchor="middle" x="787.5" y="-132" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArrowTriangleTip</text>
+</a>
+</g>
+</g>
+<!-- ArrowTip&#45;&gt;ArrowTriangleTip -->
+<g id="edge22" class="edge">
+<title>ArrowTip-&gt;ArrowTriangleTip</title>
+<path fill="none" stroke="#000000" d="M558.7651,-188.8C573.5197,-188.8 589,-188.8 589,-188.8 589,-188.8 589,-139.5 589,-139.5 589,-139.5 737.4573,-139.5 737.4573,-139.5"/>
+<polygon fill="#000000" stroke="#000000" points="737.4573,-141.2501 742.4573,-139.5 737.4572,-137.7501 737.4573,-141.2501"/>
+</g>
+<!-- ArrowSquareFilledTip -->
+<g id="node26" class="node">
+<title>ArrowSquareFilledTip</title>
+<g id="a_node26"><a xlink:href="../../reference/manim.mobject.geometry.ArrowSquareFilledTip.html#manim.mobject.geometry.ArrowSquareFilledTip" xlink:title="Square arrow tip with filled tip." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="979,-178 868,-178 868,-159 979,-159 979,-178"/>
+<text text-anchor="middle" x="923.5" y="-166" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArrowSquareFilledTip</text>
+</a>
+</g>
+</g>
+<!-- ArrowSquareTip&#45;&gt;ArrowSquareFilledTip -->
+<g id="edge17" class="edge">
+<title>ArrowSquareTip-&gt;ArrowSquareFilledTip</title>
+<path fill="none" stroke="#000000" d="M830.5313,-168.5C830.5313,-168.5 862.7912,-168.5 862.7912,-168.5"/>
+<polygon fill="#000000" stroke="#000000" points="862.7912,-170.2501 867.7912,-168.5 862.7912,-166.7501 862.7912,-170.2501"/>
+</g>
+<!-- Square -->
+<g id="node28" class="node">
+<title>Square</title>
+<g id="a_node28"><a xlink:href="../../reference/manim.mobject.geometry.Square.html#manim.mobject.geometry.Square" xlink:title="A rectangle with equal side lengths." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="679.5,-162 637.5,-162 637.5,-143 679.5,-143 679.5,-162"/>
+<text text-anchor="middle" x="658.5" y="-150" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Square</text>
+</a>
+</g>
+</g>
+<!-- Square&#45;&gt;ArrowSquareTip -->
+<g id="edge19" class="edge">
+<title>Square-&gt;ArrowSquareTip</title>
+<path fill="none" stroke="#000000" d="M659,-162.3114C659,-165.0699 659,-167.3333 659,-167.3333 659,-167.3333 739.3539,-167.3333 739.3539,-167.3333"/>
+<polygon fill="#000000" stroke="#000000" points="739.3539,-169.0834 744.3539,-167.3333 739.3539,-165.5834 739.3539,-169.0834"/>
+</g>
+<!-- ArrowTriangleFilledTip -->
+<g id="node29" class="node">
+<title>ArrowTriangleFilledTip</title>
+<g id="a_node29"><a xlink:href="../../reference/manim.mobject.geometry.ArrowTriangleFilledTip.html#manim.mobject.geometry.ArrowTriangleFilledTip" xlink:title="Triangular arrow tip with filled tip." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="981.5,-144 865.5,-144 865.5,-125 981.5,-125 981.5,-144"/>
+<text text-anchor="middle" x="923.5" y="-132" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArrowTriangleFilledTip</text>
+</a>
+</g>
+</g>
+<!-- ArrowTriangleTip&#45;&gt;ArrowTriangleFilledTip -->
+<g id="edge21" class="edge">
+<title>ArrowTriangleTip-&gt;ArrowTriangleFilledTip</title>
+<path fill="none" stroke="#000000" d="M832.786,-134.5C832.786,-134.5 860.1054,-134.5 860.1054,-134.5"/>
+<polygon fill="#000000" stroke="#000000" points="860.1055,-136.2501 865.1054,-134.5 860.1054,-132.7501 860.1055,-136.2501"/>
+</g>
+<!-- Triangle -->
+<g id="node31" class="node">
+<title>Triangle</title>
+<g id="a_node31"><a xlink:href="../../reference/manim.mobject.geometry.Triangle.html#manim.mobject.geometry.Triangle" xlink:title="An equilateral triangle." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="682,-136 635,-136 635,-117 682,-117 682,-136"/>
+<text text-anchor="middle" x="658.5" y="-124" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Triangle</text>
+</a>
+</g>
+</g>
+<!-- Triangle&#45;&gt;ArrowTriangleTip -->
+<g id="edge23" class="edge">
+<title>Triangle-&gt;ArrowTriangleTip</title>
+<path fill="none" stroke="#000000" d="M682.1606,-130.5C682.1606,-130.5 737.3226,-130.5 737.3226,-130.5"/>
+<polygon fill="#000000" stroke="#000000" points="737.3226,-132.2501 742.3226,-130.5 737.3226,-128.7501 737.3226,-132.2501"/>
+</g>
+<!-- ArrowVectorField -->
+<g id="node32" class="node">
+<title>ArrowVectorField</title>
+<g id="a_node32"><a xlink:href="../../reference/manim.mobject.vector_field.ArrowVectorField.html#manim.mobject.vector_field.ArrowVectorField" xlink:title="A :class:`VectorField` represented by a set of change vectors." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="577.5,-594 487.5,-594 487.5,-575 577.5,-575 577.5,-594"/>
+<text text-anchor="middle" x="532.5" y="-582" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ArrowVectorField</text>
+</a>
+</g>
+</g>
+<!-- VectorField&#45;&gt;ArrowVectorField -->
+<g id="edge24" class="edge">
+<title>VectorField-&gt;ArrowVectorField</title>
+<path fill="none" stroke="#000000" d="M436.5585,-572.6667C463.4307,-572.6667 498,-572.6667 498,-572.6667 498,-572.6667 498,-572.8948 498,-572.8948"/>
+<polygon fill="#000000" stroke="#000000" points="496.2502,-569.9482 498,-574.9483 499.7502,-569.9483 496.2502,-569.9482"/>
+</g>
+<!-- StreamLines -->
+<g id="node115" class="node">
+<title>StreamLines</title>
+<g id="a_node115"><a xlink:href="../../reference/manim.mobject.vector_field.StreamLines.html#manim.mobject.vector_field.StreamLines" xlink:title="StreamLines represent the flow of a :class:`VectorField` using the trace of moving agents." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="567,-620 498,-620 498,-601 567,-601 567,-620"/>
+<text text-anchor="middle" x="532.5" y="-608" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">StreamLines</text>
+</a>
+</g>
+</g>
+<!-- VectorField&#45;&gt;StreamLines -->
+<g id="edge107" class="edge">
+<title>VectorField-&gt;StreamLines</title>
+<path fill="none" stroke="#000000" d="M436.694,-570.3333C490.9578,-570.3333 597,-570.3333 597,-570.3333 597,-570.3333 597,-610.5 597,-610.5 597,-610.5 572.0159,-610.5 572.0159,-610.5"/>
+<polygon fill="#000000" stroke="#000000" points="572.016,-608.7501 567.0159,-610.5 572.0159,-612.2501 572.016,-608.7501"/>
+</g>
+<!-- NumberPlane -->
+<g id="node47" class="node">
+<title>NumberPlane</title>
+<g id="a_node47"><a xlink:href="../../reference/manim.mobject.coordinate_systems.NumberPlane.html#manim.mobject.coordinate_systems.NumberPlane" xlink:title="Creates a cartesian plane with background lines." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="570,-750 495,-750 495,-731 570,-731 570,-750"/>
+<text text-anchor="middle" x="532.5" y="-738" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">NumberPlane</text>
+</a>
+</g>
+</g>
+<!-- Axes&#45;&gt;NumberPlane -->
+<g id="edge80" class="edge">
+<title>Axes-&gt;NumberPlane</title>
+<path fill="none" stroke="#000000" d="M422.2075,-699.75C443.0553,-699.75 476,-699.75 476,-699.75 476,-699.75 476,-740.5 476,-740.5 476,-740.5 489.8137,-740.5 489.8137,-740.5"/>
+<polygon fill="#000000" stroke="#000000" points="489.8137,-742.2501 494.8137,-740.5 489.8136,-738.7501 489.8137,-742.2501"/>
+</g>
+<!-- PolarPlane -->
+<g id="node104" class="node">
+<title>PolarPlane</title>
+<g id="a_node104"><a xlink:href="../../reference/manim.mobject.coordinate_systems.PolarPlane.html#manim.mobject.coordinate_systems.PolarPlane" xlink:title="Creates a polar plane with background lines." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="562.5,-802 502.5,-802 502.5,-783 562.5,-783 562.5,-802"/>
+<text text-anchor="middle" x="532.5" y="-790" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">PolarPlane</text>
+</a>
+</g>
+</g>
+<!-- Axes&#45;&gt;PolarPlane -->
+<g id="edge89" class="edge">
+<title>Axes-&gt;PolarPlane</title>
+<path fill="none" stroke="#000000" d="M422.0284,-703.25C441.4323,-703.25 471,-703.25 471,-703.25 471,-703.25 471,-792.5 471,-792.5 471,-792.5 497.4706,-792.5 497.4706,-792.5"/>
+<polygon fill="#000000" stroke="#000000" points="497.4707,-794.2501 502.4706,-792.5 497.4706,-790.7501 497.4707,-794.2501"/>
+</g>
+<!-- ThreeDAxes -->
+<g id="node119" class="node">
+<title>ThreeDAxes</title>
+<g id="a_node119"><a xlink:href="../../reference/manim.mobject.coordinate_systems.ThreeDAxes.html#manim.mobject.coordinate_systems.ThreeDAxes" xlink:title="A 3-dimensional set of axes." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="566.5,-776 498.5,-776 498.5,-757 566.5,-757 566.5,-776"/>
+<text text-anchor="middle" x="532.5" y="-764" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ThreeDAxes</text>
+</a>
+</g>
+</g>
+<!-- Axes&#45;&gt;ThreeDAxes -->
+<g id="edge115" class="edge">
+<title>Axes-&gt;ThreeDAxes</title>
+<path fill="none" stroke="#000000" d="M422.0819,-701.5C442.3547,-701.5 474,-701.5 474,-701.5 474,-701.5 474,-766.5 474,-766.5 474,-766.5 493.4703,-766.5 493.4703,-766.5"/>
+<polygon fill="#000000" stroke="#000000" points="493.4703,-768.2501 498.4703,-766.5 493.4703,-764.7501 493.4703,-768.2501"/>
+</g>
+<!-- CoordinateSystem -->
+<g id="node35" class="node">
+<title>CoordinateSystem</title>
+<g id="a_node35"><a xlink:href="../../reference/manim.mobject.coordinate_systems.CoordinateSystem.html#manim.mobject.coordinate_systems.CoordinateSystem" xlink:title="Abstract class for Axes and NumberPlane" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="312.5,-561 213.5,-561 213.5,-542 312.5,-542 312.5,-561"/>
+<text text-anchor="middle" x="263" y="-549" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">CoordinateSystem</text>
+</a>
+</g>
+</g>
+<!-- CoordinateSystem&#45;&gt;Axes -->
+<g id="edge26" class="edge">
+<title>CoordinateSystem-&gt;Axes</title>
+<path fill="none" stroke="#000000" d="M312.6977,-550.6667C324.6299,-550.6667 334,-550.6667 334,-550.6667 334,-550.6667 334,-704.5 334,-704.5 334,-704.5 383.9167,-704.5 383.9167,-704.5"/>
+<polygon fill="#000000" stroke="#000000" points="383.9168,-706.2501 388.9167,-704.5 383.9167,-702.7501 383.9168,-706.2501"/>
+</g>
+<!-- BackgroundRectangle -->
+<g id="node36" class="node">
+<title>BackgroundRectangle</title>
+<g id="a_node36"><a xlink:href="../../reference/manim.mobject.shape_matchers.BackgroundRectangle.html#manim.mobject.shape_matchers.BackgroundRectangle" xlink:title="A background rectangle" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="980.5,-32 866.5,-32 866.5,-13 980.5,-13 980.5,-32"/>
+<text text-anchor="middle" x="923.5" y="-20" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">BackgroundRectangle</text>
+</a>
+</g>
+</g>
+<!-- SurroundingRectangle -->
+<g id="node37" class="node">
+<title>SurroundingRectangle</title>
+<g id="a_node37"><a xlink:href="../../reference/manim.mobject.shape_matchers.SurroundingRectangle.html#manim.mobject.shape_matchers.SurroundingRectangle" xlink:title="A rectangle surrounding a :class:`~.Mobject`" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="845,-32 730,-32 730,-13 845,-13 845,-32"/>
+<text text-anchor="middle" x="787.5" y="-20" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">SurroundingRectangle</text>
+</a>
+</g>
+</g>
+<!-- SurroundingRectangle&#45;&gt;BackgroundRectangle -->
+<g id="edge27" class="edge">
+<title>SurroundingRectangle-&gt;BackgroundRectangle</title>
+<path fill="none" stroke="#000000" d="M845.1762,-22.5C845.1762,-22.5 861.1687,-22.5 861.1687,-22.5"/>
+<polygon fill="#000000" stroke="#000000" points="861.1687,-24.2501 866.1687,-22.5 861.1686,-20.7501 861.1687,-24.2501"/>
+</g>
+<!-- SVGPathMobject&#45;&gt;Brace -->
+<g id="edge29" class="edge">
+<title>SVGPathMobject-&gt;Brace</title>
+<path fill="none" stroke="#000000" d="M302,-285.8186C302,-278.4264 302,-269.5 302,-269.5 302,-269.5 382.4717,-269.5 382.4717,-269.5"/>
+<polygon fill="#000000" stroke="#000000" points="382.4717,-271.2501 387.4717,-269.5 382.4716,-267.7501 382.4717,-271.2501"/>
+</g>
+<!-- TexSymbol -->
+<g id="node117" class="node">
+<title>TexSymbol</title>
+<g id="a_node117"><a xlink:href="../../reference/manim.mobject.svg.tex_mobject.TexSymbol.html#manim.mobject.svg.tex_mobject.TexSymbol" xlink:title="Purely a renaming of SVGPathMobject." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="436.5,-253 374.5,-253 374.5,-234 436.5,-234 436.5,-253"/>
+<text text-anchor="middle" x="405.5" y="-241" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">TexSymbol</text>
+</a>
+</g>
+</g>
+<!-- SVGPathMobject&#45;&gt;TexSymbol -->
+<g id="edge113" class="edge">
+<title>SVGPathMobject-&gt;TexSymbol</title>
+<path fill="none" stroke="#000000" d="M307.1331,-292.3333C339.5637,-292.3333 378,-292.3333 378,-292.3333 378,-292.3333 378,-258.3822 378,-258.3822"/>
+<polygon fill="#000000" stroke="#000000" points="379.7501,-258.3821 378,-253.3822 376.2501,-258.3822 379.7501,-258.3821"/>
+</g>
+<!-- BraceText -->
+<g id="node42" class="node">
+<title>BraceText</title>
+<g id="a_node42"><a xlink:href="../../reference/manim.mobject.svg.brace.BraceText.html#manim.mobject.svg.brace.BraceText" xlink:title="BraceText" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="434,-227 377,-227 377,-208 434,-208 434,-227"/>
+<text text-anchor="middle" x="405.5" y="-215" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">BraceText</text>
+</a>
+</g>
+</g>
+<!-- BraceLabel&#45;&gt;BraceText -->
+<g id="edge32" class="edge">
+<title>BraceLabel-&gt;BraceText</title>
+<path fill="none" stroke="#000000" d="M294.6254,-217.5C294.6254,-217.5 371.8665,-217.5 371.8665,-217.5"/>
+<polygon fill="#000000" stroke="#000000" points="371.8666,-219.2501 376.8665,-217.5 371.8665,-215.7501 371.8666,-219.2501"/>
+</g>
+<!-- BulletedList -->
+<g id="node43" class="node">
+<title>BulletedList</title>
+<g id="a_node43"><a xlink:href="../../reference/manim.mobject.svg.tex_mobject.BulletedList.html#manim.mobject.svg.tex_mobject.BulletedList" xlink:title="Examples" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="820.5,-815 754.5,-815 754.5,-796 820.5,-796 820.5,-815"/>
+<text text-anchor="middle" x="787.5" y="-803" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">BulletedList</text>
+</a>
+</g>
+</g>
+<!-- Tex -->
+<g id="node44" class="node">
+<title>Tex</title>
+<g id="a_node44"><a xlink:href="../../reference/manim.mobject.svg.tex_mobject.Tex.html#manim.mobject.svg.tex_mobject.Tex" xlink:title="A string compiled with LaTeX in normal mode." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="671,-828 646,-828 646,-809 671,-809 671,-828"/>
+<text text-anchor="middle" x="658.5" y="-816" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Tex</text>
+</a>
+</g>
+</g>
+<!-- Tex&#45;&gt;BulletedList -->
+<g id="edge33" class="edge">
+<title>Tex-&gt;BulletedList</title>
+<path fill="none" stroke="#000000" d="M671.0165,-817.3333C698.9624,-817.3333 764,-817.3333 764,-817.3333 764,-817.3333 764,-817.1052 764,-817.1052"/>
+<polygon fill="#000000" stroke="#000000" points="765.7502,-820.0517 764,-815.0517 762.2502,-820.0518 765.7502,-820.0517"/>
+</g>
+<!-- Title -->
+<g id="node121" class="node">
+<title>Title</title>
+<g id="a_node121"><a xlink:href="../../reference/manim.mobject.svg.tex_mobject.Title.html#manim.mobject.svg.tex_mobject.Title" xlink:title="Examples" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="802.5,-841 772.5,-841 772.5,-822 802.5,-822 802.5,-841"/>
+<text text-anchor="middle" x="787.5" y="-829" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Title</text>
+</a>
+</g>
+</g>
+<!-- Tex&#45;&gt;Title -->
+<g id="edge118" class="edge">
+<title>Tex-&gt;Title</title>
+<path fill="none" stroke="#000000" d="M671.3904,-819.6667C704.1459,-819.6667 788,-819.6667 788,-819.6667 788,-819.6667 788,-819.8948 788,-819.8948"/>
+<polygon fill="#000000" stroke="#000000" points="786.2502,-816.9482 788,-821.9483 789.7502,-816.9483 786.2502,-816.9482"/>
+</g>
+<!-- ComplexPlane -->
+<g id="node46" class="node">
+<title>ComplexPlane</title>
+<g id="a_node46"><a xlink:href="../../reference/manim.mobject.coordinate_systems.ComplexPlane.html#manim.mobject.coordinate_systems.ComplexPlane" xlink:title="A :class:`~.NumberPlane` specialized for use with complex numbers." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="698,-750 619,-750 619,-731 698,-731 698,-750"/>
+<text text-anchor="middle" x="658.5" y="-738" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ComplexPlane</text>
+</a>
+</g>
+</g>
+<!-- NumberPlane&#45;&gt;ComplexPlane -->
+<g id="edge36" class="edge">
+<title>NumberPlane-&gt;ComplexPlane</title>
+<path fill="none" stroke="#000000" d="M570.3042,-740.5C570.3042,-740.5 613.9731,-740.5 613.9731,-740.5"/>
+<polygon fill="#000000" stroke="#000000" points="613.9732,-742.2501 618.9731,-740.5 613.9731,-738.7501 613.9732,-742.2501"/>
+</g>
+<!-- ComplexValueTracker -->
+<g id="node48" class="node">
+<title>ComplexValueTracker</title>
+<g id="a_node48"><a xlink:href="../../reference/manim.mobject.value_tracker.ComplexValueTracker.html#manim.mobject.value_tracker.ComplexValueTracker" xlink:title="Tracks a complex-valued parameter." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="320,-123 206,-123 206,-104 320,-104 320,-123"/>
+<text text-anchor="middle" x="263" y="-111" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ComplexValueTracker</text>
+</a>
+</g>
+</g>
+<!-- ValueTracker&#45;&gt;ComplexValueTracker -->
+<g id="edge37" class="edge">
+<title>ValueTracker-&gt;ComplexValueTracker</title>
+<path fill="none" stroke="#000000" d="M155.5374,-245.6667C182.1565,-245.6667 214,-245.6667 214,-245.6667 214,-245.6667 214,-128.0051 214,-128.0051"/>
+<polygon fill="#000000" stroke="#000000" points="215.7501,-128.0051 214,-123.0051 212.2501,-128.0051 215.7501,-128.0051"/>
+</g>
+<!-- Cone -->
+<g id="node50" class="node">
+<title>Cone</title>
+<g id="a_node50"><a xlink:href="../../reference/manim.mobject.three_dimensions.Cone.html#manim.mobject.three_dimensions.Cone" xlink:title="A circular cone." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="549,-464 516,-464 516,-445 549,-445 549,-464"/>
+<text text-anchor="middle" x="532.5" y="-452" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Cone</text>
+</a>
+</g>
+</g>
+<!-- Surface&#45;&gt;Cone -->
+<g id="edge38" class="edge">
+<title>Surface-&gt;Cone</title>
+<path fill="none" stroke="#000000" d="M428.0685,-465.75C463.2054,-465.75 527,-465.75 527,-465.75 527,-465.75 527,-465.6121 527,-465.6121"/>
+<polygon fill="#000000" stroke="#000000" points="528.7504,-469.3704 527,-464.3705 525.2504,-469.3707 528.7504,-469.3704"/>
+</g>
+<!-- Cylinder -->
+<g id="node59" class="node">
+<title>Cylinder</title>
+<g id="a_node59"><a xlink:href="../../reference/manim.mobject.three_dimensions.Cylinder.html#manim.mobject.three_dimensions.Cylinder" xlink:title="A cylinder, defined by its height, radius and direction," target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="557,-568 508,-568 508,-549 557,-549 557,-568"/>
+<text text-anchor="middle" x="532.5" y="-556" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Cylinder</text>
+</a>
+</g>
+</g>
+<!-- Surface&#45;&gt;Cylinder -->
+<g id="edge46" class="edge">
+<title>Surface-&gt;Cylinder</title>
+<path fill="none" stroke="#000000" d="M412,-457.9366C412,-457.1216 412,-456.6 412,-456.6 412,-456.6 470,-456.6 470,-456.6 470,-456.6 470,-545.5 470,-545.5 470,-545.5 533,-545.5 533,-545.5 533,-545.5 533,-545.828 533,-545.828"/>
+<polygon fill="#000000" stroke="#000000" points="531.2502,-543.7804 533,-548.7804 534.7502,-543.7805 531.2502,-543.7804"/>
+</g>
+<!-- Sphere -->
+<g id="node68" class="node">
+<title>Sphere</title>
+<g id="a_node68"><a xlink:href="../../reference/manim.mobject.three_dimensions.Sphere.html#manim.mobject.three_dimensions.Sphere" xlink:title="A mobject representing a three-dimensional sphere." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="553.5,-542 511.5,-542 511.5,-523 553.5,-523 553.5,-542"/>
+<text text-anchor="middle" x="532.5" y="-530" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Sphere</text>
+</a>
+</g>
+</g>
+<!-- Surface&#45;&gt;Sphere -->
+<g id="edge104" class="edge">
+<title>Surface-&gt;Sphere</title>
+<path fill="none" stroke="#000000" d="M400,-457.5716C400,-456.1729 400,-455.2 400,-455.2 400,-455.2 473,-455.2 473,-455.2 473,-455.2 473,-519.5 473,-519.5 473,-519.5 533,-519.5 533,-519.5 533,-519.5 533,-519.828 533,-519.828"/>
+<polygon fill="#000000" stroke="#000000" points="531.2502,-517.7804 533,-522.7804 534.7502,-517.7805 531.2502,-517.7804"/>
+</g>
+<!-- ParametricSurface -->
+<g id="node99" class="node">
+<title>ParametricSurface</title>
+<g id="a_node99"><a xlink:href="../../reference/manim.mobject.three_dimensions.ParametricSurface.html#manim.mobject.three_dimensions.ParametricSurface" xlink:title="Creates a parametric surface" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="581.5,-516 483.5,-516 483.5,-497 581.5,-497 581.5,-516"/>
+<text text-anchor="middle" x="532.5" y="-504" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ParametricSurface</text>
+</a>
+</g>
+</g>
+<!-- Surface&#45;&gt;ParametricSurface -->
+<g id="edge85" class="edge">
+<title>Surface-&gt;ParametricSurface</title>
+<path fill="none" stroke="#000000" d="M428.4124,-469.25C453.7386,-469.25 491,-469.25 491,-469.25 491,-469.25 491,-491.713 491,-491.713"/>
+<polygon fill="#000000" stroke="#000000" points="489.2501,-491.713 491,-496.713 492.7501,-491.713 489.2501,-491.713"/>
+</g>
+<!-- Torus -->
+<g id="node122" class="node">
+<title>Torus</title>
+<g id="a_node122"><a xlink:href="../../reference/manim.mobject.three_dimensions.Torus.html#manim.mobject.three_dimensions.Torus" xlink:title="A torus." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="549.5,-490 515.5,-490 515.5,-471 549.5,-471 549.5,-490"/>
+<text text-anchor="middle" x="532.5" y="-478" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Torus</text>
+</a>
+</g>
+</g>
+<!-- Surface&#45;&gt;Torus -->
+<g id="edge119" class="edge">
+<title>Surface-&gt;Torus</title>
+<path fill="none" stroke="#000000" d="M428.2776,-467.5C466.1613,-467.5 538,-467.5 538,-467.5 538,-467.5 538,-467.828 538,-467.828"/>
+<polygon fill="#000000" stroke="#000000" points="536.2502,-465.7804 538,-470.7804 539.7502,-465.7805 536.2502,-465.7804"/>
+</g>
+<!-- Prism -->
+<g id="node107" class="node">
+<title>Prism</title>
+<g id="a_node107"><a xlink:href="../../reference/manim.mobject.three_dimensions.Prism.html#manim.mobject.three_dimensions.Prism" xlink:title="A cuboid." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="550.5,-438 514.5,-438 514.5,-419 550.5,-419 550.5,-438"/>
+<text text-anchor="middle" x="532.5" y="-426" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Prism</text>
+</a>
+</g>
+</g>
+<!-- Cube&#45;&gt;Prism -->
+<g id="edge92" class="edge">
+<title>Cube-&gt;Prism</title>
+<path fill="none" stroke="#000000" d="M406,-425.1842C406,-427.6745 406,-429.6667 406,-429.6667 406,-429.6667 509.3756,-429.6667 509.3756,-429.6667"/>
+<polygon fill="#000000" stroke="#000000" points="509.3757,-431.4168 514.3756,-429.6667 509.3756,-427.9168 509.3757,-431.4168"/>
+</g>
+<!-- CurvedDoubleArrow -->
+<g id="node56" class="node">
+<title>CurvedDoubleArrow</title>
+<g id="a_node56"><a xlink:href="../../reference/manim.mobject.geometry.CurvedDoubleArrow.html#manim.mobject.geometry.CurvedDoubleArrow" xlink:title="CurvedDoubleArrow" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="840.5,-204 734.5,-204 734.5,-185 840.5,-185 840.5,-204"/>
+<text text-anchor="middle" x="787.5" y="-192" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">CurvedDoubleArrow</text>
+</a>
+</g>
+</g>
+<!-- CurvedArrow&#45;&gt;CurvedDoubleArrow -->
+<g id="edge43" class="edge">
+<title>CurvedArrow-&gt;CurvedDoubleArrow</title>
+<path fill="none" stroke="#000000" d="M694.777,-194.5C694.777,-194.5 729.1608,-194.5 729.1608,-194.5"/>
+<polygon fill="#000000" stroke="#000000" points="729.1608,-196.2501 734.1608,-194.5 729.1607,-192.7501 729.1608,-196.2501"/>
+</g>
+<!-- Cylinder&#45;&gt;Line3D -->
+<g id="edge69" class="edge">
+<title>Cylinder-&gt;Line3D</title>
+<path fill="none" stroke="#000000" d="M557.0932,-558.5C557.0932,-558.5 632.3183,-558.5 632.3183,-558.5"/>
+<polygon fill="#000000" stroke="#000000" points="632.3183,-560.2501 637.3183,-558.5 632.3183,-556.7501 632.3183,-560.2501"/>
+</g>
+<!-- DecimalMatrix -->
+<g id="node62" class="node">
+<title>DecimalMatrix</title>
+<g id="a_node62"><a xlink:href="../../reference/manim.mobject.matrix.DecimalMatrix.html#manim.mobject.matrix.DecimalMatrix" xlink:title="A mobject that displays a matrix with decimal entries on the screen." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="445.5,-175 365.5,-175 365.5,-156 445.5,-156 445.5,-175"/>
+<text text-anchor="middle" x="405.5" y="-163" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">DecimalMatrix</text>
+</a>
+</g>
+</g>
+<!-- Matrix&#45;&gt;DecimalMatrix -->
+<g id="edge49" class="edge">
+<title>Matrix-&gt;DecimalMatrix</title>
+<path fill="none" stroke="#000000" d="M282.5152,-165.5C282.5152,-165.5 360.4852,-165.5 360.4852,-165.5"/>
+<polygon fill="#000000" stroke="#000000" points="360.4852,-167.2501 365.4852,-165.5 360.4851,-163.7501 360.4852,-167.2501"/>
+</g>
+<!-- IntegerMatrix -->
+<g id="node82" class="node">
+<title>IntegerMatrix</title>
+<g id="a_node82"><a xlink:href="../../reference/manim.mobject.matrix.IntegerMatrix.html#manim.mobject.matrix.IntegerMatrix" xlink:title="A mobject that displays a matrix with integer entries on the screen." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="442.5,-149 368.5,-149 368.5,-130 442.5,-130 442.5,-149"/>
+<text text-anchor="middle" x="405.5" y="-137" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">IntegerMatrix</text>
+</a>
+</g>
+</g>
+<!-- Matrix&#45;&gt;IntegerMatrix -->
+<g id="edge65" class="edge">
+<title>Matrix-&gt;IntegerMatrix</title>
+<path fill="none" stroke="#000000" d="M282.8499,-160.75C307.118,-160.75 345,-160.75 345,-160.75 345,-160.75 345,-142.6667 345,-142.6667 345,-142.6667 363.2179,-142.6667 363.2179,-142.6667"/>
+<polygon fill="#000000" stroke="#000000" points="363.2179,-144.4168 368.2179,-142.6667 363.2178,-140.9168 363.2179,-144.4168"/>
+</g>
+<!-- MobjectMatrix -->
+<g id="node94" class="node">
+<title>MobjectMatrix</title>
+<g id="a_node94"><a xlink:href="../../reference/manim.mobject.matrix.MobjectMatrix.html#manim.mobject.matrix.MobjectMatrix" xlink:title="A mobject that displays a matrix of mobject entries on the screen." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="444.5,-201 366.5,-201 366.5,-182 444.5,-182 444.5,-201"/>
+<text text-anchor="middle" x="405.5" y="-189" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">MobjectMatrix</text>
+</a>
+</g>
+</g>
+<!-- Matrix&#45;&gt;MobjectMatrix -->
+<g id="edge77" class="edge">
+<title>Matrix-&gt;MobjectMatrix</title>
+<path fill="none" stroke="#000000" d="M282.6078,-170.25C306.58,-170.25 344,-170.25 344,-170.25 344,-170.25 344,-191.5 344,-191.5 344,-191.5 361.2029,-191.5 361.2029,-191.5"/>
+<polygon fill="#000000" stroke="#000000" points="361.2029,-193.2501 366.2029,-191.5 361.2029,-189.7501 361.2029,-193.2501"/>
+</g>
+<!-- Integer -->
+<g id="node81" class="node">
+<title>Integer</title>
+<g id="a_node81"><a xlink:href="../../reference/manim.mobject.numbers.Integer.html#manim.mobject.numbers.Integer" xlink:title="A class for displaying Integers." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="427,-123 384,-123 384,-104 427,-104 427,-123"/>
+<text text-anchor="middle" x="405.5" y="-111" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Integer</text>
+</a>
+</g>
+</g>
+<!-- DecimalNumber&#45;&gt;Integer -->
+<g id="edge64" class="edge">
+<title>DecimalNumber-&gt;Integer</title>
+<path fill="none" stroke="#000000" d="M307.2118,-136.3333C325.7136,-136.3333 343,-136.3333 343,-136.3333 343,-136.3333 343,-113.5 343,-113.5 343,-113.5 378.991,-113.5 378.991,-113.5"/>
+<polygon fill="#000000" stroke="#000000" points="378.9911,-115.2501 383.991,-113.5 378.991,-111.7501 378.9911,-115.2501"/>
+</g>
+<!-- DecimalTable -->
+<g id="node65" class="node">
+<title>DecimalTable</title>
+<g id="a_node65"><a xlink:href="../../reference/manim.mobject.table.DecimalTable.html#manim.mobject.table.DecimalTable" xlink:title="A specialized :class:`~.Table` mobject for use with with :class:`~.DecimalNumber` to display decimal entries." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="570,-698 495,-698 495,-679 570,-679 570,-698"/>
+<text text-anchor="middle" x="532.5" y="-686" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">DecimalTable</text>
+</a>
+</g>
+</g>
+<!-- Table&#45;&gt;DecimalTable -->
+<g id="edge51" class="edge">
+<title>Table-&gt;DecimalTable</title>
+<path fill="none" stroke="#000000" d="M422.6798,-651.25C443.2607,-651.25 475,-651.25 475,-651.25 475,-651.25 475,-688.5 475,-688.5 475,-688.5 489.7882,-688.5 489.7882,-688.5"/>
+<polygon fill="#000000" stroke="#000000" points="489.7883,-690.2501 494.7882,-688.5 489.7882,-686.7501 489.7883,-690.2501"/>
+</g>
+<!-- IntegerTable -->
+<g id="node83" class="node">
+<title>IntegerTable</title>
+<g id="a_node83"><a xlink:href="../../reference/manim.mobject.table.IntegerTable.html#manim.mobject.table.IntegerTable" xlink:title="A specialized :class:`~.Table` mobject for use with with :class:`~.Integer`." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="567,-672 498,-672 498,-653 567,-653 567,-672"/>
+<text text-anchor="middle" x="532.5" y="-660" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">IntegerTable</text>
+</a>
+</g>
+</g>
+<!-- Table&#45;&gt;IntegerTable -->
+<g id="edge66" class="edge">
+<title>Table-&gt;IntegerTable</title>
+<path fill="none" stroke="#000000" d="M422.5855,-649.5C455.1739,-649.5 523,-649.5 523,-649.5 523,-649.5 523,-649.828 523,-649.828"/>
+<polygon fill="#000000" stroke="#000000" points="521.2502,-647.7804 523,-652.7804 524.7502,-647.7805 521.2502,-647.7804"/>
+</g>
+<!-- MathTable -->
+<g id="node88" class="node">
+<title>MathTable</title>
+<g id="a_node88"><a xlink:href="../../reference/manim.mobject.table.MathTable.html#manim.mobject.table.MathTable" xlink:title="A specialized :class:`~.Table` mobject for use with with LaTeX." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="561.5,-646 503.5,-646 503.5,-627 561.5,-627 561.5,-646"/>
+<text text-anchor="middle" x="532.5" y="-634" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">MathTable</text>
+</a>
+</g>
+</g>
+<!-- Table&#45;&gt;MathTable -->
+<g id="edge72" class="edge">
+<title>Table-&gt;MathTable</title>
+<path fill="none" stroke="#000000" d="M422.6365,-647.75C459.4958,-647.75 543,-647.75 543,-647.75 543,-647.75 543,-647.6121 543,-647.6121"/>
+<polygon fill="#000000" stroke="#000000" points="544.7504,-651.3704 543,-646.3705 541.2504,-651.3707 544.7504,-651.3704"/>
+</g>
+<!-- MobjectTable -->
+<g id="node95" class="node">
+<title>MobjectTable</title>
+<g id="a_node95"><a xlink:href="../../reference/manim.mobject.table.MobjectTable.html#manim.mobject.table.MobjectTable" xlink:title="A specialized :class:`~.Table` mobject for use with with :class:`~.Mobject`." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="568.5,-724 496.5,-724 496.5,-705 568.5,-705 568.5,-724"/>
+<text text-anchor="middle" x="532.5" y="-712" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">MobjectTable</text>
+</a>
+</g>
+</g>
+<!-- Table&#45;&gt;MobjectTable -->
+<g id="edge78" class="edge">
+<title>Table-&gt;MobjectTable</title>
+<path fill="none" stroke="#000000" d="M388.2645,-654.6667C371.0084,-654.6667 347,-654.6667 347,-654.6667 347,-654.6667 347,-850.5 347,-850.5 347,-850.5 574,-850.5 574,-850.5 574,-850.5 574,-714.5 574,-714.5 574,-714.5 573.4575,-714.5 573.4575,-714.5"/>
+<polygon fill="#000000" stroke="#000000" points="573.5746,-712.7501 568.5746,-714.5 573.5746,-716.2501 573.5746,-712.7501"/>
+</g>
+<!-- Dot3D -->
+<g id="node67" class="node">
+<title>Dot3D</title>
+<g id="a_node67"><a xlink:href="../../reference/manim.mobject.three_dimensions.Dot3D.html#manim.mobject.three_dimensions.Dot3D" xlink:title="A spherical dot." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="678,-542 639,-542 639,-523 678,-523 678,-542"/>
+<text text-anchor="middle" x="658.5" y="-530" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Dot3D</text>
+</a>
+</g>
+</g>
+<!-- Sphere&#45;&gt;Dot3D -->
+<g id="edge53" class="edge">
+<title>Sphere-&gt;Dot3D</title>
+<path fill="none" stroke="#000000" d="M553.5896,-532.5C553.5896,-532.5 633.5903,-532.5 633.5903,-532.5"/>
+<polygon fill="#000000" stroke="#000000" points="633.5904,-534.2501 638.5903,-532.5 633.5903,-530.7501 633.5904,-534.2501"/>
+</g>
+<!-- FullScreenFadeRectangle -->
+<g id="node72" class="node">
+<title>FullScreenFadeRectangle</title>
+<g id="a_node72"><a xlink:href="../../reference/manim.mobject.frame.FullScreenFadeRectangle.html#manim.mobject.frame.FullScreenFadeRectangle" xlink:title="FullScreenFadeRectangle" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="988,-58 859,-58 859,-39 988,-39 988,-58"/>
+<text text-anchor="middle" x="923.5" y="-46" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">FullScreenFadeRectangle</text>
+</a>
+</g>
+</g>
+<!-- FullScreenRectangle -->
+<g id="node73" class="node">
+<title>FullScreenRectangle</title>
+<g id="a_node73"><a xlink:href="../../reference/manim.mobject.frame.FullScreenRectangle.html#manim.mobject.frame.FullScreenRectangle" xlink:title="FullScreenRectangle" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="840.5,-58 734.5,-58 734.5,-39 840.5,-39 840.5,-58"/>
+<text text-anchor="middle" x="787.5" y="-46" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">FullScreenRectangle</text>
+</a>
+</g>
+</g>
+<!-- FullScreenRectangle&#45;&gt;FullScreenFadeRectangle -->
+<g id="edge57" class="edge">
+<title>FullScreenRectangle-&gt;FullScreenFadeRectangle</title>
+<path fill="none" stroke="#000000" d="M840.8605,-48.5C840.8605,-48.5 853.9974,-48.5 853.9974,-48.5"/>
+<polygon fill="#000000" stroke="#000000" points="853.9974,-50.2501 858.9974,-48.5 853.9974,-46.7501 853.9974,-50.2501"/>
+</g>
+<!-- ScreenRectangle -->
+<g id="node74" class="node">
+<title>ScreenRectangle</title>
+<g id="a_node74"><a xlink:href="../../reference/manim.mobject.frame.ScreenRectangle.html#manim.mobject.frame.ScreenRectangle" xlink:title="ScreenRectangle" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="703.5,-58 613.5,-58 613.5,-39 703.5,-39 703.5,-58"/>
+<text text-anchor="middle" x="658.5" y="-46" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">ScreenRectangle</text>
+</a>
+</g>
+</g>
+<!-- ScreenRectangle&#45;&gt;FullScreenRectangle -->
+<g id="edge58" class="edge">
+<title>ScreenRectangle-&gt;FullScreenRectangle</title>
+<path fill="none" stroke="#000000" d="M703.6179,-48.5C703.6179,-48.5 729.2161,-48.5 729.2161,-48.5"/>
+<polygon fill="#000000" stroke="#000000" points="729.2161,-50.2501 734.2161,-48.5 729.2161,-46.7501 729.2161,-50.2501"/>
+</g>
+<!-- FunctionGraph -->
+<g id="node75" class="node">
+<title>FunctionGraph</title>
+<g id="a_node75"><a xlink:href="../../reference/manim.mobject.functions.FunctionGraph.html#manim.mobject.functions.FunctionGraph" xlink:title="A :class:`ParametricFunction` that spans the length of the scene by default." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="444.5,-841 366.5,-841 366.5,-822 444.5,-822 444.5,-841"/>
+<text text-anchor="middle" x="405.5" y="-829" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">FunctionGraph</text>
+</a>
+</g>
+</g>
+<!-- ParametricFunction&#45;&gt;FunctionGraph -->
+<g id="edge59" class="edge">
+<title>ParametricFunction-&gt;FunctionGraph</title>
+<path fill="none" stroke="#000000" d="M314.3601,-776C328.4845,-776 340,-776 340,-776 340,-776 340,-828 340,-828 340,-828 361.2639,-828 361.2639,-828"/>
+<polygon fill="#000000" stroke="#000000" points="361.264,-829.7501 366.2639,-828 361.2639,-826.2501 361.264,-829.7501"/>
+</g>
+<!-- MarkupText -->
+<g id="node86" class="node">
+<title>MarkupText</title>
+<g id="a_node86"><a xlink:href="../../reference/manim.mobject.svg.text_mobject.MarkupText.html#manim.mobject.svg.text_mobject.MarkupText" xlink:title="Display (non-LaTeX) text rendered using `Pango &lt;https://pango.gnome.org/&gt;`_." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="438,-815 373,-815 373,-796 438,-796 438,-815"/>
+<text text-anchor="middle" x="405.5" y="-803" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">MarkupText</text>
+</a>
+</g>
+</g>
+<!-- SVGMobject&#45;&gt;MarkupText -->
+<g id="edge71" class="edge">
+<title>SVGMobject-&gt;MarkupText</title>
+<path fill="none" stroke="#000000" d="M296.874,-753C312.2256,-753 327,-753 327,-753 327,-753 327,-802 327,-802 327,-802 367.6638,-802 367.6638,-802"/>
+<polygon fill="#000000" stroke="#000000" points="367.6638,-803.7501 372.6638,-802 367.6637,-800.2501 367.6638,-803.7501"/>
+</g>
+<!-- SingleStringMathTex -->
+<g id="node90" class="node">
+<title>SingleStringMathTex</title>
+<g id="a_node90"><a xlink:href="../../reference/manim.mobject.svg.tex_mobject.SingleStringMathTex.html#manim.mobject.svg.tex_mobject.SingleStringMathTex" xlink:title="Elementary building block for rendering text with LaTeX." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="459.5,-789 351.5,-789 351.5,-770 459.5,-770 459.5,-789"/>
+<text text-anchor="middle" x="405.5" y="-777" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">SingleStringMathTex</text>
+</a>
+</g>
+</g>
+<!-- SVGMobject&#45;&gt;SingleStringMathTex -->
+<g id="edge103" class="edge">
+<title>SVGMobject-&gt;SingleStringMathTex</title>
+<path fill="none" stroke="#000000" d="M296.5767,-750C325.6278,-750 363,-750 363,-750 363,-750 363,-764.8406 363,-764.8406"/>
+<polygon fill="#000000" stroke="#000000" points="361.2501,-764.8406 363,-769.8406 364.7501,-764.8406 361.2501,-764.8406"/>
+</g>
+<!-- Text -->
+<g id="node118" class="node">
+<title>Text</title>
+<g id="a_node118"><a xlink:href="../../reference/manim.mobject.svg.text_mobject.Text.html#manim.mobject.svg.text_mobject.Text" xlink:title="Display (non-LaTeX) text rendered using `Pango &lt;https://pango.gnome.org/&gt;`_." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="420,-763 391,-763 391,-744 420,-744 420,-763"/>
+<text text-anchor="middle" x="405.5" y="-751" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Text</text>
+</a>
+</g>
+</g>
+<!-- SVGMobject&#45;&gt;Text -->
+<g id="edge114" class="edge">
+<title>SVGMobject-&gt;Text</title>
+<path fill="none" stroke="#000000" d="M296.7705,-747C296.7705,-747 385.6428,-747 385.6428,-747"/>
+<polygon fill="#000000" stroke="#000000" points="385.6429,-748.7501 390.6428,-747 385.6428,-745.2501 385.6429,-748.7501"/>
+</g>
+<!-- MathTex -->
+<g id="node89" class="node">
+<title>MathTex</title>
+<g id="a_node89"><a xlink:href="../../reference/manim.mobject.svg.tex_mobject.MathTex.html#manim.mobject.svg.tex_mobject.MathTex" xlink:title="A string compiled with LaTeX in math mode." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="557,-828 508,-828 508,-809 557,-809 557,-828"/>
+<text text-anchor="middle" x="532.5" y="-816" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">MathTex</text>
+</a>
+</g>
+</g>
+<!-- MathTex&#45;&gt;Tex -->
+<g id="edge112" class="edge">
+<title>MathTex-&gt;Tex</title>
+<path fill="none" stroke="#000000" d="M557.0932,-818.5C557.0932,-818.5 640.8763,-818.5 640.8763,-818.5"/>
+<polygon fill="#000000" stroke="#000000" points="640.8763,-820.2501 645.8763,-818.5 640.8763,-816.7501 640.8763,-820.2501"/>
+</g>
+<!-- SingleStringMathTex&#45;&gt;MathTex -->
+<g id="edge73" class="edge">
+<title>SingleStringMathTex-&gt;MathTex</title>
+<path fill="none" stroke="#000000" d="M452,-789.3413C452,-800.8948 452,-818.5 452,-818.5 452,-818.5 502.9099,-818.5 502.9099,-818.5"/>
+<polygon fill="#000000" stroke="#000000" points="502.91,-820.2501 507.9099,-818.5 502.9099,-816.7501 502.91,-820.2501"/>
+</g>
+<!-- Mobject1D -->
+<g id="node91" class="node">
+<title>Mobject1D</title>
+<g id="a_node91"><a xlink:href="../../reference/manim.mobject.types.point_cloud_mobject.Mobject1D.html#manim.mobject.types.point_cloud_mobject.Mobject1D" xlink:title="Mobject1D" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="293,-97 233,-97 233,-78 293,-78 293,-97"/>
+<text text-anchor="middle" x="263" y="-85" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Mobject1D</text>
+</a>
+</g>
+</g>
+<!-- PointCloudDot -->
+<g id="node103" class="node">
+<title>PointCloudDot</title>
+<g id="a_node103"><a xlink:href="../../reference/manim.mobject.types.point_cloud_mobject.PointCloudDot.html#manim.mobject.types.point_cloud_mobject.PointCloudDot" xlink:title="A disc made of a cloud of Dots" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="444.5,-97 366.5,-97 366.5,-78 444.5,-78 444.5,-97"/>
+<text text-anchor="middle" x="405.5" y="-85" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">PointCloudDot</text>
+</a>
+</g>
+</g>
+<!-- Mobject1D&#45;&gt;PointCloudDot -->
+<g id="edge88" class="edge">
+<title>Mobject1D-&gt;PointCloudDot</title>
+<path fill="none" stroke="#000000" d="M293.2206,-87.5C293.2206,-87.5 361.3787,-87.5 361.3787,-87.5"/>
+<polygon fill="#000000" stroke="#000000" points="361.3787,-89.2501 366.3787,-87.5 361.3786,-85.7501 361.3787,-89.2501"/>
+</g>
+<!-- PMobject&#45;&gt;Mobject1D -->
+<g id="edge75" class="edge">
+<title>PMobject-&gt;Mobject1D</title>
+<path fill="none" stroke="#000000" d="M143,-71.1814C143,-78.5736 143,-87.5 143,-87.5 143,-87.5 227.7189,-87.5 227.7189,-87.5"/>
+<polygon fill="#000000" stroke="#000000" points="227.719,-89.2501 232.7189,-87.5 227.7189,-85.7501 227.719,-89.2501"/>
+</g>
+<!-- Mobject2D -->
+<g id="node93" class="node">
+<title>Mobject2D</title>
+<g id="a_node93"><a xlink:href="../../reference/manim.mobject.types.point_cloud_mobject.Mobject2D.html#manim.mobject.types.point_cloud_mobject.Mobject2D" xlink:title="Mobject2D" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="293,-71 233,-71 233,-52 293,-52 293,-71"/>
+<text text-anchor="middle" x="263" y="-59" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Mobject2D</text>
+</a>
+</g>
+</g>
+<!-- PMobject&#45;&gt;Mobject2D -->
+<g id="edge76" class="edge">
+<title>PMobject-&gt;Mobject2D</title>
+<path fill="none" stroke="#000000" d="M146.5621,-61.5C146.5621,-61.5 227.8679,-61.5 227.8679,-61.5"/>
+<polygon fill="#000000" stroke="#000000" points="227.8679,-63.2501 232.8679,-61.5 227.8679,-59.7501 227.8679,-63.2501"/>
+</g>
+<!-- PGroup -->
+<g id="node97" class="node">
+<title>PGroup</title>
+<g id="a_node97"><a xlink:href="../../reference/manim.mobject.types.point_cloud_mobject.PGroup.html#manim.mobject.types.point_cloud_mobject.PGroup" xlink:title="Examples" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="285,-45 241,-45 241,-26 285,-26 285,-45"/>
+<text text-anchor="middle" x="263" y="-33" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">PGroup</text>
+</a>
+</g>
+</g>
+<!-- PMobject&#45;&gt;PGroup -->
+<g id="edge81" class="edge">
+<title>PMobject-&gt;PGroup</title>
+<path fill="none" stroke="#000000" d="M129,-51.8186C129,-44.4264 129,-35.5 129,-35.5 129,-35.5 235.8726,-35.5 235.8726,-35.5"/>
+<polygon fill="#000000" stroke="#000000" points="235.8727,-37.2501 240.8726,-35.5 235.8726,-33.7501 235.8727,-37.2501"/>
+</g>
+<!-- Point -->
+<g id="node102" class="node">
+<title>Point</title>
+<g id="a_node102"><a xlink:href="../../reference/manim.mobject.types.point_cloud_mobject.Point.html#manim.mobject.types.point_cloud_mobject.Point" xlink:title="Examples" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="279.5,-19 246.5,-19 246.5,0 279.5,0 279.5,-19"/>
+<text text-anchor="middle" x="263" y="-7" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Point</text>
+</a>
+</g>
+</g>
+<!-- PMobject&#45;&gt;Point -->
+<g id="edge87" class="edge">
+<title>PMobject-&gt;Point</title>
+<path fill="none" stroke="#000000" d="M112,-51.9624C112,-36.9504 112,-9.5 112,-9.5 112,-9.5 241.2634,-9.5 241.2634,-9.5"/>
+<polygon fill="#000000" stroke="#000000" points="241.2635,-11.2501 246.2634,-9.5 241.2634,-7.7501 241.2635,-11.2501"/>
+</g>
+<!-- UnitInterval -->
+<g id="node125" class="node">
+<title>UnitInterval</title>
+<g id="a_node125"><a xlink:href="../../reference/manim.mobject.number_line.UnitInterval.html#manim.mobject.number_line.UnitInterval" xlink:title="UnitInterval" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="691.5,-412 625.5,-412 625.5,-393 691.5,-393 691.5,-412"/>
+<text text-anchor="middle" x="658.5" y="-400" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">UnitInterval</text>
+</a>
+</g>
+</g>
+<!-- NumberLine&#45;&gt;UnitInterval -->
+<g id="edge123" class="edge">
+<title>NumberLine-&gt;UnitInterval</title>
+<path fill="none" stroke="#000000" d="M566.5974,-402.5C566.5974,-402.5 620.2469,-402.5 620.2469,-402.5"/>
+<polygon fill="#000000" stroke="#000000" points="620.247,-404.2501 625.2469,-402.5 620.2469,-400.7501 620.247,-404.2501"/>
+</g>
+<!-- PictureInPictureFrame -->
+<g id="node100" class="node">
+<title>PictureInPictureFrame</title>
+<g id="a_node100"><a xlink:href="../../reference/manim.mobject.frame.PictureInPictureFrame.html#manim.mobject.frame.PictureInPictureFrame" xlink:title="PictureInPictureFrame" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="716,-84 601,-84 601,-65 716,-65 716,-84"/>
+<text text-anchor="middle" x="658.5" y="-72" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">PictureInPictureFrame</text>
+</a>
+</g>
+</g>
+<!-- Rectangle -->
+<g id="node101" class="node">
+<title>Rectangle</title>
+<g id="a_node101"><a xlink:href="../../reference/manim.mobject.geometry.Rectangle.html#manim.mobject.geometry.Rectangle" xlink:title="A quadrilateral with two sets of parallel sides." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="561,-118 504,-118 504,-99 561,-99 561,-118"/>
+<text text-anchor="middle" x="532.5" y="-106" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Rectangle</text>
+</a>
+</g>
+</g>
+<!-- Rectangle&#45;&gt;Square -->
+<g id="edge105" class="edge">
+<title>Rectangle-&gt;Square</title>
+<path fill="none" stroke="#000000" d="M554,-118.3413C554,-129.8948 554,-147.5 554,-147.5 554,-147.5 632.3529,-147.5 632.3529,-147.5"/>
+<polygon fill="#000000" stroke="#000000" points="632.3529,-149.2501 637.3529,-147.5 632.3528,-145.7501 632.3529,-149.2501"/>
+</g>
+<!-- Rectangle&#45;&gt;ScreenRectangle -->
+<g id="edge101" class="edge">
+<title>Rectangle-&gt;ScreenRectangle</title>
+<path fill="none" stroke="#000000" d="M561.1891,-103.4C577.6193,-103.4 595,-103.4 595,-103.4 595,-103.4 595,-52.5 595,-52.5 595,-52.5 608.3668,-52.5 608.3668,-52.5"/>
+<polygon fill="#000000" stroke="#000000" points="608.3669,-54.2501 613.3668,-52.5 608.3668,-50.7501 608.3669,-54.2501"/>
+</g>
+<!-- Rectangle&#45;&gt;PictureInPictureFrame -->
+<g id="edge86" class="edge">
+<title>Rectangle-&gt;PictureInPictureFrame</title>
+<path fill="none" stroke="#000000" d="M561.3581,-105.6C583.3925,-105.6 610,-105.6 610,-105.6 610,-105.6 610,-89 610,-89"/>
+<polygon fill="#000000" stroke="#000000" points="611.7501,-89 610,-84 608.2501,-89 611.7501,-89"/>
+</g>
+<!-- RoundedRectangle -->
+<g id="node111" class="node">
+<title>RoundedRectangle</title>
+<g id="a_node111"><a xlink:href="../../reference/manim.mobject.geometry.RoundedRectangle.html#manim.mobject.geometry.RoundedRectangle" xlink:title="A rectangle with rounded corners." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="708,-32 609,-32 609,-13 708,-13 708,-32"/>
+<text text-anchor="middle" x="658.5" y="-20" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">RoundedRectangle</text>
+</a>
+</g>
+</g>
+<!-- Rectangle&#45;&gt;RoundedRectangle -->
+<g id="edge97" class="edge">
+<title>Rectangle-&gt;RoundedRectangle</title>
+<path fill="none" stroke="#000000" d="M561.3325,-101.2C576.9149,-101.2 593,-101.2 593,-101.2 593,-101.2 593,-22.5 593,-22.5 593,-22.5 603.8557,-22.5 603.8557,-22.5"/>
+<polygon fill="#000000" stroke="#000000" points="603.8558,-24.2501 608.8557,-22.5 603.8557,-20.7501 603.8558,-24.2501"/>
+</g>
+<!-- SampleSpace -->
+<g id="node112" class="node">
+<title>SampleSpace</title>
+<g id="a_node112"><a xlink:href="../../reference/manim.mobject.probability.SampleSpace.html#manim.mobject.probability.SampleSpace" xlink:title="Examples" target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="696,-110 621,-110 621,-91 696,-91 696,-110"/>
+<text text-anchor="middle" x="658.5" y="-98" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">SampleSpace</text>
+</a>
+</g>
+</g>
+<!-- Rectangle&#45;&gt;SampleSpace -->
+<g id="edge100" class="edge">
+<title>Rectangle-&gt;SampleSpace</title>
+<path fill="none" stroke="#000000" d="M561.0914,-107.8C561.0914,-107.8 615.9358,-107.8 615.9358,-107.8"/>
+<polygon fill="#000000" stroke="#000000" points="615.9358,-109.5501 620.9358,-107.8 615.9358,-106.0501 615.9358,-109.5501"/>
+</g>
+<!-- Polygon -->
+<g id="node105" class="node">
+<title>Polygon</title>
+<g id="a_node105"><a xlink:href="../../reference/manim.mobject.geometry.Polygon.html#manim.mobject.geometry.Polygon" xlink:title="A shape consisting of one closed loop of vertices." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="429.5,-305 381.5,-305 381.5,-286 429.5,-286 429.5,-305"/>
+<text text-anchor="middle" x="405.5" y="-293" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Polygon</text>
+</a>
+</g>
+</g>
+<!-- Polygon&#45;&gt;Rectangle -->
+<g id="edge93" class="edge">
+<title>Polygon-&gt;Rectangle</title>
+<path fill="none" stroke="#000000" d="M429.8064,-297C446.9967,-297 467,-297 467,-297 467,-297 467,-111 467,-111 467,-111 498.9613,-111 498.9613,-111"/>
+<polygon fill="#000000" stroke="#000000" points="498.9613,-112.7501 503.9613,-111 498.9613,-109.2501 498.9613,-112.7501"/>
+</g>
+<!-- Star -->
+<g id="node114" class="node">
+<title>Star</title>
+<g id="a_node114"><a xlink:href="../../reference/manim.mobject.geometry.Star.html#manim.mobject.geometry.Star" xlink:title="A regular polygram without the intersecting lines." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="546.5,-152 518.5,-152 518.5,-133 546.5,-133 546.5,-152"/>
+<text text-anchor="middle" x="532.5" y="-140" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">Star</text>
+</a>
+</g>
+</g>
+<!-- Polygon&#45;&gt;Star -->
+<g id="edge106" class="edge">
+<title>Polygon-&gt;Star</title>
+<path fill="none" stroke="#000000" d="M429.7455,-293C443.9009,-293 459,-293 459,-293 459,-293 459,-141 459,-141 459,-141 513.3285,-141 513.3285,-141"/>
+<polygon fill="#000000" stroke="#000000" points="513.3285,-142.7501 518.3285,-141 513.3284,-139.2501 513.3285,-142.7501"/>
+</g>
+<!-- Polygram&#45;&gt;Polygon -->
+<g id="edge90" class="edge">
+<title>Polygram-&gt;Polygon</title>
+<path fill="none" stroke="#000000" d="M290.868,-366.25C312.5584,-366.25 339,-366.25 339,-366.25 339,-366.25 339,-298.6667 339,-298.6667 339,-298.6667 376.492,-298.6667 376.492,-298.6667"/>
+<polygon fill="#000000" stroke="#000000" points="376.492,-300.4168 381.492,-298.6667 376.4919,-296.9168 376.492,-300.4168"/>
+</g>
+<!-- RegularPolygram -->
+<g id="node109" class="node">
+<title>RegularPolygram</title>
+<g id="a_node109"><a xlink:href="../../reference/manim.mobject.geometry.RegularPolygram.html#manim.mobject.geometry.RegularPolygram" xlink:title="A :class:`Polygram` with regularly spaced vertices." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="451.5,-331 359.5,-331 359.5,-312 451.5,-312 451.5,-331"/>
+<text text-anchor="middle" x="405.5" y="-319" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">RegularPolygram</text>
+</a>
+</g>
+</g>
+<!-- Polygram&#45;&gt;RegularPolygram -->
+<g id="edge95" class="edge">
+<title>Polygram-&gt;RegularPolygram</title>
+<path fill="none" stroke="#000000" d="M290.5552,-368.5C322.2585,-368.5 370,-368.5 370,-368.5 370,-368.5 370,-336.0112 370,-336.0112"/>
+<polygon fill="#000000" stroke="#000000" points="371.7501,-336.0111 370,-331.0112 368.2501,-336.0112 371.7501,-336.0111"/>
+</g>
+<!-- RegularPolygon -->
+<g id="node108" class="node">
+<title>RegularPolygon</title>
+<g id="a_node108"><a xlink:href="../../reference/manim.mobject.geometry.RegularPolygon.html#manim.mobject.geometry.RegularPolygon" xlink:title="An n-sided regular :class:`Polygon`." target="_top">
+<polygon fill="#ffffff" stroke="#000000" stroke-width="0" points="574.5,-178 490.5,-178 490.5,-159 574.5,-159 574.5,-178"/>
+<text text-anchor="middle" x="532.5" y="-166" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00" fill="#000000">RegularPolygon</text>
+</a>
+</g>
+</g>
+<!-- RegularPolygon&#45;&gt;Triangle -->
+<g id="edge121" class="edge">
+<title>RegularPolygon-&gt;Triangle</title>
+<path fill="none" stroke="#000000" d="M568,-158.7588C568,-146.3516 568,-126.5 568,-126.5 568,-126.5 629.7222,-126.5 629.7222,-126.5"/>
+<polygon fill="#000000" stroke="#000000" points="629.7222,-128.2501 634.7222,-126.5 629.7222,-124.7501 629.7222,-128.2501"/>
+</g>
+<!-- RegularPolygram&#45;&gt;RegularPolygon -->
+<g id="edge94" class="edge">
+<title>RegularPolygram-&gt;RegularPolygon</title>
+<path fill="none" stroke="#000000" d="M451.5789,-320.3333C460.9466,-320.3333 468,-320.3333 468,-320.3333 468,-320.3333 468,-167 468,-167 468,-167 485.1972,-167 485.1972,-167"/>
+<polygon fill="#000000" stroke="#000000" points="485.1973,-168.7501 490.1972,-167 485.1972,-165.2501 485.1973,-168.7501"/>
+</g>
+<!-- RoundedRectangle&#45;&gt;SurroundingRectangle -->
+<g id="edge109" class="edge">
+<title>RoundedRectangle-&gt;SurroundingRectangle</title>
+<path fill="none" stroke="#000000" d="M708.0058,-22.5C708.0058,-22.5 724.721,-22.5 724.721,-22.5"/>
+<polygon fill="#000000" stroke="#000000" points="724.721,-24.2501 729.721,-22.5 724.721,-20.7501 724.721,-24.2501"/>
+</g>
+</g>
+<style xmlns="http://www.w3.org/1999/xhtml">
+                svg {
+                    background-color: none;
+                }
+
+                .node text {
+                    fill: #000000;
+                }
+                
+                .node polygon {
+                    fill: #ddd;
+                }
+                
+                .edge polygon {
+                    fill: #d0d0d0;
+                    stroke: #d0d0d0;
+                }
+                
+                .edge path {
+                    stroke: #d0d0d0;
+                }
+                
+            </style></svg>

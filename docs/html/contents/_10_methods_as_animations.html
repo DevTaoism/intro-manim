@@ -1,0 +1,610 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Methods as animations &mdash; ManimCE Professional Course - Basics  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Manim utilities" href="_11_manim_utils.html" />
+    <link rel="prev" title="Transformations" href="_9_transformations.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_2_basic_mobjects.html">Basic attributes of Mobjects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_3_camera_options.html">Basic Camera and render settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_4_layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_5_rate_functions.html">Rate functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_6_assets.html">Import assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_7_groups.html">Groups and VGroups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_8_text_and_tex.html">Text and Tex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_9_transformations.html">Transformations</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Methods as animations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#movetotarget">MoveToTarget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#applyfunction">ApplyFunction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#animate"><code class="docutils literal notranslate"><span class="pre">.animate</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#special-cases">Special cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rotation">Rotation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_11_manim_utils.html">Manim utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_12_2d_graphs.html">Basic 2D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_13_3d_graphs.html">Basic 3D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ManimCE Professional Course - Basics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Methods as animations</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/contents/_10_methods_as_animations.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="methods-as-animations">
+<h1>Methods as animations<a class="headerlink" href="#methods-as-animations" title="Permalink to this headline">¶</a></h1>
+<p>Once we have understood how the transformations work, we can enter other functionalities based on them. Everything that we will see next is derived from the transformations.</p>
+<div class="section" id="movetotarget">
+<h2>MoveToTarget<a class="headerlink" href="#movetotarget" title="Permalink to this headline">¶</a></h2>
+<p>This is quite a useful animation.
+Basically it is about creating a temporary copy of a Mobject called target, then making modifications to that copy (target) to end with a transformation from the original Mobject to the target.</p>
+<p>We could do this manually, in the following example we will see MoveToTarget on the left side and on the right side we will see its analog manually.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">source_left</span>  <span class="o">=</span> <span class="n">Dot</span><span class="p">()</span>
+    <span class="n">source_right</span> <span class="o">=</span> <span class="n">source_left</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">source_left</span><span class="p">,</span><span class="n">source_right</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+    <span class="c1"># Left side - MoveToTarget ----------------</span>
+    <span class="n">source_left</span><span class="o">.</span><span class="n">generate_target</span><span class="p">()</span>
+    <span class="c1"># Manupulate the .target attr</span>
+    <span class="n">source_left</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span>
+        <span class="n">fill_color</span><span class="o">=</span><span class="n">TEAL</span><span class="p">,</span>
+        <span class="n">stroke_width</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">stroke_color</span><span class="o">=</span><span class="n">ORANGE</span>
+    <span class="p">)</span>
+    <span class="n">source_left</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+    <span class="n">source_left</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+    <span class="c1"># Right side - Manually ----------------</span>
+    <span class="n">source_right_target</span> <span class="o">=</span> <span class="n">source_right</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">source_right_target</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span>
+        <span class="n">fill_color</span><span class="o">=</span><span class="n">TEAL</span><span class="p">,</span>
+        <span class="n">stroke_width</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">stroke_color</span><span class="o">=</span><span class="n">ORANGE</span>
+    <span class="p">)</span>
+    <span class="n">source_right_target</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+    <span class="n">source_right_target</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+
+    <span class="c1"># Animations</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source_left</span><span class="p">,</span><span class="n">source_right</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">MoveToTarget</span><span class="p">(</span><span class="n">source_left</span><span class="p">),</span>
+        <span class="n">Transform</span><span class="p">(</span><span class="n">source_right</span><span class="p">,</span><span class="n">source_right_target</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/at1.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>It may not sound like a big deal, and it certainly isn’t, but using this technique saves you from creating new variables that you have to remember the name of. It is a good idea to use it on certain occasions.</p>
+</div>
+<div class="section" id="applyfunction">
+<h2>ApplyFunction<a class="headerlink" href="#applyfunction" title="Permalink to this headline">¶</a></h2>
+<p>This is another very useful animation, basically it allows you to enter a function that is going to be applied to some Mobject.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">source</span>  <span class="o">=</span> <span class="n">Dot</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">custom_func</span><span class="p">(</span><span class="n">mob</span><span class="p">):</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span>
+            <span class="n">fill_color</span><span class="o">=</span><span class="n">TEAL</span><span class="p">,</span>
+            <span class="n">stroke_width</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+            <span class="n">stroke_color</span><span class="o">=</span><span class="n">ORANGE</span>
+        <span class="p">)</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+        <span class="c1"># Don&#39;t forget return mob</span>
+        <span class="k">return</span> <span class="n">mob</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ApplyFunction</span><span class="p">(</span><span class="n">custom_func</span><span class="p">,</span><span class="n">source</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/at2.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>But not only that, this can be applied to several Mobjects at the same time, making this animation reusable:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">source</span>  <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">Dot</span><span class="p">(),</span><span class="n">Square</span><span class="p">(),</span><span class="n">Circle</span><span class="p">(),</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">))</span>\
+        <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">custom_func</span><span class="p">(</span><span class="n">mob</span><span class="p">):</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span>
+            <span class="n">fill_color</span><span class="o">=</span><span class="n">TEAL</span><span class="p">,</span>
+            <span class="n">stroke_width</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+            <span class="n">stroke_color</span><span class="o">=</span><span class="n">ORANGE</span>
+        <span class="p">)</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">mob</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+        <span class="c1"># Don&#39;t forget return mob</span>
+        <span class="k">return</span> <span class="n">mob</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="o">*</span><span class="p">[</span>
+            <span class="n">ApplyFunction</span><span class="p">(</span><span class="n">custom_func</span><span class="p">,</span> <span class="n">mob</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">source</span>
+        <span class="p">],</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/at3.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>Wait, there is more, using the concept of <strong>closures</strong>, we can do more interesting things, instead of having a static function we can create a function that generates other functions, and reuse it even more flexibly.</p>
+<p>In Manim, these types of closures are often created as separate methods from construct.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyScene</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">source</span>  <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">Dot</span><span class="p">(),</span><span class="n">Square</span><span class="p">(),</span><span class="n">Circle</span><span class="p">(),</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">))</span>\
+            <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="n">ApplyFunction</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">custom_method</span><span class="p">(</span><span class="n">scale</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span><span class="n">edge</span><span class="o">=</span><span class="n">DOWN</span><span class="p">),</span> <span class="n">source</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="c1"># Dot</span>
+            <span class="n">ApplyFunction</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">custom_method</span><span class="p">(</span><span class="n">fill_color</span><span class="o">=</span><span class="n">PURPLE</span><span class="p">),</span> <span class="n">source</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="c1"># Square</span>
+            <span class="n">ApplyFunction</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">custom_method</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>    <span class="n">source</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="c1"># Circle</span>
+            <span class="n">ApplyFunction</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">custom_method</span><span class="p">(</span><span class="n">edge</span><span class="o">=</span><span class="n">LEFT</span><span class="p">),</span>         <span class="n">source</span><span class="p">[</span><span class="mi">3</span><span class="p">]),</span> <span class="c1"># Text(&quot;A&quot;)</span>
+            <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">custom_method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                    <span class="n">fill_color</span><span class="o">=</span><span class="n">TEAL</span><span class="p">,</span>
+                    <span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                    <span class="n">stroke_width</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                    <span class="n">stroke_color</span><span class="o">=</span><span class="n">ORANGE</span><span class="p">,</span>
+                    <span class="n">scale</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+                    <span class="n">edge</span><span class="o">=</span><span class="n">UP</span><span class="p">,</span>
+                <span class="p">):</span>
+        <span class="k">def</span> <span class="nf">custom_func</span><span class="p">(</span><span class="n">mob</span><span class="p">):</span>
+            <span class="n">mob</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span>
+                <span class="n">fill_color</span><span class="o">=</span><span class="n">fill_color</span><span class="p">,</span>
+                <span class="n">fill_opacity</span><span class="o">=</span><span class="n">fill_opacity</span><span class="p">,</span>
+                <span class="n">stroke_width</span><span class="o">=</span><span class="n">stroke_width</span><span class="p">,</span>
+                <span class="n">stroke_color</span><span class="o">=</span><span class="n">stroke_color</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">mob</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">scale</span><span class="p">)</span>
+            <span class="n">mob</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">edge</span><span class="p">)</span>
+            <span class="c1"># Don&#39;t forget return mob</span>
+            <span class="k">return</span> <span class="n">mob</span>
+        <span class="c1"># Don&#39;t forget return the func</span>
+        <span class="k">return</span> <span class="n">custom_func</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/at4.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>Another functionality of ApplyFunction is the manipulation of VGroups or Groups, since it allows manipulating each element of the VGroups/Groups if we need it.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">source</span>  <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">Dot</span><span class="p">(),</span><span class="n">Square</span><span class="p">(),</span><span class="n">Circle</span><span class="p">(),</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">))</span>\
+        <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">grp_func</span><span class="p">(</span><span class="n">vgrp</span><span class="p">):</span>
+        <span class="n">vgrp</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">d</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="o">*</span><span class="n">other</span> <span class="o">=</span> <span class="n">vgrp</span>
+        <span class="c1"># The order is important</span>
+        <span class="n">d</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">PURPLE</span><span class="p">)</span>
+        <span class="n">vgrp</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="n">other</span><span class="p">)</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">TEAL</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">vgrp</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ApplyFunction</span><span class="p">(</span><span class="n">grp_func</span><span class="p">,</span> <span class="n">source</span><span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/at5.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="animate">
+<h2><code class="docutils literal notranslate"><span class="pre">.animate</span></code><a class="headerlink" href="#animate" title="Permalink to this headline">¶</a></h2>
+<p>This functionality is possibly the most versatile. It basically allows us to animate almost any <strong>interpolatable</strong> method, and its use is quite simple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">source</span>  <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">Dot</span><span class="p">(),</span><span class="n">Square</span><span class="p">(),</span><span class="n">Circle</span><span class="p">(),</span><span class="n">Tex</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span><span class="p">,</span><span class="s2">&quot;World&quot;</span><span class="p">,</span><span class="s2">&quot;!&quot;</span><span class="p">))</span>\
+        <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+
+    <span class="n">d</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">t</span> <span class="o">=</span> <span class="n">source</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="c1"># Single method</span>
+        <span class="n">d</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">),</span>
+        <span class="c1"># Multi-methods single line</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">PURPLE</span><span class="p">),</span>
+        <span class="c1"># Multi-methods multi lime</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">animate</span>
+            <span class="o">.</span><span class="n">set_x</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">fill_color</span><span class="o">=</span><span class="n">PINK</span><span class="p">,</span><span class="n">stroke_color</span><span class="o">=</span><span class="n">WHITE</span><span class="p">),</span>
+        <span class="c1"># Even VGroups or Groups</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span><span class="n">aligned_edge</span><span class="o">=</span><span class="n">LEFT</span><span class="p">)</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">get_center</span><span class="p">()</span><span class="o">+</span><span class="n">UP</span><span class="o">*</span><span class="mi">3</span><span class="p">),</span>
+        <span class="c1">#                                        -----------------------------</span>
+        <span class="c1">#       Remember that the arrange method moves the Mobjects to the center</span>
+        <span class="c1">#       so we can&#39;t use &quot;shift&quot; method here.</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/at6.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>We can think of <code class="docutils literal notranslate"><span class="pre">.animate</span></code> as a quick equivalent to <code class="docutils literal notranslate"><span class="pre">MoveToTarget</span></code> or <code class="docutils literal notranslate"><span class="pre">ApplyFunction</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">vgrp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">Square</span><span class="p">(),</span><span class="n">Square</span><span class="p">(),</span><span class="n">Square</span><span class="p">())</span>\
+        <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
+    <span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">vgrp</span>
+    <span class="n">SCALE</span> <span class="o">=</span> <span class="mf">0.3</span>
+
+    <span class="n">s2</span><span class="o">.</span><span class="n">generate_target</span><span class="p">()</span>
+    <span class="n">s2</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">SCALE</span><span class="p">)</span>\
+            <span class="o">.</span><span class="n">set_fill</span><span class="p">(</span><span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>\
+            <span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">TEAL</span><span class="p">)</span>\
+            <span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">vgrp</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="c1"># .animate  ----------------------------</span>
+        <span class="n">s1</span><span class="o">.</span><span class="n">animate</span>
+            <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">SCALE</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">set_fill</span><span class="p">(</span><span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">TEAL</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">),</span>
+        <span class="c1"># MoveToTarget  ------------------------</span>
+        <span class="n">MoveToTarget</span><span class="p">(</span><span class="n">s2</span><span class="p">),</span>
+        <span class="c1"># ApplyFunction  -----------------------</span>
+        <span class="n">ApplyFunction</span><span class="p">(</span>
+            <span class="k">lambda</span> <span class="n">mob</span><span class="p">:</span> <span class="n">mob</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">SCALE</span><span class="p">)</span>
+                <span class="o">.</span><span class="n">set_fill</span><span class="p">(</span><span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+                <span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">TEAL</span><span class="p">)</span>
+                <span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">),</span>
+            <span class="n">s3</span>
+        <span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/at6_2.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="special-cases">
+<h2>Special cases<a class="headerlink" href="#special-cases" title="Permalink to this headline">¶</a></h2>
+<p>There are some animations that come by default and allow us to color, scale or delete an object.
+The limitation of this is that you cannot use two class animations at the same <code class="docutils literal notranslate"><span class="pre">Scene.play</span></code>, unlike <code class="docutils literal notranslate"><span class="pre">.animate</span></code> or the previous classes that allow us to make several transformations to the same object.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">anims</span> <span class="o">=</span> <span class="p">[</span><span class="n">FadeToColor</span><span class="p">,</span><span class="n">ScaleInPlace</span><span class="p">,</span><span class="n">ShrinkToCenter</span><span class="p">]</span>
+    <span class="n">mobs</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">Text</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span> <span class="k">for</span> <span class="bp">cls</span> <span class="ow">in</span> <span class="n">anims</span><span class="p">])</span>\
+        <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mobs</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">FadeToColor</span><span class="p">(</span><span class="n">mobs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">RED</span><span class="p">),</span>
+        <span class="n">ScaleInPlace</span><span class="p">(</span><span class="n">mobs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="mi">2</span><span class="p">),</span>
+        <span class="n">ShrinkToCenter</span><span class="p">(</span><span class="n">mobs</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/at7.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>However, there is an animation that is especially complex and that you cannot fully use with transformations, this is: Rotation.</p>
+</div>
+<div class="section" id="rotation">
+<h2>Rotation<a class="headerlink" href="#rotation" title="Permalink to this headline">¶</a></h2>
+<p>Rotation using methods:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">angles</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">120</span><span class="p">]</span>
+    <span class="n">mobs</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">VGroup</span><span class="p">(</span><span class="n">MathTex</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">angle</span><span class="si">}</span><span class="s2">^</span><span class="se">\\</span><span class="s2">circ&quot;</span><span class="p">),</span><span class="n">Square</span><span class="p">())</span>
+            <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="n">angles</span>
+    <span class="p">])</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mobs</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="o">*</span><span class="p">[</span>
+            <span class="c1"># mob[0] is the MathTex and</span>
+            <span class="c1"># mob[1] is the Square()</span>
+            <span class="n">mob</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">angle</span><span class="o">*</span><span class="n">PI</span><span class="o">/</span><span class="mi">180</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">mob</span><span class="p">,</span><span class="n">angle</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">mobs</span><span class="p">,</span><span class="n">angles</span><span class="p">)</span>
+        <span class="p">],</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/at8.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>You can see that the greater the angle, the more deformed the rotation.
+This is because, what happens in reality, is that the squares are transformed to another square already rotated, that is, the rotations are not continuous, but it is a simple transformation between two states.
+To solve this we can use <code class="docutils literal notranslate"><span class="pre">Rotating</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">angles</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">120</span><span class="p">]</span>
+    <span class="n">mobs</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">VGroup</span><span class="p">(</span><span class="n">MathTex</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">angle</span><span class="si">}</span><span class="s2">^</span><span class="se">\\</span><span class="s2">circ&quot;</span><span class="p">),</span><span class="n">Square</span><span class="p">())</span>
+            <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="n">angles</span>
+    <span class="p">])</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mobs</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="o">*</span><span class="p">[</span>
+            <span class="c1"># mob[0] is the MathTex and</span>
+            <span class="c1"># mob[1] is the Square()</span>
+            <span class="n">Rotating</span><span class="p">(</span><span class="n">mob</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">radians</span><span class="o">=</span><span class="n">angle</span><span class="o">*</span><span class="n">PI</span><span class="o">/</span><span class="mi">180</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">mob</span><span class="p">,</span><span class="n">angle</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">mobs</span><span class="p">,</span><span class="n">angles</span><span class="p">)</span>
+        <span class="p">],</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/at9.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Instead of writing <code class="docutils literal notranslate"><span class="pre">PI/180</span></code>, <code class="docutils literal notranslate"><span class="pre">DEGREE</span></code> is usually used, which is exactly the same.</p>
+</div>
+<p>How this animation is done is more complex, we will understand it when we see <strong>alpha-type updaters</strong>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_11_manim_utils.html" class="btn btn-neutral float-right" title="Manim utilities" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="_9_transformations.html" class="btn btn-neutral float-left" title="Transformations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Vázquez.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

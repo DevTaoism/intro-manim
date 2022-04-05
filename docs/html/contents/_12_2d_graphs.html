@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Basic 2D Graphs &mdash; ManimCE Professional Course - Basics  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Basic 3D Graphs" href="_13_3d_graphs.html" />
+    <link rel="prev" title="Manim utilities" href="_11_manim_utils.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_2_basic_mobjects.html">Basic attributes of Mobjects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_3_camera_options.html">Basic Camera and render settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_4_layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_5_rate_functions.html">Rate functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_6_assets.html">Import assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_7_groups.html">Groups and VGroups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_8_text_and_tex.html">Text and Tex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_9_transformations.html">Transformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_10_methods_as_animations.html">Methods as animations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_11_manim_utils.html">Manim utilities</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic 2D Graphs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#axes">Axes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configurations">Configurations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-coord-from-axes">Get coord from axes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#line-graph">Line graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use-text-instead-numbers-in-labels">Use Text instead numbers in labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#f-x-plots"><span class="math notranslate nohighlight">\(f(x)\)</span> plots</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#resolution">Resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#style">Style</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#more-methods">More methods</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#parametric-functions">Parametric functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#numberplane">NumberPlane</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transform-riemann-rectangles">Transform Riemann rectangles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_13_3d_graphs.html">Basic 3D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ManimCE Professional Course - Basics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Basic 2D Graphs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/contents/_12_2d_graphs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-2d-graphs">
+<h1>Basic 2D Graphs<a class="headerlink" href="#basic-2d-graphs" title="Permalink to this headline">¶</a></h1>
+<p>In the previous versions of Manim there was a special scene called <code class="docutils literal notranslate"><span class="pre">GraphScene</span></code>, however, in the most recent versions it is no longer necessary, since all the functionalities of <code class="docutils literal notranslate"><span class="pre">GraphScene</span></code> were transferred to the <code class="docutils literal notranslate"><span class="pre">Axes</span></code> class, so we can have as many graphs as we want in the same scene (which could not be done in <code class="docutils literal notranslate"><span class="pre">GraphScene</span></code>).</p>
+<div class="section" id="axes">
+<h2>Axes<a class="headerlink" href="#axes" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">Axes</span></code> are made up of two <code class="docutils literal notranslate"><span class="pre">NumberLines</span></code>, and you can configure each axis with all the <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code> options. To define the axes the main thing is to define the scales and the size of the axes.</p>
+<div class="section" id="configurations">
+<h3>Configurations<a class="headerlink" href="#configurations" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
+    <span class="c1">#    [start,end,step]</span>
+    <span class="n">x_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
+    <span class="n">y_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
+    <span class="c1"># Size of each axis</span>
+    <span class="n">x_length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="n">y_length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="c1"># axis_config: the settings you make here</span>
+    <span class="c1"># will apply to both axis, you have to use the</span>
+    <span class="c1"># NumberLine options</span>
+    <span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="c1"># While axis_config applies to both axis,</span>
+    <span class="c1"># x_axis_config and y_axis_config only apply</span>
+    <span class="c1"># to their respective axis.</span>
+    <span class="n">x_axis_config</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="n">RED</span><span class="p">,</span>
+        <span class="s2">&quot;numbers_to_exclude&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+        <span class="s2">&quot;decimal_number_config&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="n">TEAL</span><span class="p">,</span>
+            <span class="s2">&quot;unit&quot;</span><span class="p">:</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">rm m&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;num_decimal_places&quot;</span><span class="p">:</span> <span class="mi">0</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">y_axis_config</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="n">YELLOW</span><span class="p">,</span>
+        <span class="s2">&quot;include_tip&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;decimal_number_config&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="n">PINK</span><span class="p">,</span>
+            <span class="s2">&quot;unit&quot;</span><span class="p">:</span> <span class="s2">&quot;^</span><span class="se">\\</span><span class="s2">circ&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;num_decimal_places&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">&quot;include_sign&quot;</span><span class="p">:</span> <span class="kc">True</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/axes1.png" src="../_images/axes1.png" />
+</details>
+<br/><p>Sometimes you will not want to define the length of the axes, sometimes you will want to define the size of each unit, if you do not specify the width of the axes you can define the <code class="docutils literal notranslate"><span class="pre">unit_size</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
+    <span class="c1">#    [start,end,step]</span>
+    <span class="n">x_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">],</span>
+    <span class="n">y_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
+    <span class="c1"># Size of each axis</span>
+    <span class="n">y_length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="n">x_axis_config</span><span class="o">=</span><span class="p">{</span>
+        <span class="c1"># Instead x_lenght we can define &quot;unit_size&quot;</span>
+        <span class="s2">&quot;unit_size&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s2">&quot;numbers_with_elongated_ticks&quot;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)),</span>
+        <span class="s2">&quot;longer_tick_multiple&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="c1"># gap between axes and numbers</span>
+        <span class="s2">&quot;line_to_number_buff&quot;</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">,</span>
+        <span class="s2">&quot;numbers_to_include&quot;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)),</span>
+        <span class="s2">&quot;decimal_number_config&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;num_decimal_places&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;font_size&quot;</span><span class="p">:</span> <span class="mi">70</span>
+    <span class="p">},</span>
+    <span class="n">y_axis_config</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span>
+    <span class="p">},</span>
+<span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">axes</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/axes2.png" src="../_images/axes2.png" />
+</details>
+<br/></div>
+<div class="section" id="get-coord-from-axes">
+<h3>Get coord from axes<a class="headerlink" href="#get-coord-from-axes" title="Permalink to this headline">¶</a></h3>
+<p>There are two concepts to understand, the “coords” reference system and the “points” reference system.</p>
+<ul class="simple">
+<li><p><strong>Points</strong>: It is the reference system of the camera, and therefore it is absolute, we could say that it is our inertial system, the fixed system.</p></li>
+<li><p><strong>Coords</strong>: It is the reference system of each axis, if you create more than one axes then each one will have its own reference system.</p></li>
+</ul>
+<p>Axes has the method <code class="docutils literal notranslate"><span class="pre">Axes.coords_to_point</span></code> and <code class="docutils literal notranslate"><span class="pre">Axes.point_to_coords</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">coords_to_point</span></code>/<code class="docutils literal notranslate"><span class="pre">c2p</span></code>: It receives a two-dimensional vector <span class="math notranslate nohighlight">\((x,y)\)</span>, and returns a three-dimensional vector <span class="math notranslate nohighlight">\((x,y,z)\)</span> which refers to the coordinates of your <code class="docutils literal notranslate"><span class="pre">Axes</span></code> using the reference system of the camera: <strong>Points</strong>.</p></li>
+</ul>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0;
+     overflow: hidden; max-width: 100%; height: auto;
+     border-width: 4px; border-style: solid; border-color: red;
+ ">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/c2pExplanation.mp4" type="video/mp4">
+ </video>
+ </div>
+<br/><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">point_to_coords</span></code>/<code class="docutils literal notranslate"><span class="pre">p2c</span></code>: This method is the inverse, we enter a three-dimensional vector <span class="math notranslate nohighlight">\((x,y,z)\)</span>  and it returns a two-dimensional coordinate <span class="math notranslate nohighlight">\((x,y)\)</span> that refers to the axes system <strong>coords</strong>.</p></li>
+</ul>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0;
+     overflow: hidden; max-width: 100%; height: auto;
+     border-width: 4px; border-style: solid; border-color: red;
+ ">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/p2cExplanation.mp4" type="video/mp4">
+ </video>
+ </div>
+<br/></div>
+</div>
+<div class="section" id="line-graph">
+<h2>Line graph<a class="headerlink" href="#line-graph" title="Permalink to this headline">¶</a></h2>
+<p>Making graphs with points should be easy for the student, we only need to make a polyline by changing the reference system using <code class="docutils literal notranslate"><span class="pre">c2p</span></code>, it is left as an exercise.</p>
+<details style="border-width: 2px; border-style: solid; border-color: blue;">
+<summary> Show solution </summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+    <span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
+        <span class="n">x_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span>
+        <span class="n">y_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+        <span class="n">x_length</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+        <span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="p">)</span>
+    <span class="n">x_values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">]</span>
+    <span class="n">y_values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">]</span>
+    <span class="n">coords</span> <span class="o">=</span> <span class="p">[</span><span class="n">axes</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x_values</span><span class="p">,</span><span class="n">y_values</span><span class="p">)]</span>
+    <span class="n">plot</span> <span class="o">=</span> <span class="n">VMobject</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">)</span><span class="o">.</span><span class="n">set_points_as_corners</span><span class="p">(</span><span class="n">coords</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span><span class="n">plot</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/axes4.png" src="../_images/axes4.png" />
+</details>
+<br/><p>However, Manim already has a functionality that allows us to do the same.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
+        <span class="n">x_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span>
+        <span class="n">y_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+        <span class="n">x_length</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+        <span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="p">)</span>
+    <span class="n">axes</span><span class="o">.</span><span class="n">center</span><span class="p">()</span>
+    <span class="n">line_graph</span> <span class="o">=</span> <span class="n">axes</span><span class="o">.</span><span class="n">get_line_graph</span><span class="p">(</span>
+        <span class="n">x_values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">],</span>
+        <span class="n">y_values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">],</span>
+        <span class="n">line_color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">,</span>
+        <span class="n">vertex_dot_style</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;stroke_width&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;fill_color&quot;</span><span class="p">:</span> <span class="n">RED</span><span class="p">},</span>
+        <span class="n">stroke_width</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="n">line_graph</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/axes3.png" src="../_images/axes3.png" />
+</details>
+<br/></div>
+<div class="section" id="use-text-instead-numbers-in-labels">
+<h2>Use Text instead numbers in labels<a class="headerlink" href="#use-text-instead-numbers-in-labels" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">x_labels</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;-</span><span class="se">\\</span><span class="s2">frac{3</span><span class="se">\\</span><span class="s2">pi}</span><span class="si">{2}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="c1">#  -3pi/2</span>
+        <span class="s2">&quot;-</span><span class="se">\\</span><span class="s2">pi&quot;</span><span class="p">,</span> <span class="c1">#              -pi</span>
+        <span class="s2">&quot;-</span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi}</span><span class="si">{2}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="c1">#   -pi/2</span>
+        <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="c1">#                   Blank</span>
+        <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi}</span><span class="si">{2}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="c1">#     pi/2</span>
+        <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">pi&quot;</span><span class="p">,</span><span class="c1">#                 pi</span>
+        <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">frac{3</span><span class="se">\\</span><span class="s2">pi}</span><span class="si">{2}</span><span class="s2">&quot;</span> <span class="c1">#     3pi/2</span>
+    <span class="p">]</span>
+    <span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
+        <span class="n">x_range</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span>
+        <span class="n">y_range</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+        <span class="n">x_length</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_tip&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
+    <span class="p">)</span>
+    <span class="n">axes</span><span class="o">.</span><span class="n">center</span><span class="p">()</span>
+
+    <span class="n">x_tex_lables</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">MathTex</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">axes</span><span class="o">.</span><span class="n">x_axis</span><span class="o">.</span><span class="n">n2p</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">DOWN</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">else</span>
+        <span class="c1"># Shift pi&lt;0 labels to left</span>
+        <span class="n">MathTex</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">axes</span><span class="o">.</span><span class="n">x_axis</span><span class="o">.</span><span class="n">n2p</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">DOWN</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">LEFT</span><span class="o">*</span><span class="mf">0.2</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">t</span><span class="p">,</span><span class="n">x</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x_labels</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="k">if</span> <span class="n">t</span> <span class="o">!=</span> <span class="s2">&quot;0&quot;</span>
+        <span class="c1">#                                                              Ignore 0 value</span>
+    <span class="p">])</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span><span class="n">x_tex_lables</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/axes5.png" src="../_images/axes5.png" />
+</details>
+<br/></div>
+<div class="section" id="f-x-plots">
+<h2><span class="math notranslate nohighlight">\(f(x)\)</span> plots<a class="headerlink" href="#f-x-plots" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="resolution">
+<h3>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h3>
+<p>The plots are only approximations by means of bézier curves, so it is good to indicate the resolution of the graph:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># Define axes</span>
+    <span class="n">axes_left</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
+        <span class="n">x_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="n">y_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="n">x_length</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+        <span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="p">)</span>
+    <span class="n">axes_right</span> <span class="o">=</span> <span class="n">axes_left</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">axes</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">axes_left</span><span class="p">,</span><span class="n">axes_right</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+    <span class="n">axes</span><span class="o">.</span><span class="n">width</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">frame_width</span><span class="o">-</span><span class="mi">1</span>
+    <span class="c1"># Define graphs</span>
+    <span class="n">function</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+    <span class="c1"># good resolution</span>
+    <span class="n">left_graph</span>  <span class="o">=</span> <span class="n">axes_left</span><span class="o">.</span><span class="n">get_graph</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">x_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">))</span>
+    <span class="c1"># bad resolution                                           |-----&gt; Resolution</span>
+    <span class="n">right_graph</span> <span class="o">=</span> <span class="n">axes_right</span><span class="o">.</span><span class="n">get_graph</span><span class="p">(</span><span class="n">function</span><span class="p">,</span><span class="n">x_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">axes</span><span class="p">,</span>
+        <span class="n">left_graph</span><span class="p">,</span><span class="n">right_graph</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/axes6.png" src="../_images/axes6.png" />
+</details>
+<br/></div>
+<div class="section" id="style">
+<h3>Style<a class="headerlink" href="#style" title="Permalink to this headline">¶</a></h3>
+<p>The plots are like any VMobject, so it accepts <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code>, <code class="docutils literal notranslate"><span class="pre">stroke_color</span></code>, it can be converted to <code class="docutils literal notranslate"><span class="pre">DashedVMobject</span></code>, etc.</p>
+</div>
+<div class="section" id="more-methods">
+<h3>More methods<a class="headerlink" href="#more-methods" title="Permalink to this headline">¶</a></h3>
+<p>This is another VMobject that has many more options, you already have the knowledge to be able to read the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.coordinate_systems.CoordinateSystem.html#coordinatesystem">official documentation</a>.</p>
+</div>
+</div>
+<div class="section" id="parametric-functions">
+<h2>Parametric functions<a class="headerlink" href="#parametric-functions" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># Define axes</span>
+    <span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
+        <span class="n">x_range</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="n">y_range</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="n">x_length</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+        <span class="n">y_length</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+        <span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="p">)</span>
+
+    <span class="n">parametric_func</span> <span class="o">=</span> <span class="n">axes</span><span class="o">.</span><span class="n">get_parametric_curve</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">t</span><span class="p">),</span>   <span class="c1"># x</span>
+            <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="c1"># y</span>
+        <span class="p">]),</span>
+        <span class="n">t_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">PI</span><span class="p">,</span><span class="mf">0.1</span><span class="p">),</span>
+        <span class="c1"># Domain &lt;---| |----&gt; resolution</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">RED</span>
+    <span class="p">)</span>
+
+    <span class="n">equations</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">      c:\begin</span><span class="si">{cases}</span><span class="s2"></span>
+<span class="s2">        \cos(t)\\</span>
+<span class="s2">        2\sin(t)\\</span>
+<span class="s2">        t\in [0,2\pi)</span>
+<span class="s2">    \end</span><span class="si">{cases}</span><span class="s2"></span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.3</span><span class="p">)</span>
+    <span class="n">equations</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">UR</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span><span class="n">parametric_func</span><span class="p">,</span><span class="n">equations</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/axes7.png" src="../_images/axes7.png" />
+</details>
+<br/></div>
+<div class="section" id="numberplane">
+<h2>NumberPlane<a class="headerlink" href="#numberplane" title="Permalink to this headline">¶</a></h2>
+<p>It is the same as <code class="docutils literal notranslate"><span class="pre">Axes</span></code> but with background lines, it is ideal for making linear transformations, which we will see in the next course.</p>
+<p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.coordinate_systems.NumberPlane.html">Official documentation</a>.</p>
+</div>
+<div class="section" id="transform-riemann-rectangles">
+<h2>Transform Riemann rectangles<a class="headerlink" href="#transform-riemann-rectangles" title="Permalink to this headline">¶</a></h2>
+<p>With <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.coordinate_systems.CoordinateSystem.html?highlight=riemann#manim.mobject.coordinate_systems.CoordinateSystem.get_riemann_rectangles">this</a> we can do it using:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
+        <span class="n">x_range</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="n">y_range</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="n">x_length</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span>
+        <span class="n">y_length</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">func</span> <span class="o">=</span> <span class="n">axes</span><span class="o">.</span><span class="n">get_graph</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mf">0.7</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">x_range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mf">0.05</span><span class="p">])</span>
+
+    <span class="n">rects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+            <span class="n">axes</span><span class="o">.</span><span class="n">get_riemann_rectangles</span><span class="p">(</span>
+            <span class="n">func</span><span class="p">,</span>
+            <span class="n">x_range</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">],</span>
+            <span class="n">dx</span><span class="o">=</span><span class="n">dx</span><span class="p">,</span>
+            <span class="n">input_sample_type</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
+            <span class="n">stroke_width</span><span class="o">=</span><span class="n">dx</span> <span class="k">if</span> <span class="n">dx</span> <span class="o">&gt;</span> <span class="mf">0.1</span> <span class="k">else</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="p">)</span>
+            <span class="o">.</span><span class="n">set_color_by_gradient</span><span class="p">(</span><span class="n">PURPLE</span><span class="p">,</span><span class="n">ORANGE</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">BLACK</span> <span class="k">if</span> <span class="n">dx</span> <span class="o">&gt;</span> <span class="mf">0.1</span> <span class="k">else</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">dx</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">15</span><span class="p">)]</span>
+    <span class="p">])</span>
+
+    <span class="n">r</span> <span class="o">=</span> <span class="n">rects</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span><span class="n">func</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">rect</span> <span class="ow">in</span> <span class="n">rects</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="n">Transform</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">rect</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/axes9.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_13_3d_graphs.html" class="btn btn-neutral float-right" title="Basic 3D Graphs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="_11_manim_utils.html" class="btn btn-neutral float-left" title="Manim utilities" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Vázquez.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Basic Camera and render settings &mdash; ManimCE Professional Course - Basics  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Layers" href="_4_layers.html" />
+    <link rel="prev" title="Basic attributes of Mobjects" href="_2_basic_mobjects.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_2_basic_mobjects.html">Basic attributes of Mobjects</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Camera and render settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#manim-cfg">manim.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manimce-cli">ManimCE CLI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#config-dict"><code class="docutils literal notranslate"><span class="pre">config</span></code> dict</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration-priority">Configuration priority</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_4_layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_5_rate_functions.html">Rate functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_6_assets.html">Import assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_7_groups.html">Groups and VGroups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_8_text_and_tex.html">Text and Tex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_9_transformations.html">Transformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_10_methods_as_animations.html">Methods as animations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_11_manim_utils.html">Manim utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_12_2d_graphs.html">Basic 2D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_13_3d_graphs.html">Basic 3D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ManimCE Professional Course - Basics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Basic Camera and render settings</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/contents/_3_camera_options.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-camera-and-render-settings">
+<h1>Basic Camera and render settings<a class="headerlink" href="#basic-camera-and-render-settings" title="Permalink to this headline">¶</a></h1>
+<p>As we explained in previous chapters, the camera has an aspect ratio of 16/9, it has a black background and there are several default rendering options (<code class="docutils literal notranslate"><span class="pre">l</span></code>, <code class="docutils literal notranslate"><span class="pre">m</span></code>, <code class="docutils literal notranslate"><span class="pre">h</span></code> and <code class="docutils literal notranslate"><span class="pre">k</span></code>). In this chapter we are going to extend this knowledge.</p>
+<p>There are three ways to configure the camera and rendering options:</p>
+<ul class="simple">
+<li><p>Modifying the <code class="docutils literal notranslate"><span class="pre">config</span></code> dictionary inside a .py script.</p></li>
+<li><p>Using the ManimCE CLI.</p></li>
+<li><p>Using a manim.cfg file.</p></li>
+</ul>
+<div class="section" id="manim-cfg">
+<h2>manim.cfg<a class="headerlink" href="#manim-cfg" title="Permalink to this headline">¶</a></h2>
+<p>manim.cfg files do not always work very well, some properties work and others do not, at the moment I do not recommend using it. But if you want to learn how to use it, just type the command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>manim cfg write -o
+</pre></div>
+</div>
+<p>This command will create a configuration file with all the options that you can modify. As I said before, some options may not work, it is still under development.</p>
+<p>Read the documentation <a class="reference external" href="https://docs.manim.community/en/stable/tutorials/configuration.html#the-config-files">here</a>.</p>
+</div>
+<div class="section" id="manimce-cli">
+<h2>ManimCE CLI<a class="headerlink" href="#manimce-cli" title="Permalink to this headline">¶</a></h2>
+<p>Unfortunately the CLI is constantly changing, some functionalities may change as the versions progress, so I will leave the options that are more stable.</p>
+<ul class="simple">
+<li><p><span class="underbold">PREVIEW</span>: <code class="docutils literal notranslate"><span class="pre">-p</span></code>: Automatically open your file at the end of the rendering is done, be it a video or an image.</p></li>
+<li><p><span class="underbold">QUALITY</span>: <code class="docutils literal notranslate"><span class="pre">-ql</span></code>: 420p at 15FPS, <code class="docutils literal notranslate"><span class="pre">-qm</span></code>: 720p at 30FPS, <code class="docutils literal notranslate"><span class="pre">-qh</span></code>: 1080p at 60FPS, <code class="docutils literal notranslate"><span class="pre">-qp</span></code>: 1440p at 60FPS and <code class="docutils literal notranslate"><span class="pre">-qk</span></code>: 4K at 60FPS.</p></li>
+<li><p><span class="underbold">RENDER LAST FRAME AS IMAGE</span>: <code class="docutils literal notranslate"><span class="pre">-s</span></code>.</p></li>
+<li><p><span class="underbold">RENDER AS GIF</span>: <code class="docutils literal notranslate"><span class="pre">--format=gif</span></code>.</p></li>
+<li><p><span class="underbold">RENDER AS MOV</span>: <code class="docutils literal notranslate"><span class="pre">--format=mov</span></code> - This format is the one with the best quality.</p></li>
+<li><p><span class="underbold">SET FPS</span>:  <code class="docutils literal notranslate"><span class="pre">--fps=SOME_NUMBER</span></code>.</p></li>
+<li><p><span class="underbold">WITH TRANSPARENCY</span>: <code class="docutils literal notranslate"><span class="pre">-t</span></code> - If you use this flag while rendering a video then it will be exported in <strong>.mov</strong> format in an alpha channel, in case you render an image it will export a <strong>PNG</strong> without background.</p></li>
+<li><p><span class="underbold">CHANGING ASPECT RATIO</span>: <code class="docutils literal notranslate"><span class="pre">-r</span> <span class="pre">W,H</span></code> - For example: <code class="docutils literal notranslate"><span class="pre">-r</span> <span class="pre">1000,500</span></code>. <strong>I do not recommend doing this unless you have a more advanced understanding of the camera</strong>.</p></li>
+<li><p><span class="underbold">CHANGE OUTPUT FILENAME</span>: <code class="docutils literal notranslate"><span class="pre">-o</span> <span class="pre">FILE_NAME</span></code>.</p></li>
+<li><p><span class="underbold">START RENDERING FROM…</span>: <code class="docutils literal notranslate"><span class="pre">-n</span> <span class="pre">START,END</span></code> - It only works in video rendering, it starts rendering from <code class="docutils literal notranslate"><span class="pre">START</span></code> animation to <code class="docutils literal notranslate"><span class="pre">END</span></code> animation, where <code class="docutils literal notranslate"><span class="pre">START</span></code> and <code class="docutils literal notranslate"><span class="pre">END</span></code> are the numbers of some animations, <code class="docutils literal notranslate"><span class="pre">START</span></code> &lt; <code class="docutils literal notranslate"><span class="pre">END</span></code>.</p></li>
+<li><p><span class="underbold">RENDER ALL SCENES FROM FILE</span>: <code class="docutils literal notranslate"><span class="pre">-a</span></code> - If you have more than one class that inherits from Scene (or its variants) then it will render all these scenes.</p></li>
+</ul>
+<div class="section" id="examples">
+<h3>Examples:<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Render a scene at 720p, no preview, at 15 fps as a gif and with the output name of MY_SCENE:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>manim scripy.py SceneName -qm --fps<span class="o">=</span><span class="m">15</span> --format<span class="o">=</span>gif -o MY_SCENE
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Render a scene with 800 pixels width x 700 pixels HEIGHT, at 20 fps, output name = OTHER_SCENE, starting at animation 3 and ending at animation 20, with preveiw and transparency.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>manim scripy.py SceneName -p --fps<span class="o">=</span><span class="m">20</span> -r <span class="m">800</span>,700 -t -o OTHER_SCENE -n <span class="m">3</span>,20
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="config-dict">
+<h2><code class="docutils literal notranslate"><span class="pre">config</span></code> dict<a class="headerlink" href="#config-dict" title="Permalink to this headline">¶</a></h2>
+<p>We can define almost all the options in our same <strong>.py</strong> script that we are working on without having to alter the CLI or use .cfg files.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manim</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">config</span><span class="o">.</span><span class="n">background_color</span> <span class="o">=</span> <span class="n">RED</span>
+<span class="n">config</span><span class="o">.</span><span class="n">frame_rate</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">config</span><span class="o">.</span><span class="n">frame_size</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1200</span><span class="p">,</span><span class="mi">500</span><span class="p">]</span> <span class="c1"># [WIDTH, HEIGHT]</span>
+<span class="c1"># config.transparent = True</span>
+
+<span class="c1"># RENDER AS IMAGE: ----------------</span>
+<span class="n">config</span><span class="o">.</span><span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;png&quot;</span>
+<span class="n">config</span><span class="o">.</span><span class="n">save_last_frame</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># config.transparent = True</span>
+
+<span class="c1"># REDER AS GIF: -------------------</span>
+<span class="n">config</span><span class="o">.</span><span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;gif&quot;</span>
+
+<span class="k">class</span> <span class="nc">SomeScene</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="configuration-priority">
+<h2>Configuration priority<a class="headerlink" href="#configuration-priority" title="Permalink to this headline">¶</a></h2>
+<p>Now, in case you want to use several of these settings at the same time, you should know that Manim is going to take the following priority:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">config</span></code> dict.</p></li>
+<li><p>ManimCE CLI.</p></li>
+<li><p>manim.cfg</p></li>
+</ol>
+<p>That is, the configuration with the highest priority will be the <code class="docutils literal notranslate"><span class="pre">config</span></code> dictionary within your script, if you have not modified it then it will take the CLI, and if you have not configured the CLI then it will read your manim.cfg, and in case of If you haven’t configured manim.cfg then Manim will use the default settings.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_4_layers.html" class="btn btn-neutral float-right" title="Layers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="_2_basic_mobjects.html" class="btn btn-neutral float-left" title="Basic attributes of Mobjects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Vázquez.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

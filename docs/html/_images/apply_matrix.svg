@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="-130 -360 1140 1520"
+   id="svg353"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title2">2D affine transformation matrix</title>
+  <desc
+     id="desc4">Illustration of the effect of applying various 2D affine transformation matrices on a unit square by CMG Lee. Note that the reflection matrices are special cases of the scaling matrix.</desc>
+  <style
+     type="text/css"
+     id="style6">
+.point_0 { stroke:#009900; fill:#009900; }
+.point_x { stroke:#0000ff; fill:#0000ff; }
+.point_y { stroke:#cc0000; fill:#cc0000; }
+.default { stroke:#000000; fill:#000000; }
+.ghost   { stroke:#999999; fill:#999999; }
+.angle   { stroke:#660099; fill:#cc00ff; }
+.nostroke { stroke:none; }
+ </style>
+  <defs
+     id="defs51">
+    <g
+       id="square">
+      <circle
+         cx="0"
+         cy="0"
+         r="6.4"
+         class="point_0"
+         opacity="0.75"
+         id="circle8" />
+      <circle
+         cx="100"
+         cy="0"
+         r="6.4"
+         class="point_x"
+         opacity="0.75"
+         id="circle10" />
+      <circle
+         cx="0"
+         cy="-100"
+         r="6.4"
+         class="point_y"
+         opacity="0.75"
+         id="circle12" />
+      <rect
+         x="0"
+         y="-100"
+         width="100"
+         height="100"
+         id="rect14" />
+      <path
+         d="M 80,-80 H 20 V -20 H 30 V -45 H 70 V -55 H 30 V -70 H 80 Z"
+         stroke="none"
+         fill="#cc9900"
+         opacity="0.9"
+         id="path16" />
+    </g>
+    <path
+       id="axis"
+       d="M -120,0 H 170 m -10,-10 l 10,10 l -10,10 M -100,-10 V 10 M 100,-10 V 10"
+       stroke="#999999" />
+    <path
+       id="bracket"
+       d="M 0,10 H -10 V 120 H 0" />
+    <g
+       id="base_matrix"
+       transform="translate(40,-315)">
+      <text
+         x="-50"
+         y="120"
+         class="ghost nostroke"
+         id="text21">0</text>
+      <text
+         x="0"
+         y="120"
+         class="ghost nostroke"
+         id="text23">0</text>
+      <text
+         x="50"
+         y="120"
+         class="ghost nostroke"
+         id="text25">1</text>
+      <use
+         xlink:href="#bracket"
+         transform="translate(-80)"
+         id="use27" />
+      <use
+         xlink:href="#bracket"
+         transform="translate(80) scale(-1,1)"
+         id="use29" />
+    </g>
+    <g
+       id="base">
+      <use
+         xlink:href="#axis"
+         id="use32" />
+      <use
+         xlink:href="#axis"
+         transform="rotate(-90)"
+         id="use34" />
+      <g
+         stroke="none"
+         fill="#999999"
+         id="g46">
+        <text
+           x="-20"
+           y="-85"
+           id="text36">1</text>
+        <text
+           x="-20"
+           y="45"
+           id="text38">0</text>
+        <text
+           x="100"
+           y="45"
+           id="text40">1</text>
+        <text
+           x="160"
+           y="45"
+           font-style="italic"
+           id="text42">x</text>
+        <text
+           x="-30"
+           y="-160"
+           font-style="italic"
+           id="text44">y</text>
+      </g>
+      <use
+         xlink:href="#square"
+         stroke-width="3.5"
+         stroke-dasharray="0.1,4.9"
+         fill-opacity="0.4"
+         id="use48" />
+    </g>
+  </defs>
+  <rect
+     x="-4657.8037"
+     y="-4621.6094"
+     width="9999"
+     height="9999"
+     fill="#ffffff"
+     id="rect53"
+     style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke:none;stroke-linecap:round;stroke-linejoin:round" />
+  <g
+     id="g30500">
+    <g
+       id="g139"
+       style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">
+      <g
+         id="g83">
+        <use
+           xlink:href="#base"
+           id="use55"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#base_matrix"
+           id="use57"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#square"
+           id="use59"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <text
+           x="105"
+           y="-15"
+           text-anchor="start"
+           class="point_x nostroke"
+           id="text61">(1, 0)</text>
+        <text
+           x="5"
+           y="-115"
+           text-anchor="start"
+           class="point_y nostroke"
+           id="text63">(0, 1)</text>
+        <text
+           x="-5"
+           y="-15"
+           text-anchor="end"
+           class="point_0 nostroke"
+           id="text65">(0, 0)</text>
+        <g
+           transform="translate(40,-315)"
+           id="g81">
+          <text
+             x="0"
+             y="-9"
+             class="default nostroke"
+             id="text67">No change</text>
+          <text
+             x="-50"
+             y="40"
+             class="point_x nostroke"
+             id="text69">1</text>
+          <text
+             x="-50"
+             y="80"
+             class="point_x nostroke"
+             id="text71">0</text>
+          <text
+             x="0"
+             y="40"
+             class="point_y nostroke"
+             id="text73">0</text>
+          <text
+             x="0"
+             y="80"
+             class="point_y nostroke"
+             id="text75">1</text>
+          <text
+             x="50"
+             y="40"
+             class="point_0 nostroke"
+             id="text77">0</text>
+          <text
+             x="50"
+             y="80"
+             class="point_0 nostroke"
+             id="text79">0</text>
+        </g>
+      </g>
+      <g
+         transform="translate(375)"
+         id="g109">
+        <use
+           xlink:href="#base"
+           id="use85"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#base_matrix"
+           id="use87"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#square"
+           transform="translate(10,-40)"
+           id="use89"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <text
+           x="-5"
+           y="-30"
+           text-anchor="end"
+           class="point_0 nostroke"
+           id="text91">(X, Y)</text>
+        <g
+           transform="translate(40,-315)"
+           id="g107">
+          <text
+             x="0"
+             y="-9"
+             class="default nostroke"
+             id="text93">Translate</text>
+          <text
+             x="-50"
+             y="40"
+             class="default nostroke"
+             id="text95">1</text>
+          <text
+             x="-50"
+             y="80"
+             class="default nostroke"
+             id="text97">0</text>
+          <text
+             x="0"
+             y="40"
+             class="default nostroke"
+             id="text99">0</text>
+          <text
+             x="0"
+             y="80"
+             class="default nostroke"
+             id="text101">1</text>
+          <text
+             x="50"
+             y="40"
+             class="point_0 nostroke"
+             id="text103">X</text>
+          <text
+             x="50"
+             y="80"
+             class="point_0 nostroke"
+             id="text105">Y</text>
+        </g>
+      </g>
+      <g
+         transform="translate(750)"
+         id="g137">
+        <use
+           xlink:href="#base"
+           id="use111"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#base_matrix"
+           id="use113"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#square"
+           transform="scale(1.2,1.1)"
+           id="use115"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <text
+           x="125"
+           y="-20"
+           text-anchor="start"
+           class="point_x nostroke"
+           id="text117">(W, 0)</text>
+        <text
+           x="5"
+           y="-125"
+           text-anchor="start"
+           class="point_y nostroke"
+           id="text119">(0, H)</text>
+        <g
+           transform="translate(40,-315)"
+           id="g135">
+          <text
+             x="0"
+             y="-9"
+             class="default nostroke"
+             id="text121">Scale about origin</text>
+          <text
+             x="-50"
+             y="40"
+             class="point_x nostroke"
+             id="text123">W</text>
+          <text
+             x="-50"
+             y="80"
+             class="point_x nostroke"
+             id="text125">0</text>
+          <text
+             x="0"
+             y="40"
+             class="point_y nostroke"
+             id="text127">0</text>
+          <text
+             x="0"
+             y="80"
+             class="point_y nostroke"
+             id="text129">H</text>
+          <text
+             x="50"
+             y="40"
+             class="default nostroke"
+             id="text131">0</text>
+          <text
+             x="50"
+             y="80"
+             class="default nostroke"
+             id="text133">0</text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g30348">
+      <g
+         id="g30283">
+        <use
+           xlink:href="#base"
+           id="use141"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           transform="translate(0,500)"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <use
+           xlink:href="#square"
+           transform="rotate(-36.742516,752.78836,250)"
+           id="use143"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           x="185.04749"
+           y="440.2876"
+           text-anchor="start"
+           class="point_x nostroke"
+           id="text145"
+           style="font-size:32px;font-family:Helvetica, Arial, sans-serif;text-align:end;letter-spacing:-2;text-anchor:end;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><tspan
+             id="tspan16289"
+             x="185.04749"
+             y="440.2876">(cos θ,</tspan><tspan
+             x="183.04749"
+             y="480.2876"
+             id="tspan17377">sin θ)</tspan></text>
+        <text
+           x="-39.849266"
+           y="360.63504"
+           text-anchor="start"
+           class="point_y nostroke"
+           id="text147"
+           style="font-size:32px;font-family:Helvetica, Arial, sans-serif;text-align:end;letter-spacing:-2;text-anchor:end;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><tspan
+             id="tspan22911"
+             x="-39.849266"
+             y="360.63504">(−sin θ,</tspan><tspan
+             id="tspan22913"
+             x="-41.849266"
+             y="400.63504">cos θ)</tspan></text>
+        <text
+           x="-26.224321"
+           y="496.10803"
+           text-anchor="end"
+           class="angle   nostroke"
+           id="text149"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">θ</text>
+        <path
+           d="m 0,500 v -40 a 40,40 0 0 0 -24,8 z"
+           class="angle"
+           id="path151"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           x="40"
+           y="176"
+           class="default nostroke"
+           id="text153"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">Rotate about origin</text>
+        <text
+           x="-50"
+           y="225"
+           class="point_x nostroke"
+           id="text155"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">cos θ</text>
+        <text
+           x="-50"
+           y="265"
+           class="point_x nostroke"
+           id="text157"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">sin θ</text>
+        <text
+           x="75"
+           y="225"
+           class="point_y nostroke"
+           id="text159"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">−sin θ</text>
+        <text
+           x="75"
+           y="265"
+           class="point_y nostroke"
+           id="text161"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">cos θ</text>
+        <text
+           x="160"
+           y="225"
+           class="default nostroke"
+           id="text163"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">0</text>
+        <text
+           x="160"
+           y="265"
+           class="default nostroke"
+           id="text165"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">0</text>
+        <text
+           x="-50"
+           y="305"
+           class="ghost nostroke"
+           id="text167"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">0</text>
+        <text
+           x="75"
+           y="305"
+           class="ghost nostroke"
+           id="text169"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">0</text>
+        <text
+           x="160"
+           y="305"
+           class="ghost nostroke"
+           id="text171"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">1</text>
+        <use
+           xlink:href="#bracket"
+           transform="translate(-110,185)"
+           id="use173"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+        <use
+           xlink:href="#bracket"
+           transform="matrix(-1,0,0,1,190,185)"
+           id="use175"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%"
+           style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" />
+      </g>
+      <g
+         transform="translate(375,500)"
+         id="g219"
+         style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">
+        <use
+           xlink:href="#base"
+           id="use181"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#square"
+           transform="skewX(-26.565051)"
+           id="use183"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <text
+           x="120"
+           y="-10"
+           text-anchor="start"
+           class="point_x nostroke"
+           id="text185">(1, 0)</text>
+        <text
+           x="20"
+           y="-115"
+           text-anchor="start"
+           class="point_y nostroke"
+           id="text187">(tan ϕ, 1)</text>
+        <text
+           x="-5"
+           y="-15"
+           text-anchor="end"
+           class="angle   nostroke"
+           id="text189">ϕ</text>
+        <path
+           d="m 0,0 v -40 a 40,40 0 0 1 18,4 z"
+           class="angle"
+           id="path191" />
+        <g
+           transform="translate(40,-315)"
+           id="g217">
+          <text
+             x="0"
+             y="-9"
+             class="default nostroke"
+             id="text193">Shear in x direction</text>
+          <text
+             x="-80"
+             y="40"
+             class="point_x nostroke"
+             id="text195">1</text>
+          <text
+             x="-80"
+             y="80"
+             class="point_x nostroke"
+             id="text197">0</text>
+          <text
+             x="0"
+             y="40"
+             class="point_y nostroke"
+             id="text199">tan ϕ</text>
+          <text
+             x="0"
+             y="80"
+             class="point_y nostroke"
+             id="text201">1</text>
+          <text
+             x="80"
+             y="40"
+             class="default nostroke"
+             id="text203">0</text>
+          <text
+             x="80"
+             y="80"
+             class="default nostroke"
+             id="text205">0</text>
+          <text
+             x="-80"
+             y="120"
+             class="ghost nostroke"
+             id="text207">0</text>
+          <text
+             x="0"
+             y="120"
+             class="ghost nostroke"
+             id="text209">0</text>
+          <text
+             x="80"
+             y="120"
+             class="ghost nostroke"
+             id="text211">1</text>
+          <use
+             xlink:href="#bracket"
+             transform="translate(-110)"
+             id="use213"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#bracket"
+             transform="matrix(-1,0,0,1,110,0)"
+             id="use215"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         transform="translate(750,500)"
+         id="g259"
+         style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">
+        <use
+           xlink:href="#base"
+           id="use221"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#square"
+           transform="skewY(-26.565051)"
+           id="use223"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <text
+           x="120"
+           y="-25"
+           text-anchor="start"
+           class="point_x nostroke"
+           transform="scale(0.9,1)"
+           id="text225">(1, tan ψ)</text>
+        <text
+           x="-2"
+           y="-120"
+           text-anchor="end"
+           class="point_y nostroke"
+           id="text227">(0, 1)</text>
+        <text
+           x="20"
+           y="35"
+           text-anchor="start"
+           class="angle   nostroke"
+           id="text229">ψ</text>
+        <path
+           d="M 0,0 H 40 A 40,40 0 0 0 36,-18"
+           class="angle"
+           id="path231" />
+        <g
+           transform="translate(40,-315)"
+           id="g257">
+          <text
+             x="0"
+             y="-9"
+             class="default nostroke"
+             id="text233">Shear in y direction</text>
+          <text
+             x="-55"
+             y="40"
+             class="point_x nostroke"
+             id="text235">1</text>
+          <text
+             x="-55"
+             y="80"
+             class="point_x nostroke"
+             id="text237">tan ψ</text>
+          <text
+             x="25"
+             y="40"
+             class="point_y nostroke"
+             id="text239">0</text>
+          <text
+             x="25"
+             y="80"
+             class="point_y nostroke"
+             id="text241">1</text>
+          <text
+             x="80"
+             y="40"
+             class="default nostroke"
+             id="text243">0</text>
+          <text
+             x="80"
+             y="80"
+             class="default nostroke"
+             id="text245">0</text>
+          <text
+             x="-55"
+             y="120"
+             class="ghost nostroke"
+             id="text247">0</text>
+          <text
+             x="25"
+             y="120"
+             class="ghost nostroke"
+             id="text249">0</text>
+          <text
+             x="80"
+             y="120"
+             class="ghost nostroke"
+             id="text251">1</text>
+          <use
+             xlink:href="#bracket"
+             transform="translate(-110)"
+             id="use253"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#bracket"
+             transform="matrix(-1,0,0,1,110,0)"
+             id="use255"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(0,1040)"
+       id="g347"
+       style="font-size:40px;font-family:Helvetica, Arial, sans-serif;letter-spacing:-2;text-anchor:middle;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">
+      <g
+         id="g289">
+        <use
+           xlink:href="#base"
+           id="use263"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#base_matrix"
+           id="use265"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#square"
+           transform="scale(-1)"
+           id="use267"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <text
+           x="-125"
+           y="-15"
+           text-anchor="start"
+           class="point_x nostroke"
+           id="text269">(−1, 0)</text>
+        <text
+           x="10"
+           y="100"
+           text-anchor="start"
+           class="point_y nostroke"
+           id="text271">(0, −1)</text>
+        <g
+           transform="translate(40,-315)"
+           id="g287">
+          <text
+             x="0"
+             y="-9"
+             class="default nostroke"
+             id="text273">Reflect about origin</text>
+          <text
+             x="-50"
+             y="40"
+             class="point_x nostroke"
+             id="text275">−1</text>
+          <text
+             x="-50"
+             y="80"
+             class="point_x nostroke"
+             id="text277">0</text>
+          <text
+             x="0"
+             y="40"
+             class="point_y nostroke"
+             id="text279">0</text>
+          <text
+             x="0"
+             y="80"
+             class="point_y nostroke"
+             id="text281">−1</text>
+          <text
+             x="50"
+             y="40"
+             class="default nostroke"
+             id="text283">0</text>
+          <text
+             x="50"
+             y="80"
+             class="default nostroke"
+             id="text285">0</text>
+        </g>
+      </g>
+      <g
+         transform="translate(375)"
+         id="g317">
+        <use
+           xlink:href="#base"
+           id="use291"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#base_matrix"
+           id="use293"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#square"
+           transform="scale(1,-1)"
+           id="use295"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <text
+           x="105"
+           y="-15"
+           text-anchor="start"
+           class="point_x nostroke"
+           id="text297">(1, 0)</text>
+        <text
+           x="-10"
+           y="100"
+           text-anchor="end"
+           class="point_y nostroke"
+           id="text299">(0, −1)</text>
+        <g
+           transform="translate(40,-315)"
+           id="g315">
+          <text
+             x="0"
+             y="-9"
+             class="default nostroke"
+             id="text301">Reflect about x-axis</text>
+          <text
+             x="-50"
+             y="40"
+             class="point_x nostroke"
+             id="text303">1</text>
+          <text
+             x="-50"
+             y="80"
+             class="point_x nostroke"
+             id="text305">0</text>
+          <text
+             x="0"
+             y="40"
+             class="point_y nostroke"
+             id="text307">0</text>
+          <text
+             x="0"
+             y="80"
+             class="point_y nostroke"
+             id="text309">−1</text>
+          <text
+             x="50"
+             y="40"
+             class="default nostroke"
+             id="text311">0</text>
+          <text
+             x="50"
+             y="80"
+             class="default nostroke"
+             id="text313">0</text>
+        </g>
+      </g>
+      <g
+         transform="translate(750)"
+         id="g345">
+        <use
+           xlink:href="#base"
+           id="use319"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#base_matrix"
+           id="use321"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#square"
+           transform="scale(-1,1)"
+           id="use323"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <text
+           x="-60"
+           y="45"
+           text-anchor="end"
+           class="point_x nostroke"
+           id="text325">(−1, 0)</text>
+        <text
+           x="10"
+           y="-115"
+           text-anchor="start"
+           class="point_y nostroke"
+           id="text327">(0, 1)</text>
+        <g
+           transform="translate(40,-315)"
+           id="g343">
+          <text
+             x="0"
+             y="-9"
+             class="default nostroke"
+             id="text329">Reflect about y-axis</text>
+          <text
+             x="-50"
+             y="40"
+             class="point_x nostroke"
+             id="text331">−1</text>
+          <text
+             x="-50"
+             y="80"
+             class="point_x nostroke"
+             id="text333">0</text>
+          <text
+             x="0"
+             y="40"
+             class="point_y nostroke"
+             id="text335">0</text>
+          <text
+             x="0"
+             y="80"
+             class="point_y nostroke"
+             id="text337">1</text>
+          <text
+             x="50"
+             y="40"
+             class="default nostroke"
+             id="text339">0</text>
+          <text
+             x="50"
+             y="80"
+             class="default nostroke"
+             id="text341">0</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata1172">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>2D affine transformation matrix</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

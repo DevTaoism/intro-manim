@@ -1,0 +1,893 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Basic attributes of Mobjects &mdash; ManimCE Professional Course - Basics  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Basic Camera and render settings" href="_3_camera_options.html" />
+    <link rel="prev" title="Basic elements" href="_1_basic_elements.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic attributes of Mobjects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#camera-dimensions">Camera dimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-attributes">Basic attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#position">Position</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#absolute-position">Absolute Position</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mobject-move-to">Mobject.move_to()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mobject-shift">Mobject.shift()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mobject-get">Mobject.get…</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#relative-position">Relative Position</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mobject-to-edge">Mobject.to_edge()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mobject-to-corner">Mobject.to_corner()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mobject-next-to">Mobject.next_to()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mobject-align-to">Mobject.align_to()</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#width-and-height">Width and Height</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setting">Setting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stretch">Stretch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scale">Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apply-matrix">Apply Matrix</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#vmobject-attributes">VMobject attributes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#color-palette">Color palette</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stroke-width-fill-and-opacity">Stroke width, fill and opacity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#points-start-and-end">Points, start and end</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#copies-and-setters">Copies and setters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_3_camera_options.html">Basic Camera and render settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_4_layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_5_rate_functions.html">Rate functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_6_assets.html">Import assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_7_groups.html">Groups and VGroups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_8_text_and_tex.html">Text and Tex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_9_transformations.html">Transformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_10_methods_as_animations.html">Methods as animations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_11_manim_utils.html">Manim utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_12_2d_graphs.html">Basic 2D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_13_3d_graphs.html">Basic 3D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ManimCE Professional Course - Basics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Basic attributes of Mobjects</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/contents/_2_basic_mobjects.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-attributes-of-mobjects">
+<h1>Basic attributes of Mobjects<a class="headerlink" href="#basic-attributes-of-mobjects" title="Permalink to this headline">¶</a></h1>
+<p>If you want to see a tree of what inheritance is like between Mobjects you can see the following diagram (created by the ManimCE community).</p>
+<img alt="../_images/mob_tree.svg" src="../_images/mob_tree.svg" /><div class="section" id="camera-dimensions">
+<h2>Camera dimensions<a class="headerlink" href="#camera-dimensions" title="Permalink to this headline">¶</a></h2>
+<p>Before studying the attributes of Mobjects it is necessary to know the basic characteristics of the camera.</p>
+<p>By default, the <strong>Camera</strong> is 8 units high, and since the aspect ratio is 16/9, the width can be easily calculated.
+These 8 units are independent of the rendering resolution (480p, 720p, etc), so there is no need to worry about that.</p>
+<img alt="../_images/camera_settings.png" class="align-center" src="../_images/camera_settings.png" />
+<p>The coordinates of each Mobject are a three-dimensional array, and the coordinate <span class="math notranslate nohighlight">\([0,0,0]\)</span> is located in the center of the camera.</p>
+<img alt="../_images/camera_coordinates.png" src="../_images/camera_coordinates.png" />
+<p>For now, we will not worry about the 3rd dimension, we will focus only on the x, y coordinates.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These values can be changed but it is not recommended.</p>
+</div>
+</div>
+<div class="section" id="basic-attributes">
+<h2>Basic attributes<a class="headerlink" href="#basic-attributes" title="Permalink to this headline">¶</a></h2>
+<p>All Mobjects have four main attributes:</p>
+<ul class="simple">
+<li><p>Position</p></li>
+<li><p>Width</p></li>
+<li><p>Height</p></li>
+<li><p>Z index</p></li>
+</ul>
+<p>We won’t study <strong>Z index</strong> in this section until <strong>Section 4</strong>.</p>
+<p>To start studying the properties we will create a rectangle and add it on the screen, I recommend the student to use Jupyter-Notebook to study these first sections.
+We will omit the scene name to save space.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/cp1.png" src="../_images/cp1.png" />
+</div>
+<div class="section" id="position">
+<h2>Position<a class="headerlink" href="#position" title="Permalink to this headline">¶</a></h2>
+<p>Manim already has some constants that will help us locate our Mobjects, which are:</p>
+<p><span class="underbold">Origin:</span></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ORIGIN</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><span class="underbold">One-dimensional vectors:</span></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">UP</span>    <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">DOWN</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">RIGHT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">LEFT</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><span class="underbold">Two-dimensional vectors:</span></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">UR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">UL</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">DR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">DL</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>When we instantiate a Mobject, it is always located by default in the center of the screen, that is, in the location <span class="math notranslate nohighlight">\([0,0,0]\)</span>.</p>
+<p>If we want to place this object in another position, there are two positioning systems:</p>
+<ul>
+<li><p><strong>Absolute Position</strong>: Use as reference the coordinates of the camera or the current location of our Mobject.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Mobject.move_to()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Mobject.shift()</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Relative Position</strong>: We use another Mobject or coordinate as a reference to locate our Mobject.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Mobject.to_edge()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Mobject.to_corner()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Mobject.next_to()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Mobject.align_to()</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="absolute-position">
+<h2>Absolute Position<a class="headerlink" href="#absolute-position" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mobject-move-to">
+<h3>Mobject.move_to()<a class="headerlink" href="#mobject-move-to" title="Permalink to this headline">¶</a></h3>
+<p>This method requires a three-dimensional array (coordinate) to locate an object on the screen, <strong>always use the center of the camera center as a reference</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Remember that if you place a Mobject outside the limits of the camera then your Mobject will not be visible in your animation, although Manim will have computed it.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">move_to</span><span class="p">([</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/ap1.png" src="../_images/ap1.png" />
+<p>In general, it is advisable to convert your coordinates to <code class="docutils literal notranslate"><span class="pre">np.array</span></code>, or to use linear combinations of the <strong>one-dimensional</strong> or <strong>two-dimensional</strong> vectors to locate your objects.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+    <span class="n">e</span> <span class="o">=</span> <span class="n">Ellipse</span><span class="p">()</span>
+    <span class="c1"># Best practice</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="p">)</span>
+    <span class="c1"># Other way</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span> <span class="n">LEFT</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="n">UP</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span>
+    <span class="c1"># Another way</span>
+    <span class="n">e</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span> <span class="n">UL</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">LEFT</span> <span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/ap2.png" src="../_images/ap2.png" />
+</div>
+<div class="section" id="mobject-shift">
+<h3>Mobject.shift()<a class="headerlink" href="#mobject-shift" title="Permalink to this headline">¶</a></h3>
+<p>This method is similar to <code class="docutils literal notranslate"><span class="pre">move_to</span></code>, but the difference is that <code class="docutils literal notranslate"><span class="pre">move_to</span></code> <span class="underbold">always refers to the center of the camera</span> (the origin), while <code class="docutils literal notranslate"><span class="pre">shift</span></code> refers to the <strong>current</strong> position of your Mobject.</p>
+<p>To differentiate it, let’s look at the following case:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+    <span class="c1"># Apply move_to 4 times</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+
+    <span class="c1"># Apply shift 4 times</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/ap3.png" src="../_images/ap3.png" />
+<p>If we apply the same <code class="docutils literal notranslate"><span class="pre">move_to</span></code> 4 times, then it is redundant, because the movement always takes the <strong>center</strong> of the camera as a reference.</p>
+<p>But applying <code class="docutils literal notranslate"><span class="pre">shift</span></code> 4 times is different, because each shift takes the new Mobject coordinates as a reference.</p>
+<p>This can be made even clearer with an animation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+        <span class="c1"># Pause</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="c1"># Move</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+</pre></div>
+</div>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+<video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+    <source src="../_static/images/ap4.mp4" type="video/mp4">
+</video>
+</div>
+<br/><p>You can notice that at the beginning both appear in the center of the camera, then the first cycle of the loop is applied and both move once to the right, but the second time only the circle (to whom the <code class="docutils literal notranslate"><span class="pre">shift</span></code> is applied) is it keeps moving, because the new <code class="docutils literal notranslate"><span class="pre">shift</span></code> (of the following loops) takes the new Mobject (circle) coordinates as a reference.</p>
+</div>
+<div class="section" id="mobject-get">
+<h3>Mobject.get…<a class="headerlink" href="#mobject-get" title="Permalink to this headline">¶</a></h3>
+<p>To obtain the coordinates of an object we can use the following getters:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+
+    <span class="n">center</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get_center</span><span class="p">()</span>
+    <span class="n">right</span>  <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get_right</span><span class="p">()</span>
+    <span class="n">left</span>   <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get_left</span><span class="p">()</span>
+    <span class="n">top</span>    <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get_top</span><span class="p">()</span>
+    <span class="n">bottom</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get_bottom</span><span class="p">()</span>
+
+    <span class="n">up_right</span>   <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get_corner</span><span class="p">(</span><span class="n">UR</span><span class="p">)</span>
+    <span class="n">up_left</span>    <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get_corner</span><span class="p">(</span><span class="n">UL</span><span class="p">)</span>
+    <span class="n">down_right</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get_corner</span><span class="p">(</span><span class="n">DR</span><span class="p">)</span>
+    <span class="n">down_left</span>  <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get_corner</span><span class="p">(</span><span class="n">DL</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">n</span><span class="p">,</span><span class="n">p</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
+        <span class="p">[</span><span class="s2">&quot;C&quot;</span>   <span class="p">,</span><span class="s2">&quot;R&quot;</span>  <span class="p">,</span><span class="s2">&quot;L&quot;</span> <span class="p">,</span><span class="s2">&quot;T&quot;</span><span class="p">,</span><span class="s2">&quot;B&quot;</span>   <span class="p">,</span><span class="s2">&quot;UR&quot;</span>    <span class="p">,</span><span class="s2">&quot;UL&quot;</span>   <span class="p">,</span><span class="s2">&quot;DR&quot;</span>      <span class="p">,</span><span class="s2">&quot;DL&quot;</span><span class="p">],</span>
+        <span class="p">[</span><span class="n">center</span><span class="p">,</span><span class="n">right</span><span class="p">,</span><span class="n">left</span><span class="p">,</span><span class="n">top</span><span class="p">,</span><span class="n">bottom</span><span class="p">,</span><span class="n">up_right</span><span class="p">,</span><span class="n">up_left</span><span class="p">,</span><span class="n">down_right</span><span class="p">,</span><span class="n">down_left</span><span class="p">]</span>
+    <span class="p">):</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/ap5.png" src="../_images/ap5.png" />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is important to note that <code class="docutils literal notranslate"><span class="pre">.get_center()</span></code> <span class="underbold">does not get</span> the geometric center or center of mass of the Mobject. What <code class="docutils literal notranslate"><span class="pre">.get_center()</span></code> does is “create” an <em>imaginary</em> rectangle whose borders contain the entirety of your Mobject and then it returns the coordinates of that rectangle. If you need to obtain the center of mass of a Mobject use <code class="docutils literal notranslate"><span class="pre">get_center_of_mass()</span></code>.</p>
+</div>
+<p>Also exists:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Mobject</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="c1"># &lt;==&gt; Mobject.get_center()[0]</span>
+<span class="n">Mobject</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="c1"># &lt;==&gt; Mobject.get_center()[1]</span>
+<span class="n">Mobject</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span> <span class="c1"># &lt;==&gt; Mobject.get_center()[2]</span>
+
+<span class="c1"># N is some real number</span>
+<span class="n">Mobject</span><span class="o">.</span><span class="n">set_x</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="c1"># &lt;==&gt; Mobject.move_to(RIGHT * N)</span>
+<span class="n">Mobject</span><span class="o">.</span><span class="n">set_y</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="c1"># &lt;==&gt; Mobject.move_to(UP    * N)</span>
+<span class="n">Mobject</span><span class="o">.</span><span class="n">set_z</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="c1"># &lt;==&gt; Mobject.move_to(OUT   * N)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="relative-position">
+<h2>Relative Position<a class="headerlink" href="#relative-position" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mobject-to-edge">
+<h3>Mobject.to_edge()<a class="headerlink" href="#mobject-to-edge" title="Permalink to this headline">¶</a></h3>
+<p>This method moves vertically or horizontally to some edge of the camera, takes a <strong>one-dimensional</strong> vector as an argument and moves the Mobject in that direction to the edge.</p>
+<p><span class="underbold">Examples</span>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/cp2.png" src="../_images/cp2.png" />
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/cp3.png" src="../_images/cp3.png" />
+<p>We can even use this method twice to move an object to a corner:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/cp4.png" src="../_images/cp4.png" />
+<p>This method admits a parameter called <code class="docutils literal notranslate"><span class="pre">buff</span></code> (buffer), this parameter indicates a gap between the border and your object, by <strong>default</strong> the value of this buffer is <strong>0.5 units</strong>, but we can reduce this gap to zero using:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/cp5.png" src="../_images/cp5.png" />
+</div>
+<div class="section" id="mobject-to-corner">
+<h3>Mobject.to_corner()<a class="headerlink" href="#mobject-to-corner" title="Permalink to this headline">¶</a></h3>
+<p>This method requires a two-dimensional vector, and places your Mobject in the corner. It is equivalent to using <code class="docutils literal notranslate"><span class="pre">Mobject.to_edge()</span></code> twice. It also supports the <code class="docutils literal notranslate"><span class="pre">buff</span></code> parameter.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">UL</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/cp6.png" src="../_images/cp6.png" />
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">DR</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/cp7.png" src="../_images/cp7.png" />
+</div>
+<div class="section" id="mobject-next-to">
+<h3>Mobject.next_to()<a class="headerlink" href="#mobject-next-to" title="Permalink to this headline">¶</a></h3>
+<p>This method uses the <strong>edge</strong> of a Mobject/point and positions our Mobject in the direction of that edge, the format is as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Mobject</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">REFERENCE_MOBJECT_OR_POINT</span><span class="p">,</span> <span class="n">DIRECTION</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="n">BUFFER</span><span class="p">,</span> <span class="n">aligned_edge</span><span class="o">=</span><span class="n">EDGE</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here we see some examples:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># Reference Mobject:</span>
+    <span class="n">rm</span>  <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="c1"># Mobjects that we want to move:</span>
+    <span class="n">red_dot</span>    <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span>
+    <span class="n">blue_dot</span>   <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">)</span>
+    <span class="n">green_dot</span>  <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">GREEN</span><span class="p">)</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Some text&quot;</span><span class="p">)</span>
+    <span class="c1"># Set positions</span>
+    <span class="n">red_dot</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">rm</span><span class="p">,</span> <span class="n">LEFT</span><span class="p">)</span>
+
+    <span class="n">blue_dot</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">rm</span><span class="p">,</span> <span class="n">LEFT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="n">green_dot</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">rm</span><span class="p">,</span> <span class="n">DR</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="n">t</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">rm</span><span class="p">,</span> <span class="n">DOWN</span><span class="p">,</span> <span class="n">aligned_edge</span><span class="o">=</span><span class="n">LEFT</span><span class="p">)</span>
+    <span class="c1">#                   -----------------</span>
+    <span class="c1">#               Delete this parameter and see what</span>
+    <span class="c1">#               happens, then change LEFT to RIGHT</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">rm</span><span class="p">,</span>
+        <span class="n">red_dot</span><span class="p">,</span>
+        <span class="n">blue_dot</span><span class="p">,</span>
+        <span class="n">green_dot</span><span class="p">,</span>
+        <span class="n">t</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/cp8.png" src="../_images/cp8.png" />
+<p>You can notice that <code class="docutils literal notranslate"><span class="pre">.next_to()</span></code> will never move a Mobject to the center of another Mobject, it always takes as a reference the edge that you indicate in the second argument.</p>
+<p>The parameter <code class="docutils literal notranslate"><span class="pre">aligned_edge</span></code> allows you to <strong>align</strong> your Mobject with the edge of the <em>reference Mobject</em>.</p>
+</div>
+<div class="section" id="mobject-align-to">
+<h3>Mobject.align_to()<a class="headerlink" href="#mobject-align-to" title="Permalink to this headline">¶</a></h3>
+<p>This is a somewhat complicated method to understand, but quite useful, its behavior is similar to what you saw with the <code class="docutils literal notranslate"><span class="pre">aligned_edge</span></code> parameter of <code class="docutils literal notranslate"><span class="pre">.next_to()</span></code>.</p>
+<img alt="../_images/alignto.png" src="../_images/alignto.png" />
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">RIGHT</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="n">UP</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+
+    <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">align_to</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">RIGHT</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/cp9.png" src="../_images/cp9.png" />
+<p>Also works with corners:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">RIGHT</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="n">UP</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">align_to</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">UR</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/cp10.png" src="../_images/cp10.png" />
+</div>
+</div>
+<div class="section" id="width-and-height">
+<h2>Width and Height<a class="headerlink" href="#width-and-height" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="setting">
+<h3>Setting<a class="headerlink" href="#setting" title="Permalink to this headline">¶</a></h3>
+<p>Obviously, all Mobjects have height and width, additionally, three-dimensional Mobjects also have depth.
+To be able to modify them it is very simple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+
+    <span class="c1"># replace &quot;width&quot; with &quot;height</span>
+    <span class="c1"># and see what happens</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">3</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/wh1.png" src="../_images/wh1.png" />
+<p>We can also pass the width from one Mobject to another like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+
+    <span class="c1"># replace &quot;width&quot; with &quot;height</span>
+    <span class="c1"># and see what happens</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">width</span>
+    <span class="c1"># or</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">scale_to_fit_width</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">width</span><span class="p">)</span>
+    <span class="c1"># c.scale_to_fit_height(r.height)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/wh2.png" src="../_images/wh2.png" />
+<p>Another way to define the width or height is using the <code class="docutils literal notranslate"><span class="pre">.set</span></code> method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+
+    <span class="c1"># replace &quot;width&quot; with &quot;height</span>
+    <span class="c1"># and see what happens</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="stretch">
+<h3>Stretch<a class="headerlink" href="#stretch" title="Permalink to this headline">¶</a></h3>
+<p>If you don’t want the proportions of your Mobject to be kept when changing the width or height then you can use <code class="docutils literal notranslate"><span class="pre">.stretch_to_fit_height()</span></code> or <code class="docutils literal notranslate"><span class="pre">.stretch_to_fit_width()</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Triangle</span><span class="p">()</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+
+    <span class="n">t</span><span class="o">.</span><span class="n">stretch_to_fit_height</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">height</span><span class="p">)</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">stretch_to_fit_width</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">width</span><span class="p">)</span>
+
+    <span class="n">t</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">get_center</span><span class="p">())</span> <span class="c1"># What happend if you remove this line</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/wh3.png" src="../_images/wh3.png" />
+</div>
+<div class="section" id="scale">
+<h3>Scale<a class="headerlink" href="#scale" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># Original circle</span>
+    <span class="n">c_original</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span>
+    <span class="c1"># x2</span>
+    <span class="n">c_x_2</span>      <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">WHITE</span><span class="p">)</span>
+    <span class="n">c_x_2</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="c1"># x3</span>
+    <span class="n">c_x_3</span>      <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">)</span>
+    <span class="n">c_x_3</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="c1"># x 1/3</span>
+    <span class="n">c_x_1_3</span>    <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">GREEN</span><span class="p">)</span>
+    <span class="n">c_x_1_3</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">c_original</span><span class="p">,</span>
+        <span class="n">c_x_2</span><span class="p">,</span>
+        <span class="n">c_x_3</span><span class="p">,</span>
+        <span class="n">c_x_1_3</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/wh3_2.png" src="../_images/wh3_2.png" />
+</div>
+<div class="section" id="apply-matrix">
+<h3>Apply Matrix<a class="headerlink" href="#apply-matrix" title="Permalink to this headline">¶</a></h3>
+<p>As its name indicates, it applies a <strong>linear transformation</strong> to a Mobject, you can use the following image as a reference. This is a generalization of all the properties previously seen.</p>
+<img alt="../_images/apply_matrix.svg" src="../_images/apply_matrix.svg" /><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">sq_phantom</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
+    <span class="n">sq</span> <span class="o">=</span> <span class="n">Square</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span>
+
+    <span class="n">ANGLE</span> <span class="o">=</span> <span class="n">PI</span> <span class="o">/</span> <span class="mi">6</span>
+    <span class="c1"># Reference point</span>
+    <span class="n">POINT</span> <span class="o">=</span> <span class="n">sq</span><span class="o">.</span><span class="n">get_corner</span><span class="p">(</span><span class="n">DL</span><span class="p">)</span>
+
+    <span class="n">matrix</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">ANGLE</span><span class="p">),</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="p">]</span>
+
+    <span class="n">sq</span><span class="o">.</span><span class="n">apply_matrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span><span class="n">about_point</span><span class="o">=</span><span class="n">POINT</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">sq_phantom</span><span class="p">,</span> <span class="n">sq</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/wh4.png" src="../_images/wh4.png" />
+</div>
+</div>
+<div class="section" id="vmobject-attributes">
+<h2>VMobject attributes<a class="headerlink" href="#vmobject-attributes" title="Permalink to this headline">¶</a></h2>
+<p>The previously studied properties work for any Mobject, now we will study the properties that only VMobjects have. The most common VMobjects are:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Some Subclasses: <code class="docutils literal notranslate"><span class="pre">Text</span></code>, <code class="docutils literal notranslate"><span class="pre">Tex</span></code>, <code class="docutils literal notranslate"><span class="pre">MathTex</span></code>, <code class="docutils literal notranslate"><span class="pre">MarkupText</span></code>, etc.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Geometry VMobjects:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Line</span></code>, <code class="docutils literal notranslate"><span class="pre">Arrow</span></code>, <code class="docutils literal notranslate"><span class="pre">Circle</span></code>, <code class="docutils literal notranslate"><span class="pre">Rectangle</span></code>, etc.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="section" id="color-palette">
+<h3>Color palette<a class="headerlink" href="#color-palette" title="Permalink to this headline">¶</a></h3>
+<p>ManimCE’s official documentation gives us all the default colors:</p>
+<img alt="../_images/color_pallete.png" src="../_images/color_pallete.png" />
+<p>You must write them in capital letters.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The colors of type “C” have an alias equal to the colorname without a letter, e.g.</p>
+<p>GREEN = GREEN_C</p>
+</div>
+<p>You can define the color using the hexadecimal format, with RGB or with HSL:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">colour</span> <span class="kn">import</span> <span class="n">Color</span>
+    <span class="k">def</span> <span class="nf">HSL</span><span class="p">(</span><span class="n">hue</span><span class="p">,</span><span class="n">saturation</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">lightness</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">Color</span><span class="p">(</span><span class="n">hsl</span><span class="o">=</span><span class="p">(</span><span class="n">hue</span><span class="o">/</span><span class="mi">360</span><span class="p">,</span><span class="n">saturation</span><span class="p">,</span><span class="n">lightness</span><span class="p">))</span>
+
+    <span class="n">red_dot</span>    <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span>          <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>    <span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+    <span class="n">blue_e_dot</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">BLUE_E</span><span class="p">)</span>       <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>    <span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+    <span class="n">hex_dot</span>    <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;#FE298D&quot;</span><span class="p">)</span>    <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>    <span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
+    <span class="n">rgb_dot</span>    <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">rgb_to_color</span><span class="p">([</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.9</span><span class="p">,</span><span class="mi">0</span><span class="p">]))</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+    <span class="n">hsl_color</span>  <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">HSL</span><span class="p">(</span><span class="mi">45</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.5</span><span class="p">))</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>    <span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">red_dot</span><span class="p">,</span> <span class="n">blue_e_dot</span><span class="p">,</span>
+        <span class="n">hex_dot</span><span class="p">,</span> <span class="n">rgb_dot</span><span class="p">,</span> <span class="n">hsl_color</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/color_example.png" src="../_images/color_example.png" />
+</div>
+<div class="section" id="stroke-width-fill-and-opacity">
+<h3>Stroke width, fill and opacity<a class="headerlink" href="#stroke-width-fill-and-opacity" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">background_square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">(</span>
+        <span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">fill_color</span><span class="o">=</span><span class="n">WHITE</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">background_square</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+
+    <span class="n">circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span>
+        <span class="c1"># stroke options</span>
+        <span class="n">stroke_width</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+        <span class="n">stroke_color</span><span class="o">=</span><span class="n">TEAL</span><span class="p">,</span>
+        <span class="n">stroke_opacity</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="c1"># 0 &lt;= stroke_opacity &lt;= 1</span>
+        <span class="c1"># fill options</span>
+        <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>   <span class="c1"># 0 &lt;= fill_opacity &lt;= 1</span>
+        <span class="n">fill_color</span><span class="o">=</span><span class="n">ORANGE</span>
+    <span class="p">)</span>
+
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">background_square</span><span class="p">,</span>
+        <span class="n">circle</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/vm1.png" src="../_images/vm1.png" />
+<p>A quick way to set a color is using <code class="docutils literal notranslate"><span class="pre">.set_color(SOME_COLOR)</span></code>, in case you have already defined the color of the stroke width or the fill, both properties will take the color that you indicated in the <code class="docutils literal notranslate"><span class="pre">.set_color()</span></code> method.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span>
+        <span class="n">stroke_color</span><span class="o">=</span><span class="n">PINK</span><span class="p">,</span>
+        <span class="n">stroke_width</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+        <span class="n">stroke_opacity</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span>
+        <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span>
+        <span class="n">fill_color</span><span class="o">=</span><span class="n">ORANGE</span>
+    <span class="p">)</span>
+
+    <span class="n">c</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">RED</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/vm2.png" src="../_images/vm2.png" />
+</div>
+<div class="section" id="points-start-and-end">
+<h3>Points, start and end<a class="headerlink" href="#points-start-and-end" title="Permalink to this headline">¶</a></h3>
+<p>As we explained at the beginning, all VMobjects are bézier curves, and therefore have control points, you can visualize them quite easily:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+    <span class="c1"># c.points are the control points</span>
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">c</span><span class="o">.</span><span class="n">points</span><span class="p">:</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">()</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/po1.png" src="../_images/po1.png" />
+<p>You can even modify the points at runtime:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">points</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+=</span> <span class="n">LEFT</span>
+
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">c</span><span class="o">.</span><span class="n">points</span><span class="p">:</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">()</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/po2.png" src="../_images/po2.png" />
+<p>In general, this type of manipulation is not useful, but with this we can obtain the starting and ending point of our path. In general, this type of manipulation is not useful, but thanks to this we can obtain the starting and ending point of our path. It is very useful when we use it with <code class="docutils literal notranslate"><span class="pre">Line</span></code> or similar.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">arrow</span> <span class="o">=</span> <span class="n">Arrow</span><span class="p">(</span><span class="n">LEFT</span><span class="p">,</span><span class="n">UR</span><span class="p">)</span>
+    <span class="n">arrow</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">LEFT</span><span class="o">+</span><span class="n">DOWN</span><span class="p">)</span>
+
+    <span class="n">arrow_start</span> <span class="o">=</span> <span class="n">arrow</span><span class="o">.</span><span class="n">get_start</span><span class="p">()</span> <span class="c1"># same as arrow.points[0]</span>
+    <span class="n">arrow_end</span>   <span class="o">=</span> <span class="n">arrow</span><span class="o">.</span><span class="n">get_end</span><span class="p">()</span>   <span class="c1"># same as arrow.points[-1]</span>
+
+    <span class="n">dot_start</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">arrow_start</span><span class="p">)</span>
+    <span class="n">dot_end</span>   <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">)</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">arrow_end</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">arrow</span><span class="p">,</span> <span class="n">dot_start</span><span class="p">,</span> <span class="n">dot_end</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/po3.png" src="../_images/po3.png" />
+</div>
+</div>
+<div class="section" id="copies-and-setters">
+<h2>Copies and setters<a class="headerlink" href="#copies-and-setters" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes it is convenient to copy an <strong>instance</strong> of a Mobject, to do this we can use the <code class="docutils literal notranslate"><span class="pre">.copy()</span></code> method.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">original_circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span>
+        <span class="n">radius</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">stroke_color</span><span class="o">=</span><span class="n">PINK</span><span class="p">,</span>
+        <span class="n">stroke_width</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+        <span class="n">stroke_opacity</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span>
+        <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span>
+        <span class="n">fill_color</span><span class="o">=</span><span class="n">ORANGE</span>
+    <span class="p">)</span>
+    <span class="n">original_circle</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
+
+    <span class="n">copy_circle</span> <span class="o">=</span> <span class="n">original_circle</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">copy_circle</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+    <span class="c1"># set_color</span>
+    <span class="n">copy_circle</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">RED</span><span class="p">)</span>
+    <span class="c1"># set_stroke</span>
+    <span class="n">copy_circle</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">TEAL</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span><span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1"># set_fill</span>
+    <span class="n">copy_circle</span><span class="o">.</span><span class="n">set_fill</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">PURE_BLUE</span><span class="p">,</span><span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">another_copy_circle</span> <span class="o">=</span> <span class="n">copy_circle</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">another_copy_circle</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">ORIGIN</span><span class="p">)</span>
+    <span class="c1"># set_style</span>
+    <span class="n">another_copy_circle</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span>
+        <span class="n">stroke_width</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+        <span class="n">stroke_color</span><span class="o">=</span><span class="n">WHITE</span><span class="p">,</span>
+        <span class="n">stroke_opacity</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+        <span class="n">fill_color</span><span class="o">=</span><span class="n">PURE_GREEN</span><span class="p">,</span>
+        <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/po4.png" src="../_images/po4.png" />
+<p>As you can see, it is possible to change the thickness and padding properties after the instance, either by using <code class="docutils literal notranslate"><span class="pre">.set_stroke()</span></code>, <code class="docutils literal notranslate"><span class="pre">.set_fill()</span></code>, or by using <code class="docutils literal notranslate"><span class="pre">.set_style()</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">.copy()</span></code> method works with any Mobject, not just VMobjects.</p>
+</div>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Create a grid in which you can see the coordinates of the screen:</p></li>
+</ol>
+<img alt="../_images/ex_1.png" src="../_images/ex_1.png" />
+<ol class="arabic simple" start="2">
+<li><p>Draw the Yin-Yang symbol.</p></li>
+<li><p>Draw the VUE.js logo.</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_3_camera_options.html" class="btn btn-neutral float-right" title="Basic Camera and render settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="_1_basic_elements.html" class="btn btn-neutral float-left" title="Basic elements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Vázquez.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

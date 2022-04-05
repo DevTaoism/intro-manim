@@ -1,0 +1,1200 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Manim utilities &mdash; ManimCE Professional Course - Basics  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Basic 2D Graphs" href="_12_2d_graphs.html" />
+    <link rel="prev" title="Methods as animations" href="_10_methods_as_animations.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_2_basic_mobjects.html">Basic attributes of Mobjects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_3_camera_options.html">Basic Camera and render settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_4_layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_5_rate_functions.html">Rate functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_6_assets.html">Import assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_7_groups.html">Groups and VGroups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_8_text_and_tex.html">Text and Tex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_9_transformations.html">Transformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_10_methods_as_animations.html">Methods as animations</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Manim utilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#helpful-methods">Helpful methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#interpolate-color"><code class="docutils literal notranslate"><span class="pre">.interpolate_color</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-points"><code class="docutils literal notranslate"><span class="pre">.set_points</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#as-corners"><code class="docutils literal notranslate"><span class="pre">_as_corners</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#smoothly"><code class="docutils literal notranslate"><span class="pre">_smoothly</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#point-from-proportion"><code class="docutils literal notranslate"><span class="pre">.point_from_proportion</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-subcurve"><code class="docutils literal notranslate"><span class="pre">.get_subcurve</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-color-by-tex"><code class="docutils literal notranslate"><span class="pre">.set_color_by_tex</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#save-state-and-restore"><code class="docutils literal notranslate"><span class="pre">.save_state</span></code> and <code class="docutils literal notranslate"><span class="pre">Restore</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#surround"><code class="docutils literal notranslate"><span class="pre">.surround</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-background-rectangle"><code class="docutils literal notranslate"><span class="pre">.add_background_rectangle</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#more-methods">More methods</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#helpful-vmobjects">Helpful VMobjects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#lines-and-arrows">Lines and Arrows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#line">Line</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arrows">Arrows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-unit-vector"><code class="docutils literal notranslate"><span class="pre">.get_unit_vector</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#braces">Braces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#decimalnumber">DecimalNumber</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#numberline">NumberLine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#matrix">Matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tables">Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#arcs">Arcs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#angle">Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arc">Arc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arcbetweenpoints">ArcBetweenPoints</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#codemobject">CodeMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dashedvmobject">DashedVMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cutout">Cutout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-mobjects">Other Mobjects</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#more-class-animations">More Class Animations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creation">Creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#indication">Indication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove">Remove</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_12_2d_graphs.html">Basic 2D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_13_3d_graphs.html">Basic 3D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ManimCE Professional Course - Basics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Manim utilities</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/contents/_11_manim_utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="manim-utilities">
+<h1>Manim utilities<a class="headerlink" href="#manim-utilities" title="Permalink to this headline">¶</a></h1>
+<p>In this chapter we will learn some methods and classes that are quite useful to make our animations, here we will conclude all the <strong>class animations</strong>.</p>
+<div class="section" id="helpful-methods">
+<h2>Helpful methods<a class="headerlink" href="#helpful-methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="interpolate-color">
+<h3><code class="docutils literal notranslate"><span class="pre">.interpolate_color</span></code><a class="headerlink" href="#interpolate-color" title="Permalink to this headline">¶</a></h3>
+<p>As its name implies, it gives you an interpolation between two colors, you can see the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.utils.color.html?highlight=interpolate_color#manim.utils.color.interpolate_color">official documentation</a> to see its definition and the algorithm, You can see in the same documentation other functions related to color in case you want to learn more.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">dots</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">Dot</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)])</span>\
+        <span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">left_dot</span><span class="p">,</span> <span class="n">center_dot</span><span class="p">,</span> <span class="n">right_dot</span> <span class="o">=</span> <span class="n">dots</span>
+
+    <span class="n">color1</span> <span class="o">=</span> <span class="s2">&quot;#FF0000&quot;</span><span class="p">;</span> <span class="n">color2</span> <span class="o">=</span> <span class="s2">&quot;#0000FF&quot;</span>
+    <span class="n">color3</span> <span class="o">=</span> <span class="n">interpolate_color</span><span class="p">(</span><span class="n">color1</span><span class="p">,</span><span class="n">color2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="c1">#                                         |</span>
+    <span class="c1">#                                         v</span>
+    <span class="c1">#                                  0 &lt;= alpha &lt;= 1</span>
+    <span class="c1">#                               color1         color2</span>
+
+    <span class="nb">print</span><span class="p">([</span><span class="n">color1</span><span class="p">,</span><span class="n">color2</span><span class="p">,</span><span class="n">color3</span><span class="p">])</span>
+    <span class="c1"># [&#39;#FF0000&#39; &#39;#0000FF&#39; &lt;Color #7f007f&gt;]</span>
+
+    <span class="n">left_dot</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">color1</span><span class="p">)</span>
+    <span class="n">right_dot</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">color2</span><span class="p">)</span>
+    <span class="n">center_dot</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">color3</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">dots</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu1.png" src="../_images/mu1.png" />
+</details>
+<br/></div>
+<div class="section" id="set-points">
+<h3><code class="docutils literal notranslate"><span class="pre">.set_points</span></code><a class="headerlink" href="#set-points" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For this section we are going to use the <strong>grid</strong> that you created in previous chapters, and it will help us to understand this method.</p>
+</div>
+<div class="section" id="as-corners">
+<h4><code class="docutils literal notranslate"><span class="pre">_as_corners</span></code><a class="headerlink" href="#as-corners" title="Permalink to this headline">¶</a></h4>
+<p>The way to make a polyline using the coordinates of the screen we can do the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">sg</span> <span class="o">=</span> <span class="n">ScreenGrid</span><span class="p">()</span> <span class="c1"># Here is your Grid</span>
+    <span class="n">sg</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">coord</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">points</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">coord</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="p">[</span>
+            <span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span>
+            <span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">),</span>
+            <span class="p">(</span><span class="mf">3.5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">]</span>
+
+    <span class="n">dots</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">Dot</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">points</span><span class="p">])</span>
+    <span class="n">polyline</span> <span class="o">=</span> <span class="n">VMobject</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">)</span><span class="o">.</span><span class="n">set_points_as_corners</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">sg</span><span class="p">,</span><span class="n">polyline</span><span class="p">,</span><span class="n">dots</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu4.png" src="../_images/mu4.png" />
+</details>
+<br/></div>
+<div class="section" id="smoothly">
+<h4><code class="docutils literal notranslate"><span class="pre">_smoothly</span></code><a class="headerlink" href="#smoothly" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">sg</span> <span class="o">=</span> <span class="n">ScreenGrid</span><span class="p">()</span> <span class="c1"># Here is your Grid</span>
+    <span class="n">sg</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">coord</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">points</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">coord</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="p">[</span>
+            <span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span>
+            <span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">),</span>
+            <span class="p">(</span><span class="mf">3.5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">]</span>
+
+    <span class="n">dots</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">Dot</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">points</span><span class="p">])</span>
+    <span class="n">polyline</span> <span class="o">=</span> <span class="n">VMobject</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">)</span><span class="o">.</span><span class="n">set_points_smoothly</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">sg</span><span class="p">,</span><span class="n">polyline</span><span class="p">,</span><span class="n">dots</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu5.png" src="../_images/mu5.png" />
+</details>
+<br/></div>
+</div>
+<div class="section" id="point-from-proportion">
+<h3><code class="docutils literal notranslate"><span class="pre">.point_from_proportion</span></code><a class="headerlink" href="#point-from-proportion" title="Permalink to this headline">¶</a></h3>
+<p>This is an exclusive method for VMobjects, especially for paths (lines and curves).</p>
+<p>Think VMobject (a curve) as a <strong>road</strong>, as you travel the road you can tell the <strong>percentage</strong> you have completed. Using this analogy with curves (paths) you can locate a point in a percentage of the path using <code class="docutils literal notranslate"><span class="pre">point_from_proportion</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">LEFT</span><span class="p">,</span><span class="n">RIGHT</span><span class="p">)</span>  <span class="c1"># We will study this below.</span>
+    <span class="n">path</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_width</span> <span class="o">-</span> <span class="mi">2</span>
+
+    <span class="n">proportions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+                <span class="c1"># 0.1, 0.2, 0.3 ... 1.0</span>
+
+    <span class="n">prop_text</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">VGroup</span><span class="p">(</span>
+            <span class="c1"># The first argument to dot is the</span>
+            <span class="c1"># coordinate where it is located,</span>
+            <span class="c1"># so we don&#39;t need to use &quot;.move_to&quot;</span>
+            <span class="c1"># in this case.</span>
+            <span class="n">Dot</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">point_from_proportion</span><span class="p">(</span><span class="n">p</span><span class="p">)),</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.1f</span><span class="s2">&quot;</span><span class="o">%</span><span class="n">p</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">point_from_proportion</span><span class="p">(</span><span class="n">p</span><span class="p">),</span><span class="n">DOWN</span><span class="p">),</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">interpolate_color</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="n">BLUE</span><span class="p">,</span><span class="n">p</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">proportions</span>
+    <span class="p">])</span>
+
+    <span class="n">start</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Start&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">get_start</span><span class="p">(),</span><span class="n">UP</span><span class="p">)</span>
+    <span class="n">end</span>   <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;End&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">get_end</span><span class="p">(),</span><span class="n">UP</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">prop_text</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu2.png" src="../_images/mu2.png" />
+</details>
+<br/><p>With regular figures it is easy to see what this method means.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">paths</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
+        <span class="n">Line</span><span class="p">(</span><span class="n">LEFT</span><span class="p">,</span><span class="n">RIGHT</span><span class="p">),</span> <span class="c1"># We will study this below.</span>
+        <span class="n">Square</span><span class="p">(),</span>
+        <span class="n">Circle</span><span class="p">()</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">frame_width</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_proportions</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">proportions</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+            <span class="n">Dot</span><span class="p">(</span>
+                <span class="c1"># The first argument to dot is the</span>
+                <span class="c1"># coordinate where it is located,</span>
+                <span class="c1"># so we don&#39;t need to use &quot;.move_to&quot;</span>
+                <span class="c1"># in this case.</span>
+                <span class="n">path</span><span class="o">.</span><span class="n">point_from_proportion</span><span class="p">(</span><span class="n">p</span><span class="p">),</span>
+                <span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="o">+</span><span class="mf">0.3</span><span class="p">,</span>
+                <span class="n">color</span><span class="o">=</span><span class="n">interpolate_color</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="n">BLUE</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">proportions</span>
+        <span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">get_start_and_end</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">VGroup</span><span class="p">(</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;START&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">get_start</span><span class="p">(),</span><span class="n">UP</span><span class="p">),</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;END&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">get_end</span><span class="p">(),</span><span class="n">DOWN</span><span class="p">),</span>
+        <span class="p">)</span>
+
+    <span class="n">vgrp_proportions</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">get_proportions</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">paths</span>
+    <span class="p">])</span>
+    <span class="n">vgrp_start_end</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">get_start_and_end</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">paths</span>
+    <span class="p">])</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">paths</span><span class="p">,</span><span class="n">vgrp_proportions</span><span class="p">,</span><span class="n">vgrp_start_end</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu3.png" src="../_images/mu3.png" />
+</details>
+<br/><p>This counts for any VMobject.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">sg</span> <span class="o">=</span> <span class="n">ScreenGrid</span><span class="p">()</span> <span class="c1"># Here is your Grid</span>
+    <span class="n">sg</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="n">proportions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+                <span class="c1"># 0.1, 0.2, 0.3 ... 1.0</span>
+
+    <span class="k">def</span> <span class="nf">coord</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">points</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">coord</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="p">[</span>
+            <span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span>
+            <span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">),</span>
+            <span class="p">(</span><span class="mf">3.5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">]</span>
+
+    <span class="n">polyline</span> <span class="o">=</span> <span class="n">VMobject</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">)</span><span class="o">.</span><span class="n">set_points_smoothly</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+
+    <span class="n">prop_text</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">VGroup</span><span class="p">(</span>
+            <span class="c1"># The first argument to dot is the</span>
+            <span class="c1"># coordinate where it is located,</span>
+            <span class="c1"># so we don&#39;t need to use &quot;.move_to&quot;</span>
+            <span class="c1"># in this case.</span>
+            <span class="n">Dot</span><span class="p">(</span><span class="n">polyline</span><span class="o">.</span><span class="n">point_from_proportion</span><span class="p">(</span><span class="n">p</span><span class="p">)),</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.1f</span><span class="s2">&quot;</span><span class="o">%</span><span class="n">p</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+                <span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">polyline</span><span class="o">.</span><span class="n">point_from_proportion</span><span class="p">(</span><span class="n">p</span><span class="p">),</span><span class="n">DOWN</span><span class="p">),</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">interpolate_color</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="n">BLUE</span><span class="p">,</span><span class="n">p</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">proportions</span>
+    <span class="p">])</span>
+
+    <span class="n">start</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Start&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">polyline</span><span class="o">.</span><span class="n">get_start</span><span class="p">(),</span><span class="n">UP</span><span class="p">)</span>
+    <span class="n">end</span>   <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;End&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">polyline</span><span class="o">.</span><span class="n">get_end</span><span class="p">(),</span><span class="n">UP</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu6.png" src="../_images/mu6.png" />
+</details>
+<br/></div>
+<div class="section" id="get-subcurve">
+<h3><code class="docutils literal notranslate"><span class="pre">.get_subcurve</span></code><a class="headerlink" href="#get-subcurve" title="Permalink to this headline">¶</a></h3>
+<p>Using the concept of <code class="docutils literal notranslate"><span class="pre">point_from_proportion</span></code>, we can get a part of a VMobject by specifying the starting and ending percentage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">coord</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">points</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">coord</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="p">[</span>
+            <span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span>
+            <span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">),</span>
+            <span class="p">(</span><span class="mf">3.5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">]</span>
+
+    <span class="n">path</span> <span class="o">=</span> <span class="n">VMobject</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">)</span><span class="o">.</span><span class="n">set_points_smoothly</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+    <span class="n">partial_path</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">get_subcurve</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.9</span><span class="p">)</span>
+    <span class="n">partial_path</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="n">stroke_width</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">stroke_color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">partial_path</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu6_2.png" src="../_images/mu6_2.png" />
+</details>
+<br/></div>
+<div class="section" id="set-color-by-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">.set_color_by_tex</span></code><a class="headerlink" href="#set-color-by-tex" title="Permalink to this headline">¶</a></h3>
+<p>In the Tex section we saw that there is an argument that allows us to color certain text, but sometimes we need to color certain parts afterwards, for this we use this method. However, to achieve this effectively we have to isolate the text as we saw it in <code class="docutils literal notranslate"><span class="pre">TransformMatchingTex</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">equation</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span>
+        <span class="sa">r</span><span class="s2">&quot;e^x = x^0 + x^1 + \frac</span><span class="si">{1}{2}</span><span class="s2"> x^2 + \frac</span><span class="si">{1}{6}</span><span class="s2"> x^3 + \cdots + \frac</span><span class="si">{1}</span><span class="s2">{n!} x^n + \cdots&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="c1"># FAIL</span>
+    <span class="n">equation</span><span class="o">.</span><span class="n">set_color_by_tex</span><span class="p">(</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="n">YELLOW</span><span class="p">)</span>
+    <span class="n">equation</span><span class="o">.</span><span class="n">set_color_by_tex</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">BLUE</span><span class="p">)</span>
+    <span class="n">equation</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_width</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">equation</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu7.png" src="../_images/mu7.png" />
+</details>
+<br/><p>Succesull coloring:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">equation</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span>
+        <span class="sa">r</span><span class="s2">&quot;e^x = x^0 + x^1 + \frac</span><span class="si">{1}{2}</span><span class="s2"> x^2 + \frac</span><span class="si">{1}{6}</span><span class="s2"> x^3 + \cdots + \frac</span><span class="si">{1}</span><span class="s2">{n!} x^n + \cdots&quot;</span><span class="p">,</span>
+        <span class="n">substrings_to_isolate</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span><span class="s2">&quot;+&quot;</span><span class="p">]</span>
+    <span class="p">)</span>
+    <span class="n">equation</span><span class="o">.</span><span class="n">set_color_by_tex</span><span class="p">(</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="n">YELLOW</span><span class="p">)</span>
+    <span class="n">equation</span><span class="o">.</span><span class="n">set_color_by_tex</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">BLUE</span><span class="p">)</span>
+    <span class="n">equation</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_width</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">equation</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu8.png" src="../_images/mu8.png" />
+</details>
+<br/><p>We could have done this using <code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> in <code class="docutils literal notranslate"><span class="pre">MathTex</span></code> instance, but sometimes you will want to color certain parts in different parts of the code, and in this way it can be achieved. But remember that if your formulas are too complex then they will not work.</p>
+</div>
+<div class="section" id="save-state-and-restore">
+<h3><code class="docutils literal notranslate"><span class="pre">.save_state</span></code> and <code class="docutils literal notranslate"><span class="pre">Restore</span></code><a class="headerlink" href="#save-state-and-restore" title="Permalink to this headline">¶</a></h3>
+<p>This is a very simple method, basically it is about creating a temporary copy in a time state of a Mobject, and after applying certain modifications to it, using <code class="docutils literal notranslate"><span class="pre">Restore</span></code> we can return to the point where we saved the state.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">FRAME_WIDTH</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_width</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">&quot;Original&quot;</span><span class="p">)</span>\
+           <span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">FRAME_WIDTH</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="n">text</span><span class="o">.</span><span class="n">save_state</span><span class="p">()</span>
+
+    <span class="n">text_2</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">&quot;Modified&quot;</span><span class="p">)</span>\
+           <span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">FRAME_WIDTH</span><span class="o">/</span><span class="mf">1.5</span><span class="p">)</span>\
+           <span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">ORANGE</span><span class="p">)</span>\
+           <span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">DL</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Transform</span><span class="p">(</span><span class="n">text</span><span class="p">,</span><span class="n">text_2</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">text</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Restore</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.7</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/mu1.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="surround">
+<h3><code class="docutils literal notranslate"><span class="pre">.surround</span></code><a class="headerlink" href="#surround" title="Permalink to this headline">¶</a></h3>
+<p>This method allows us to <strong>fit</strong> a Mobject in another, this method will be useful when we use indication animations.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">formula</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span><span class="s2">&quot;=&quot;</span><span class="p">,</span><span class="s2">&quot;y&quot;</span><span class="p">,</span><span class="s2">&quot;+&quot;</span><span class="p">,</span><span class="s2">&quot;3&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+
+    <span class="n">sm1</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span><span class="o">.</span><span class="n">surround</span><span class="p">(</span><span class="n">formula</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># buffer_factor=1.2) by default</span>
+    <span class="n">sm2</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span><span class="o">.</span><span class="n">surround</span><span class="p">(</span><span class="n">formula</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">buffer_factor</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">sm3</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">TEAL</span><span class="p">)</span><span class="o">.</span><span class="n">surround</span><span class="p">(</span><span class="n">formula</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="n">sm4</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">YELLOW</span><span class="p">)</span><span class="o">.</span><span class="n">surround</span><span class="p">(</span><span class="n">formula</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">stretch</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># To fix the ratio</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">formula</span><span class="p">,</span>
+        <span class="n">sm1</span><span class="p">,</span><span class="n">sm2</span><span class="p">,</span><span class="n">sm3</span><span class="p">,</span><span class="n">sm4</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu20.png" src="../_images/mu20.png" />
+</details>
+<br/></div>
+<div class="section" id="add-background-rectangle">
+<h3><code class="docutils literal notranslate"><span class="pre">.add_background_rectangle</span></code><a class="headerlink" href="#add-background-rectangle" title="Permalink to this headline">¶</a></h3>
+<p>It is similar to surround, with the difference that this method adds the background to the Mobject.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">number_plane</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">(</span><span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
+
+    <span class="n">matrix</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">Text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">27</span><span class="p">)])</span>\
+        <span class="o">.</span><span class="n">arrange_in_grid</span><span class="p">(</span><span class="n">cols</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">_0</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">_16</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[</span><span class="mi">16</span><span class="p">]</span>
+    <span class="n">_13</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span>
+
+    <span class="n">_16</span><span class="o">.</span><span class="n">add_background_rectangle</span><span class="p">()</span>
+    <span class="n">_0</span><span class="o">.</span><span class="n">add_background_rectangle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span>
+    <span class="n">_13</span><span class="o">.</span><span class="n">add_background_rectangle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">YELLOW</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">number_plane</span><span class="p">,</span><span class="n">matrix</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu21.png" src="../_images/mu21.png" />
+</details>
+<br/></div>
+<div class="section" id="more-methods">
+<h3>More methods<a class="headerlink" href="#more-methods" title="Permalink to this headline">¶</a></h3>
+<p>If you want to see all the missing methods of the VMobjects you can read the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.VMobject.html?highlight=VMobject#vmobject">official documentation</a>.</p>
+</div>
+</div>
+<div class="section" id="helpful-vmobjects">
+<h2>Helpful VMobjects<a class="headerlink" href="#helpful-vmobjects" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lines-and-arrows">
+<h3>Lines and Arrows<a class="headerlink" href="#lines-and-arrows" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="line">
+<h4>Line<a class="headerlink" href="#line" title="Permalink to this headline">¶</a></h4>
+<p>It is equivalent to polyline, only that this VMobject only receives two points, the initial or final.
+A special parameter of the lines is a buffer, which allows us to add a space between the endpoints.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">sg</span> <span class="o">=</span> <span class="n">ScreenGrid</span><span class="p">()</span>
+
+    <span class="n">l1</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">LEFT</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span><span class="n">RIGHT</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+    <span class="n">l2</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">LEFT</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span><span class="n">RIGHT</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+    <span class="n">l3</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">LEFT</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span><span class="n">RIGHT</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">DOWN</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">sg</span><span class="p">,</span><span class="n">l1</span><span class="p">,</span><span class="n">l2</span><span class="p">,</span><span class="n">l3</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu9.png" src="../_images/mu9.png" />
+</details>
+<br/><p>Since the lines are a VMobject, then it accepts all the properties of the VMobjects.</p>
+</div>
+<div class="section" id="arrows">
+<h4>Arrows<a class="headerlink" href="#arrows" title="Permalink to this headline">¶</a></h4>
+<p>The arrows are similar to the lines, although they have a default buff, I’ll leave you some examples here:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">get_size</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">LEFT</span><span class="o">*</span><span class="n">s</span><span class="p">,</span><span class="n">RIGHT</span><span class="o">*</span><span class="n">s</span><span class="p">]</span>
+
+    <span class="n">arrows</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
+        <span class="n">Arrow</span><span class="p">(</span><span class="o">*</span><span class="n">get_size</span><span class="p">()),</span>
+        <span class="n">Arrow</span><span class="p">(</span><span class="o">*</span><span class="n">get_size</span><span class="p">(),</span><span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+        <span class="n">DoubleArrow</span><span class="p">(</span><span class="o">*</span><span class="n">get_size</span><span class="p">()),</span>
+        <span class="n">DoubleArrow</span><span class="p">(</span><span class="o">*</span><span class="n">get_size</span><span class="p">(),</span><span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+        <span class="c1"># ---------------</span>
+        <span class="n">Arrow</span><span class="p">(</span><span class="o">*</span><span class="n">get_size</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)),</span>
+        <span class="n">Arrow</span><span class="p">(</span><span class="o">*</span><span class="n">get_size</span><span class="p">(</span><span class="mf">0.5</span><span class="p">),</span><span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+        <span class="n">DoubleArrow</span><span class="p">(</span><span class="o">*</span><span class="n">get_size</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)),</span>
+        <span class="n">DoubleArrow</span><span class="p">(</span><span class="o">*</span><span class="n">get_size</span><span class="p">(</span><span class="mf">0.5</span><span class="p">),</span><span class="n">buff</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="n">arrows</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">arrows</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu10.png" src="../_images/mu10.png" />
+</details>
+<br/><p>You may find that the smaller the arrows, the smaller the tips.
+They can learn more in the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.geometry.Arrow.html?highlight=arrows">official documentation</a>.</p>
+<p>In addition to the classic tips, there are also these others:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># Special tips</span>
+    <span class="kn">from</span> <span class="nn">manim.mobject.geometry</span> <span class="kn">import</span> <span class="p">(</span>
+        <span class="n">ArrowTriangleFilledTip</span><span class="p">,</span>
+        <span class="n">ArrowTriangleTip</span>
+    <span class="p">)</span>
+    <span class="n">tips_set</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">ArrowCircleFilledTip</span><span class="p">,</span>
+        <span class="n">ArrowCircleTip</span><span class="p">,</span>
+        <span class="n">ArrowSquareFilledTip</span><span class="p">,</span>
+        <span class="n">ArrowSquareTip</span><span class="p">,</span>
+        <span class="n">ArrowTriangleFilledTip</span><span class="p">,</span>
+        <span class="n">ArrowTriangleTip</span>
+    <span class="p">]</span>
+    <span class="n">normal_arrow</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">Arrow</span><span class="p">(</span><span class="n">LEFT</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span><span class="n">RIGHT</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">tip_shape</span><span class="o">=</span><span class="n">ts</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">ts</span> <span class="ow">in</span> <span class="n">tips_set</span>
+    <span class="p">])</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+    <span class="n">double_arrow</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">DoubleArrow</span><span class="p">(</span><span class="n">LEFT</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span><span class="n">RIGHT</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">tip_shape_start</span><span class="o">=</span><span class="n">ts</span><span class="p">,</span> <span class="n">tip_shape_end</span><span class="o">=</span><span class="n">ts</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">ts</span> <span class="ow">in</span> <span class="n">tips_set</span>
+    <span class="p">])</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+    <span class="n">normal_arrow_t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Arrow&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="s2">&quot;Monospace&quot;</span><span class="p">)</span>
+    <span class="n">double_arrow_t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;DoubleArrow&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="s2">&quot;Monospace&quot;</span><span class="p">)</span>
+
+    <span class="n">VGroup</span><span class="p">(</span>
+        <span class="n">VGroup</span><span class="p">(</span><span class="n">normal_arrow_t</span><span class="p">,</span><span class="n">normal_arrow</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">),</span>
+        <span class="n">VGroup</span><span class="p">(</span><span class="n">double_arrow_t</span><span class="p">,</span><span class="n">double_arrow</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">),</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">Write</span><span class="p">(</span><span class="n">normal_arrow_t</span><span class="p">),</span>
+        <span class="n">Write</span><span class="p">(</span><span class="n">double_arrow_t</span><span class="p">),</span>
+        <span class="o">*</span><span class="p">[</span>
+            <span class="n">GrowArrow</span><span class="p">(</span><span class="n">arrow</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">arrow</span> <span class="ow">in</span> <span class="p">[</span><span class="o">*</span><span class="n">normal_arrow</span><span class="p">,</span><span class="o">*</span><span class="n">double_arrow</span><span class="p">]</span>
+        <span class="p">],</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">4</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/mu2.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="get-unit-vector">
+<h4><code class="docutils literal notranslate"><span class="pre">.get_unit_vector</span></code><a class="headerlink" href="#get-unit-vector" title="Permalink to this headline">¶</a></h4>
+<p>Both lines and arrows have two very useful methods called <code class="docutils literal notranslate"><span class="pre">.get_vector()</span></code> and <code class="docutils literal notranslate"><span class="pre">.get_unit_vector()</span></code>, which, as its name says, returns the vector and unit vector of the line/arrow, we will use it in the next section.</p>
+</div>
+</div>
+<div class="section" id="braces">
+<h3>Braces<a class="headerlink" href="#braces" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+    <span class="n">end</span>   <span class="o">=</span> <span class="n">Dot</span><span class="p">([</span> <span class="mi">2</span><span class="p">,</span>  <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">start</span><span class="o">.</span><span class="n">get_center</span><span class="p">(),</span> <span class="n">end</span><span class="o">.</span><span class="n">get_center</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="n">ORANGE</span><span class="p">)</span>
+    <span class="n">down_brace</span>  <span class="o">=</span> <span class="n">Brace</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    <span class="n">left_brace</span>  <span class="o">=</span> <span class="n">Brace</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="n">LEFT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">right_brace</span> <span class="o">=</span> <span class="n">Brace</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="n">RIGHT</span><span class="p">)</span>
+    <span class="n">down_brace_tex</span> <span class="o">=</span> <span class="n">down_brace</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s2">&quot;Down brace&quot;</span><span class="p">)</span>
+    <span class="n">left_brace_tex</span> <span class="o">=</span> <span class="n">left_brace</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s2">&quot;Left brace&quot;</span><span class="p">)</span>
+
+    <span class="n">normal_brace</span> <span class="o">=</span> <span class="n">Brace</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="n">rotate_vector</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">get_unit_vector</span><span class="p">(),</span> <span class="mi">90</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">))</span>
+    <span class="c1">#                                   --------------------------------------------------</span>
+    <span class="c1">#                                                   normal vector</span>
+    <span class="c1"># rotate_vector is a function that, as the name suggests, rotates a vector.</span>
+    <span class="n">normal_brace_tex</span> <span class="o">=</span> <span class="n">normal_brace</span><span class="o">.</span><span class="n">get_tex</span><span class="p">(</span><span class="s2">&quot;x-x_1&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">line</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span>
+        <span class="n">down_brace</span><span class="p">,</span> <span class="n">down_brace_tex</span><span class="p">,</span>
+        <span class="n">left_brace</span><span class="p">,</span> <span class="n">left_brace_tex</span><span class="p">,</span>
+        <span class="n">normal_brace</span><span class="p">,</span> <span class="n">normal_brace_tex</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu11.png" src="../_images/mu11.png" />
+</details>
+<br/></div>
+<div class="section" id="decimalnumber">
+<h3>DecimalNumber<a class="headerlink" href="#decimalnumber" title="Permalink to this headline">¶</a></h3>
+<p>This class might seem very redundant, since it is used to write values, generally measurements (meters, seconds, etc), but they will make more sense when we see <strong>updaters</strong>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">dgrp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
+        <span class="n">DecimalNumber</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+        <span class="n">DecimalNumber</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">include_sign</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+        <span class="n">DecimalNumber</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">unit</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">rm m&quot;</span><span class="p">),</span>
+        <span class="n">DecimalNumber</span><span class="p">(</span><span class="mf">13.41364</span><span class="p">,</span><span class="n">unit</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">rm m&quot;</span><span class="p">,</span><span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span>
+        <span class="n">DecimalNumber</span><span class="p">(</span><span class="mf">133414.41364</span><span class="p">,</span><span class="n">unit</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">rm m&quot;</span><span class="p">,</span><span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span>
+        <span class="n">DecimalNumber</span><span class="p">(</span><span class="mf">133414.41364</span><span class="p">,</span><span class="n">unit</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">rm m&quot;</span><span class="p">,</span><span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">group_with_commas</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">2.5</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">dgrp</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu12.png" src="../_images/mu12.png" />
+</details>
+<br/><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is a subclass of <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code>, which is <code class="docutils literal notranslate"><span class="pre">Integer</span></code>, and as the name suggests, it has no decimal part.</p>
+</div>
+</div>
+<div class="section" id="numberline">
+<h3>NumberLine<a class="headerlink" href="#numberline" title="Permalink to this headline">¶</a></h3>
+<p>This is another very useful VMobject, and the base from which the graphs are built.
+But it has so many configuration options that it is best to read the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.number_line.NumberLine.html#manim.mobject.number_line.NumberLine">official documentation</a>.</p>
+<p>The most important thing to know is that the numbers are created using <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code> and that there is a method that allows us to obtain a value according to the <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code> measure, that is <code class="docutils literal notranslate"><span class="pre">NumberLine.n2p(number)</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">l0</span> <span class="o">=</span> <span class="n">NumberLine</span><span class="p">(</span>
+        <span class="c1">#        min max step</span>
+        <span class="n">x_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="n">length</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">,</span>
+        <span class="n">include_numbers</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">label_direction</span><span class="o">=</span><span class="n">UP</span><span class="p">,</span>
+        <span class="n">font_size</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">l1</span> <span class="o">=</span> <span class="n">NumberLine</span><span class="p">(</span>
+        <span class="n">x_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+        <span class="n">unit_size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+        <span class="n">numbers_with_elongated_ticks</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+        <span class="n">include_numbers</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">font_size</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="p">[</span><span class="n">num6</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">l1</span><span class="o">.</span><span class="n">numbers</span> <span class="k">if</span> <span class="n">num</span><span class="o">.</span><span class="n">number</span> <span class="o">==</span> <span class="mi">6</span><span class="p">]</span>
+    <span class="n">num6</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">RED</span><span class="p">)</span>
+    <span class="n">l1</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">num6</span><span class="p">)</span>
+
+    <span class="n">l2</span> <span class="o">=</span> <span class="n">NumberLine</span><span class="p">(</span>
+        <span class="n">x_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">2.5</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span>
+        <span class="n">length</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+        <span class="c1"># Here they are modifying the parameters of the numbers,</span>
+        <span class="c1"># the number of decimal places.</span>
+        <span class="n">decimal_number_config</span><span class="o">=</span><span class="p">{</span>
+            <span class="s2">&quot;num_decimal_places&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">&quot;unit&quot;</span><span class="p">:</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">rm m&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="n">TEAL</span>
+        <span class="p">},</span>
+        <span class="n">include_numbers</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">font_size</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">l3</span> <span class="o">=</span> <span class="n">NumberLine</span><span class="p">(</span>
+        <span class="n">x_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="n">length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+        <span class="n">include_tip</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">include_numbers</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">rotation</span><span class="o">=</span><span class="mi">10</span> <span class="o">*</span> <span class="n">DEGREES</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">line_group</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">l0</span><span class="p">,</span> <span class="n">l1</span><span class="p">,</span> <span class="n">l2</span><span class="p">,</span> <span class="n">l3</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">pink_dot</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">l0</span><span class="o">.</span><span class="n">n2p</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="n">PINK</span><span class="p">)</span>
+    <span class="n">orange_dot</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">l3</span><span class="o">.</span><span class="n">n2p</span><span class="p">(</span><span class="mf">1.5</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="n">ORANGE</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">line_group</span><span class="p">,</span><span class="n">pink_dot</span><span class="p">,</span><span class="n">orange_dot</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu13.png" src="../_images/mu13.png" />
+</details>
+<br/></div>
+<div class="section" id="matrix">
+<h3>Matrix<a class="headerlink" href="#matrix" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.matrix.html?highlight=Matrix#module-manim.mobject.matrix">Official documentation.</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">m0</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([</span>
+                    <span class="p">[</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">pi&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span>     <span class="mi">1</span><span class="p">]</span>
+                <span class="p">])</span>
+    <span class="n">m1</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([</span>
+                    <span class="p">[</span><span class="s2">&quot;π&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">],</span>
+                    <span class="p">[</span><span class="s2">&quot;-1&quot;</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span><span class="p">]</span>
+                <span class="p">],</span>
+        <span class="n">element_to_mobject</span><span class="o">=</span><span class="n">Text</span><span class="p">,</span>
+        <span class="n">element_to_mobject_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;font&quot;</span><span class="p">:</span> <span class="s2">&quot;Arial&quot;</span><span class="p">}</span>
+        <span class="p">)</span>
+    <span class="n">m2</span> <span class="o">=</span> <span class="n">IntegerMatrix</span><span class="p">([</span>
+                    <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
+                    <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.3</span><span class="p">]</span>
+                <span class="p">],</span>
+                <span class="n">left_bracket</span><span class="o">=</span><span class="s2">&quot;(&quot;</span><span class="p">,</span>
+                <span class="n">right_bracket</span><span class="o">=</span><span class="s2">&quot;)&quot;</span>
+        <span class="p">)</span>
+    <span class="n">m3</span> <span class="o">=</span> <span class="n">DecimalMatrix</span><span class="p">(</span>
+        <span class="p">[[</span><span class="mf">3.456</span><span class="p">,</span> <span class="mf">2.122</span><span class="p">],</span> <span class="p">[</span><span class="mf">33.2244</span><span class="p">,</span> <span class="mf">12.33</span><span class="p">]],</span>
+        <span class="n">element_to_mobject_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;num_decimal_places&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span>
+        <span class="n">left_bracket</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">{&quot;</span><span class="p">,</span>
+        <span class="n">right_bracket</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">}&quot;</span><span class="p">)</span>
+    <span class="n">m4</span> <span class="o">=</span> <span class="n">MobjectMatrix</span><span class="p">([</span>
+                            <span class="p">[</span><span class="n">Circle</span><span class="p">()</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span>      <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)],</span>
+                            <span class="p">[</span><span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">pi&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">Star</span><span class="p">()</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)]</span>
+                    <span class="p">],</span>
+                    <span class="n">left_bracket</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">langle&quot;</span><span class="p">,</span>
+                    <span class="n">right_bracket</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">rangle&quot;</span>
+        <span class="p">)</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">Group</span><span class="p">(</span><span class="n">m0</span><span class="p">,</span> <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">,</span> <span class="n">m3</span><span class="p">)</span><span class="o">.</span><span class="n">arrange_in_grid</span><span class="p">(</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+    <span class="n">m4</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="n">DOWN</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">m4</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu14.png" src="../_images/mu14.png" />
+</details>
+<br/></div>
+<div class="section" id="tables">
+<h3>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.table.html?highlight=Tables">Official documentation.</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># Table -------------------------------------------------</span>
+    <span class="n">t0</span> <span class="o">=</span> <span class="n">Table</span><span class="p">([</span>
+            <span class="p">[</span><span class="s2">&quot;First&quot;</span><span class="p">,</span> <span class="s2">&quot;Second&quot;</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">&quot;Third&quot;</span><span class="p">,</span> <span class="s2">&quot;Fourth&quot;</span><span class="p">]</span>
+        <span class="p">],</span>
+        <span class="n">row_labels</span><span class="o">=</span><span class="p">[</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;R1&quot;</span><span class="p">),</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;R2&quot;</span><span class="p">)],</span>
+        <span class="n">col_labels</span><span class="o">=</span><span class="p">[</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;C1&quot;</span><span class="p">),</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;C2&quot;</span><span class="p">)],</span>
+        <span class="n">top_left_entry</span><span class="o">=</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;TOP&quot;</span><span class="p">))</span>
+    <span class="c1">#                     (row,col) not start from 0, 1 instead</span>
+    <span class="n">t0</span><span class="o">.</span><span class="n">add_highlighted_cell</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="n">GREEN</span><span class="p">)</span>
+    <span class="c1"># DecimalTable ------------------------------------------</span>
+    <span class="n">x_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">y_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x_vals</span><span class="p">)</span>
+    <span class="n">t1</span> <span class="o">=</span> <span class="n">DecimalTable</span><span class="p">(</span>
+        <span class="p">[</span><span class="n">x_vals</span><span class="p">,</span> <span class="n">y_vals</span><span class="p">],</span>
+        <span class="n">row_labels</span><span class="o">=</span><span class="p">[</span><span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">),</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;f(x)&quot;</span><span class="p">)],</span>
+        <span class="n">include_outer_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">t1</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t1</span><span class="o">.</span><span class="n">get_cell</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">))</span>
+    <span class="c1"># MathTable ---------------------------------------------</span>
+    <span class="n">t2</span> <span class="o">=</span> <span class="n">MathTable</span><span class="p">(</span>
+        <span class="p">[[</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">14</span><span class="p">]],</span>
+        <span class="n">include_outer_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">t2</span><span class="o">.</span><span class="n">get_horizontal_lines</span><span class="p">()[:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">ORANGE</span><span class="p">)</span>
+    <span class="n">t2</span><span class="o">.</span><span class="n">get_vertical_lines</span><span class="p">()[:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">ORANGE</span><span class="p">)</span>
+    <span class="n">t2</span><span class="o">.</span><span class="n">get_vertical_lines</span><span class="p">()[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">PINK</span><span class="p">)</span>
+    <span class="n">t2</span><span class="o">.</span><span class="n">get_vertical_lines</span><span class="p">()[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">YELLOW</span><span class="p">)</span>
+    <span class="n">t2</span><span class="o">.</span><span class="n">get_horizontal_lines</span><span class="p">()[:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_z_index</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1"># MobjectTable ------------------------------------------</span>
+    <span class="n">cross</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
+        <span class="n">Line</span><span class="p">(</span><span class="n">UP</span> <span class="o">+</span> <span class="n">LEFT</span><span class="p">,</span> <span class="n">DOWN</span> <span class="o">+</span> <span class="n">RIGHT</span><span class="p">),</span>
+        <span class="n">Line</span><span class="p">(</span><span class="n">UP</span> <span class="o">+</span> <span class="n">RIGHT</span><span class="p">,</span> <span class="n">DOWN</span> <span class="o">+</span> <span class="n">LEFT</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">BLUE</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">RED</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">cross</span>
+    <span class="n">t3</span> <span class="o">=</span> <span class="n">MobjectTable</span><span class="p">([</span>
+        <span class="p">[</span><span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span><span class="n">b</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span><span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">()],</span>
+        <span class="p">[</span><span class="n">b</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span><span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span><span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">()],</span>
+        <span class="p">[</span><span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span><span class="n">b</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span><span class="n">b</span><span class="o">.</span><span class="n">copy</span><span class="p">()]</span>
+    <span class="p">])</span>
+    <span class="n">t3</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Line</span><span class="p">(</span>
+        <span class="n">t3</span><span class="o">.</span><span class="n">get_corner</span><span class="p">(</span><span class="n">DL</span><span class="p">),</span> <span class="n">t3</span><span class="o">.</span><span class="n">get_corner</span><span class="p">(</span><span class="n">UR</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">RED</span><span class="p">))</span>
+    <span class="n">vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">21</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+    <span class="n">t4</span> <span class="o">=</span> <span class="n">IntegerTable</span><span class="p">(</span>
+        <span class="n">vals</span><span class="p">,</span>
+        <span class="n">include_outer_lines</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
+    <span class="n">grp</span> <span class="o">=</span> <span class="n">Group</span><span class="p">(</span>
+        <span class="n">Group</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">t1</span><span class="p">)</span>    <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+        <span class="n">Group</span><span class="p">(</span><span class="n">t2</span><span class="p">,</span> <span class="n">t3</span><span class="p">,</span> <span class="n">t4</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grp</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu15.png" src="../_images/mu15.png" />
+</details>
+<br/></div>
+<div class="section" id="arcs">
+<h3>Arcs<a class="headerlink" href="#arcs" title="Permalink to this headline">¶</a></h3>
+<p>There are mainly thre types of Arcs:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.geometry.Angle.html">Angle</a></p></li>
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.geometry.Arc.html">Arc</a></p></li>
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.geometry.ArcBetweenPoints.html">ArcBetweenPoints</a></p></li>
+</ul>
+<div class="section" id="angle">
+<h4>Angle<a class="headerlink" href="#angle" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Angle</span></code> has good documentation, I recommend that you see it, there are many examples, for the other two we are going to explain them here.</p>
+</div>
+<div class="section" id="arc">
+<h4>Arc<a class="headerlink" href="#arc" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">number_plane</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">(</span><span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
+
+    <span class="n">arcs</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
+        <span class="n">Arc</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+        <span class="c1"># ---------------------------</span>
+        <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">stroke_opacity</span><span class="o">=</span><span class="mf">0.4</span><span class="p">),</span>
+        <span class="c1">#     start_angle, increment angle</span>
+        <span class="n">Arc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span> <span class="mi">80</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">),</span>
+        <span class="c1"># ---------------------------</span>
+        <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">stroke_opacity</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">),</span>
+        <span class="n">Arc</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">300</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span> <span class="p">(</span><span class="mi">60</span><span class="o">+</span><span class="mi">90</span><span class="p">)</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">),</span>
+        <span class="c1"># ---------------------------</span>
+        <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span><span class="n">stroke_opacity</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">YELLOW</span><span class="p">,</span><span class="n">arc_center</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]),</span>
+        <span class="n">Arc</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span> <span class="mi">60</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span><span class="n">arc_center</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]),</span>
+    <span class="p">)</span>
+
+    <span class="n">dot</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">arcs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">get_arc_center</span><span class="p">(),</span><span class="n">color</span><span class="o">=</span><span class="n">YELLOW</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">number_plane</span><span class="p">,</span><span class="n">arcs</span><span class="p">,</span><span class="n">dot</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu16.png" src="../_images/mu16.png" />
+</details>
+<br/></div>
+<div class="section" id="arcbetweenpoints">
+<h4>ArcBetweenPoints<a class="headerlink" href="#arcbetweenpoints" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">number_plane</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">(</span><span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
+
+    <span class="n">fade_circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">fade_circle</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mf">0.6</span><span class="p">)</span>
+
+    <span class="n">start</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">fade_circle</span><span class="o">.</span><span class="n">point_at_angle</span><span class="p">(</span><span class="mi">50</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="n">ORANGE</span><span class="p">)</span>
+    <span class="n">end</span>   <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">fade_circle</span><span class="o">.</span><span class="n">point_at_angle</span><span class="p">(</span><span class="mi">130</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="n">PINK</span><span class="p">)</span>
+
+    <span class="n">arcbp</span> <span class="o">=</span> <span class="n">ArcBetweenPoints</span><span class="p">(</span>
+        <span class="n">start</span><span class="o">.</span><span class="n">get_center</span><span class="p">(),</span>
+        <span class="n">end</span><span class="o">.</span><span class="n">get_center</span><span class="p">(),</span>
+        <span class="c1"># 130 - 50 = 80</span>
+        <span class="n">angle</span><span class="o">=</span><span class="mi">80</span><span class="o">*</span><span class="n">DEGREES</span>
+    <span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">number_plane</span><span class="p">,</span><span class="n">fade_circle</span><span class="p">,</span><span class="n">arcbp</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu17.png" src="../_images/mu17.png" />
+</details>
+<br/></div>
+</div>
+<div class="section" id="codemobject">
+<h3>CodeMobject<a class="headerlink" href="#codemobject" title="Permalink to this headline">¶</a></h3>
+<p>This have many options, I recommend reading the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.svg.code_mobject.Code.html?highlight=Code">official documentation</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyScene</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># It is important to omit the indentation</span>
+        <span class="n">code</span> <span class="o">=</span> \
+<span class="sd">&#39;&#39;&#39;from manim import *</span>
+
+<span class="sd">def custom_mob(mob):</span>
+<span class="sd">    mob.scale(3)</span>
+<span class="sd">    mob.set_color(RED)</span>
+
+<span class="sd">class MyScene(Scene):</span>
+<span class="sd">    def construct(self):</span>
+<span class="sd">        s = Square()</span>
+<span class="sd">        self.play(FadeIn(s))</span>
+<span class="sd">        self.play(s.animate.scale(2))</span>
+<span class="sd">        self.play(ApplyFunc(custom_mob,s))</span>
+<span class="sd">        self.wait()</span>
+<span class="sd">&#39;&#39;&#39;</span>
+        <span class="n">rendered_code</span> <span class="o">=</span> <span class="n">Code</span><span class="p">(</span>
+                                <span class="n">code</span><span class="o">=</span><span class="n">code</span><span class="p">,</span>
+                                <span class="n">tab_width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                                <span class="n">background</span><span class="o">=</span><span class="s2">&quot;window&quot;</span><span class="p">,</span>
+                                <span class="n">language</span><span class="o">=</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span>
+                                <span class="n">font</span><span class="o">=</span><span class="s2">&quot;Monospace&quot;</span><span class="p">,</span>
+                                <span class="n">style</span><span class="o">=</span><span class="s2">&quot;monokai&quot;</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">rendered_code</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu18.png" src="../_images/mu18.png" />
+</details>
+<br/></div>
+<div class="section" id="dashedvmobject">
+<h3>DashedVMobject<a class="headerlink" href="#dashedvmobject" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">dvgrp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
+        <span class="n">DashedVMobject</span><span class="p">(</span><span class="n">Triangle</span><span class="p">()),</span>
+        <span class="n">DashedVMobject</span><span class="p">(</span><span class="n">Circle</span><span class="p">(),</span><span class="n">num_dashes</span><span class="o">=</span><span class="mi">30</span><span class="p">),</span>
+        <span class="n">DashedVMobject</span><span class="p">(</span><span class="n">Square</span><span class="p">(),</span><span class="n">num_dashes</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span><span class="n">dashed_ratio</span><span class="o">=</span><span class="mf">0.1</span><span class="p">),</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">frame_width</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">dvgrp</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/mu19.png" src="../_images/mu19.png" />
+</details>
+<br/></div>
+<div class="section" id="cutout">
+<h3>Cutout<a class="headerlink" href="#cutout" title="Permalink to this headline">¶</a></h3>
+<p>It creates holes in a VMobject using other VMobjects.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">holes</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">vm</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">vm</span> <span class="ow">in</span> <span class="p">[</span><span class="n">Triangle</span><span class="p">(),</span><span class="n">Circle</span><span class="p">(),</span><span class="n">RegularPolygon</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span><span class="n">Star</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+    <span class="p">])</span><span class="o">.</span><span class="n">arrange_in_grid</span><span class="p">(</span><span class="n">cols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">vmob_to_cut</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Cutout</span><span class="p">(</span><span class="n">vmob_to_cut</span><span class="p">,</span> <span class="o">*</span><span class="n">holes</span><span class="p">,</span> <span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">,</span> <span class="n">stroke_color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">DrawBorderThenFill</span><span class="p">(</span><span class="n">c</span><span class="p">),</span> <span class="n">run_time</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/mu19.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="other-mobjects">
+<h3>Other Mobjects<a class="headerlink" href="#other-mobjects" title="Permalink to this headline">¶</a></h3>
+<p>There are more Mobjects, each new version Mobjects are added and bugs are corrected for those that already exist. I recommend reading the <a class="reference external" href="https://docs.manim.community/en/stable/reference_index/mobjects.html">official documentation</a> to learn more. In this chapter I showed you the most common ones and the ones that you are going to use the most in your animations.</p>
+</div>
+</div>
+<div class="section" id="more-class-animations">
+<h2>More Class Animations<a class="headerlink" href="#more-class-animations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creation">
+<h3>Creation<a class="headerlink" href="#creation" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.creation.html">Official documentation</a>.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.creation.AddTextLetterByLetter.html#manim.animation.creation.AddTextLetterByLetter">AddTextLetterByLetter</a>: Add letter by letter without animation (like a typewriter), you can control the time between letters.</p></li>
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.creation.Write.html?highlight=Write">Write</a>: Generally used to display text.</p></li>
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.creation.Create.html?highlight=Create">Create</a>: It is used to display VMobjects that preferably have no fill.</p></li>
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.creation.DrawBorderThenFill.html#manim.animation.creation.DrawBorderThenFill">DrawBorderThenFill</a>: Apply a <code class="docutils literal notranslate"><span class="pre">Create</span></code> without adding the fill, and then add the fill with a <code class="docutils literal notranslate"><span class="pre">FadeIn</span></code>.</p></li>
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.fading.FadeIn.html#manim.animation.fading.FadeIn">FadeIn</a>: You show a Mobject by adding opacity, you can add it statically, with movement, or with an initial scale.</p></li>
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.growing.html">GrowFromCenter</a>: Show the Mobject from a very small size by making it grow.</p></li>
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.growing.GrowFromEdge.html#manim.animation.growing.GrowFromEdge">GrowFromEdge</a>:  Same as <code class="docutils literal notranslate"><span class="pre">GrowFromCenter</span></code>, but instead of growing the Mobject from the center, it does so from some edge of the Mobject.</p></li>
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.growing.GrowFromPoint.html#manim.animation.growing.GrowFromPoint">GrowFromPoint</a>: Same as the previous ones, only here you are more free to say the exact coordinate of where you want your Mobject to grow.</p></li>
+<li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.growing.SpinInFromNothing.html#manim.animation.growing.SpinInFromNothing">SpinInFromNothing</a>: Same as <code class="docutils literal notranslate"><span class="pre">GrowFromCenter</span></code>, only it adds a spiral movement.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you find that few options, don’t worry, we’ll learn to create our own creation animations later.</p>
+</div>
+</div>
+<div class="section" id="indication">
+<h3>Indication<a class="headerlink" href="#indication" title="Permalink to this headline">¶</a></h3>
+<p>These animations generate a temporary transformation that is intended to highlight a Mobject.</p>
+<p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.indication.html">Official documentation of each one</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">indications</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="c1"># Indications that need only the Mobject to be highlighted</span>
+        <span class="n">ApplyWave</span><span class="p">,</span>
+        <span class="n">Circumscribe</span><span class="p">,</span>
+        <span class="n">FocusOn</span><span class="p">,</span>
+        <span class="n">Indicate</span><span class="p">,</span>
+        <span class="n">Wiggle</span><span class="p">,</span>
+        <span class="c1"># Indications that need another argument</span>
+        <span class="n">ShowPassingFlash</span><span class="p">,</span> <span class="c1"># This needs a background Mobject, such as Underline or a VMobject with surround</span>
+        <span class="n">Flash</span><span class="p">,</span> <span class="c1"># This needs a coord</span>
+    <span class="p">]</span>
+    <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="n">Tex</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indications</span><span class="p">]</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">indications</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">is</span> <span class="n">Flash</span><span class="p">:</span>
+            <span class="c1"># Flash needs a coord</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Flash</span><span class="p">(</span><span class="n">UP</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">indications</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">is</span> <span class="n">ShowPassingFlash</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ShowPassingFlash</span><span class="p">(</span><span class="n">Underline</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="n">i</span><span class="p">])))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+                <span class="n">ShowPassingFlash</span><span class="p">(</span>
+                    <span class="n">RoundedRectangle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span><span class="o">.</span><span class="n">surround</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">stretch</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">1.3</span><span class="p">),</span>
+                    <span class="n">time_width</span><span class="o">=</span><span class="mf">0.5</span>
+                <span class="p">),</span>
+                <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">indications</span><span class="p">[</span><span class="n">i</span><span class="p">](</span><span class="n">names</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">AnimationGroup</span><span class="p">(</span>
+            <span class="n">FadeOut</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">shift</span><span class="o">=</span><span class="n">UP</span><span class="o">*</span><span class="mf">1.5</span><span class="p">),</span>
+            <span class="n">FadeIn</span><span class="p">(</span><span class="n">names</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)],</span> <span class="n">shift</span><span class="o">=</span><span class="n">UP</span><span class="o">*</span><span class="mf">1.5</span><span class="p">),</span>
+        <span class="p">))</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/mu22.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Again, if you think that there are few animations, we will learn how to create your own animations of this type.</p>
+</div>
+</div>
+<div class="section" id="remove">
+<h3>Remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h3>
+<p>They are basically the same as the creation ones, but with an inverted <code class="docutils literal notranslate"><span class="pre">rate_func=lambda</span> <span class="pre">t:</span> <span class="pre">func(1-t)</span></code>, like <code class="docutils literal notranslate"><span class="pre">Uncreate</span></code> or <code class="docutils literal notranslate"><span class="pre">Unwrite</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_12_2d_graphs.html" class="btn btn-neutral float-right" title="Basic 2D Graphs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="_10_methods_as_animations.html" class="btn btn-neutral float-left" title="Methods as animations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Vázquez.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

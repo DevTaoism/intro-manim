@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Groups and VGroups &mdash; ManimCE Professional Course - Basics  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Text and Tex" href="_8_text_and_tex.html" />
+    <link rel="prev" title="Import assets" href="_6_assets.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_2_basic_mobjects.html">Basic attributes of Mobjects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_3_camera_options.html">Basic Camera and render settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_4_layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_5_rate_functions.html">Rate functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_6_assets.html">Import assets</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Groups and VGroups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#groups">Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vgroups">VGroups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#as-arrays">As arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-list-comprehension">Using list comprehension</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_8_text_and_tex.html">Text and Tex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_9_transformations.html">Transformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_10_methods_as_animations.html">Methods as animations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_11_manim_utils.html">Manim utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_12_2d_graphs.html">Basic 2D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_13_3d_graphs.html">Basic 3D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ManimCE Professional Course - Basics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Groups and VGroups</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/contents/_7_groups.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="groups-and-vgroups">
+<h1>Groups and VGroups<a class="headerlink" href="#groups-and-vgroups" title="Permalink to this headline">¶</a></h1>
+<p>Sometimes it is very necessary to group several <code class="docutils literal notranslate"><span class="pre">Mobjects</span></code> to apply some Manim method to them.</p>
+<p>For example, suppose we want to apply a <code class="docutils literal notranslate"><span class="pre">shift</span></code> to several <code class="docutils literal notranslate"><span class="pre">Mobjects</span></code>, it is true that we can group them in an array and make a loop, but it is much faster to group them in a <code class="docutils literal notranslate"><span class="pre">Group</span></code> and apply the <code class="docutils literal notranslate"><span class="pre">shift</span></code> to that <code class="docutils literal notranslate"><span class="pre">Group</span></code>.</p>
+<p>The difference between <code class="docutils literal notranslate"><span class="pre">Group</span></code> and <code class="docutils literal notranslate"><span class="pre">VGroup</span></code> is simple, <code class="docutils literal notranslate"><span class="pre">Group</span></code> supports any <code class="docutils literal notranslate"><span class="pre">Mobject</span></code>, such as <code class="docutils literal notranslate"><span class="pre">ImageMobject</span></code> and <code class="docutils literal notranslate"><span class="pre">VMobjects</span></code>, but <code class="docutils literal notranslate"><span class="pre">VGroup</span></code> only supports <code class="docutils literal notranslate"><span class="pre">VMobjects</span></code>.</p>
+<div class="section" id="groups">
+<h2>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Group</span></code> support any method of Mobjects, such as <code class="docutils literal notranslate"><span class="pre">shift</span></code>, <code class="docutils literal notranslate"><span class="pre">scale</span></code>, <code class="docutils literal notranslate"><span class="pre">move_to</span></code>, <code class="docutils literal notranslate"><span class="pre">next_to</span></code>, <code class="docutils literal notranslate"><span class="pre">align_to</span></code>, etc. However you cannot apply VMobjects methods to them, such as <code class="docutils literal notranslate"><span class="pre">set_stroke</span></code> or <code class="docutils literal notranslate"><span class="pre">set_fill</span></code>, if you want to use those methods then you will have to use a <code class="docutils literal notranslate"><span class="pre">VGroup</span></code>.</p>
+<p>Two additional methods that are very useful are <code class="docutils literal notranslate"><span class="pre">arrange</span></code> and <code class="docutils literal notranslate"><span class="pre">arrange_in_grid</span></code>, they work quite simply:</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+<video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+    <source src="../_static/basic_videos/ArrangeScene.mp4" type="video/mp4">
+</video>
+</div>
+<br/><p>It should be noted that when we apply <code class="docutils literal notranslate"><span class="pre">arrange</span></code> or <code class="docutils literal notranslate"><span class="pre">arrange_in_grid</span></code>, all Mobjects move to the center of the screen.</p>
+</div>
+<div class="section" id="vgroups">
+<h2>VGroups<a class="headerlink" href="#vgroups" title="Permalink to this headline">¶</a></h2>
+<p>They are exactly the same as Groups, but you can apply the VMobjects methods, such as <code class="docutils literal notranslate"><span class="pre">set_stroke</span></code>, <code class="docutils literal notranslate"><span class="pre">set_fill</span></code>, <code class="docutils literal notranslate"><span class="pre">set_style</span></code>, etc.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">grp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
+        <span class="n">Rectangle</span><span class="p">(),</span> <span class="n">Circle</span><span class="p">(),</span> <span class="n">Triangle</span><span class="p">(),</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">),</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">),</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="n">grp</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span>
+        <span class="n">fill_opacity</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">stroke_width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+        <span class="n">stroke_color</span><span class="o">=</span><span class="n">PURPLE</span>
+    <span class="p">)</span>
+    <span class="n">grp</span><span class="o">.</span><span class="n">arrange_in_grid</span><span class="p">(</span><span class="n">cols</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">grp</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_width</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grp</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/grp1.png" src="../_images/grp1.png" />
+</div>
+<div class="section" id="as-arrays">
+<h2>As arrays<a class="headerlink" href="#as-arrays" title="Permalink to this headline">¶</a></h2>
+<p>Another advantage is that you can add, select and remove elements as you would with an array.</p>
+<ul class="simple">
+<li><p>To add elements use <code class="docutils literal notranslate"><span class="pre">Group.add(some_mobject)</span></code></p></li>
+<li><p>To remove elements, use <code class="docutils literal notranslate"><span class="pre">Group.remove(some_mobject)</span></code>, with the indication that <code class="docutils literal notranslate"><span class="pre">some_mobject</span></code> must already be included in the <code class="docutils literal notranslate"><span class="pre">Group</span></code>.</p></li>
+<li><p>To select an item use <code class="docutils literal notranslate"><span class="pre">Group[i]</span></code> where <code class="docutils literal notranslate"><span class="pre">i</span></code> is a number, or a range, like <code class="docutils literal notranslate"><span class="pre">Group[3:5]</span></code>. If you use range then the return is another <code class="docutils literal notranslate"><span class="pre">Group</span></code> with those elements.</p></li>
+</ul>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+<video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+    <source src="../_static/basic_videos/ArrangeScenex.mp4" type="video/mp4">
+</video>
+</div>
+<br/></div>
+<div class="section" id="using-list-comprehension">
+<h2>Using list comprehension<a class="headerlink" href="#using-list-comprehension" title="Permalink to this headline">¶</a></h2>
+<p>This technique is quite useful when we need to create Groups more quickly.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">cycle</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="n">cycle</span><span class="p">([</span><span class="n">RED</span><span class="p">,</span><span class="n">TEAL</span><span class="p">,</span><span class="n">ORANGE</span><span class="p">,</span><span class="n">PINK</span><span class="p">])</span>
+    <span class="n">grp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">Text</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="nb">next</span><span class="p">(</span><span class="n">colors</span><span class="p">))</span>
+            <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="s2">&quot;ManimCE&quot;</span>
+    <span class="p">])</span>
+    <span class="n">grp</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">aligned_edge</span><span class="o">=</span><span class="n">DOWN</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grp</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/grp2.png" src="../_images/grp2.png" />
+<p>List comprehensions are quite useful in Manim, we will use them later in other chapters.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_8_text_and_tex.html" class="btn btn-neutral float-right" title="Text and Tex" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="_6_assets.html" class="btn btn-neutral float-left" title="Import assets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Vázquez.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

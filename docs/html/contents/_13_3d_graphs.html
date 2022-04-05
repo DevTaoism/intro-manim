@@ -1,0 +1,489 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Basic 3D Graphs &mdash; ManimCE Professional Course - Basics  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Basic Updaters" href="_14_basic_updaters.html" />
+    <link rel="prev" title="Basic 2D Graphs" href="_12_2d_graphs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_2_basic_mobjects.html">Basic attributes of Mobjects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_3_camera_options.html">Basic Camera and render settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_4_layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_5_rate_functions.html">Rate functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_6_assets.html">Import assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_7_groups.html">Groups and VGroups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_8_text_and_tex.html">Text and Tex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_9_transformations.html">Transformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_10_methods_as_animations.html">Methods as animations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_11_manim_utils.html">Manim utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_12_2d_graphs.html">Basic 2D Graphs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic 3D Graphs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setting-camera">Setting camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#moving-camera">Moving camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#threedaxes">ThreeDAxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parametric-functions">Parametric functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#surfaces">Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#utilities">Utilities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fix-mobject-to-camera">Fix Mobject to camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#arrow3d">Arrow3D</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ManimCE Professional Course - Basics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Basic 3D Graphs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/contents/_13_3d_graphs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-3d-graphs">
+<h1>Basic 3D Graphs<a class="headerlink" href="#basic-3d-graphs" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you are going to create very complex 3D animations, it is not recommended to use Manim, there are other much better tools, such as <a class="reference external" href="https://www.blender.org/">Blender</a>. Use Manim when you really need it. In addition to the fact that a powerful computer is needed to be able to perform these scenes, if not, the rendering of the videos will be excessively slow. In later versions of Manim, the version with OpenGL will be available, which will allow us to use animations with the 3D camera much faster.</p>
+</div>
+<div class="section" id="setting-camera">
+<h2>Setting camera<a class="headerlink" href="#setting-camera" title="Permalink to this headline">¶</a></h2>
+<p>In order to graph 3D scenes we need to activate the 3D camera, this is very simple, we just have to build our scenes using <code class="docutils literal notranslate"><span class="pre">ThreeDScene</span></code> instead of <code class="docutils literal notranslate"><span class="pre">Scene</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">My3DScene</span><span class="p">(</span><span class="n">ThreeDScene</span><span class="p">):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>If you do this and make any animation, you will not notice the difference, for this you have to move the camera. For this, we are going to use the 3D axes, and we are going to compare by changing the camera angles.</p>
+<img alt="../_images/tds1.png" src="../_images/tds1.png" />
+<img alt="../_images/tds2.png" src="../_images/tds2.png" />
+<img alt="../_images/tds3.png" src="../_images/tds3.png" />
+<p>From now on we are going to skip the first 4 lines:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">My3DScene</span><span class="p">(</span><span class="n">ThreeDScene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">axes_3d</span> <span class="o">=</span> <span class="n">ThreeDAxes</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">axes_3d</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/tds4.png" src="../_images/tds4.png" />
+<p>Recapping, the angles are like this:</p>
+<img alt="../_images/angles_camera.png" src="../_images/angles_camera.png" />
+ <div style="position: relative; padding-bottom: 56.25%; height: 0;
+     overflow: hidden; max-width: 100%; height: auto;
+     border-width: 4px; border-style: solid; border-color: red;
+ ">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/_3DCamera.mp4" type="video/mp4">
+ </video>
+</div>
+<br/></div>
+<div class="section" id="moving-camera">
+<h2>Moving camera<a class="headerlink" href="#moving-camera" title="Permalink to this headline">¶</a></h2>
+<p>Note that by default <code class="docutils literal notranslate"><span class="pre">theta=-90*DEGREES</span></code>.</p>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0;
+     overflow: hidden; max-width: 100%; height: auto;
+     border-width: 4px; border-style: solid; border-color: red;
+ ">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/MovingCameraExample.mp4" type="video/mp4">
+ </video>
+</div>
+<br/><p>You can add animations when you perform the camera movement:</p>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0;
+     overflow: hidden; max-width: 100%; height: auto;
+     border-width: 4px; border-style: solid; border-color: red;
+ ">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/MC2.mp4" type="video/mp4">
+ </video>
+</div>
+<br/></div>
+<div class="section" id="threedaxes">
+<h2>ThreeDAxes<a class="headerlink" href="#threedaxes" title="Permalink to this headline">¶</a></h2>
+<p>If you are going to graph <strong>surfaces</strong>, the axes must have a <code class="docutils literal notranslate"><span class="pre">unit_size=1</span></code>, that is, each unit of the camera must be a unit of the graphs, this is because ThreeDAxes does not have a method to create surfaces, so the surfaces use the camera’s units of measure.</p>
+<p>If you are only going to graph parametric curves or vectors you can use any <code class="docutils literal notranslate"><span class="pre">unit_size</span></code>, you only have to be careful in the Z axis, since <code class="docutils literal notranslate"><span class="pre">Axes.c2p</span></code> does not contemplate the Z coordinate:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">axes_3d</span> <span class="o">=</span> <span class="n">ThreeDAxes</span><span class="p">(</span>
+        <span class="c1"># unit_size=1 in Z axis</span>
+        <span class="n">z_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
+        <span class="n">z_length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_camera_orientation</span><span class="p">(</span><span class="n">phi</span><span class="o">=</span><span class="mi">70</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span><span class="n">theta</span><span class="o">=</span><span class="mi">240</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">)</span>
+
+    <span class="n">main_line</span>        <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">ORIGIN</span><span class="p">,</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">OUT</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">)</span>
+    <span class="n">vertical_line</span>    <span class="o">=</span> <span class="n">DashedLine</span><span class="p">(</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+    <span class="n">horizontal_line</span>  <span class="o">=</span> <span class="n">DashedLine</span><span class="p">(</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+    <span class="n">fall_line</span>        <span class="o">=</span> <span class="n">DashedLine</span><span class="p">(</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="n">OUT</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/MC3.png" src="../_images/MC3.png" />
+</details>
+<br/></div>
+<div class="section" id="parametric-functions">
+<h2>Parametric functions<a class="headerlink" href="#parametric-functions" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">axes_3d</span> <span class="o">=</span> <span class="n">ThreeDAxes</span><span class="p">()</span>
+    <span class="n">func</span> <span class="o">=</span> <span class="n">axes_3d</span><span class="o">.</span><span class="n">get_parametric_curve</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+            <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">t</span><span class="p">),</span>
+            <span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="p">),</span>
+            <span class="n">t</span><span class="o">/</span><span class="mi">3</span>
+        <span class="p">]),</span>
+        <span class="n">t_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">PI</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">PI</span><span class="p">,</span><span class="mf">0.01</span><span class="p">),</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">RED</span>
+    <span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_camera_orientation</span><span class="p">(</span><span class="n">phi</span><span class="o">=</span><span class="mi">70</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span><span class="n">theta</span><span class="o">=</span><span class="mi">240</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">axes_3d</span><span class="p">,</span>
+        <span class="n">func</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">move_camera</span><span class="p">(</span><span class="n">theta</span><span class="o">=</span><span class="mi">120</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span><span class="n">run_time</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="n">rate_func</span><span class="o">=</span><span class="n">linear</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">move_camera</span><span class="p">(</span><span class="n">theta</span><span class="o">=</span><span class="mi">90</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span><span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">run_time</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">rate_func</span><span class="o">=</span><span class="n">smooth</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/MC4.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="surfaces">
+<h2>Surfaces<a class="headerlink" href="#surfaces" title="Permalink to this headline">¶</a></h2>
+<p>If you are going to graph <strong>Surfaces</strong> then it is necessary to normalize all <code class="docutils literal notranslate"><span class="pre">unit_size</span></code> on the axes to 1.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">axes_3d</span> <span class="o">=</span> <span class="n">ThreeDAxes</span><span class="p">(</span>
+        <span class="n">x_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
+        <span class="n">x_length</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+        <span class="n">y_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
+        <span class="n">y_length</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">z_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
+        <span class="n">z_length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_camera_orientation</span><span class="p">(</span><span class="n">phi</span><span class="o">=</span><span class="mi">70</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span><span class="n">theta</span><span class="o">=</span><span class="mi">240</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">)</span>
+
+    <span class="n">surface</span> <span class="o">=</span> <span class="n">ParametricSurface</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">TAU</span> <span class="o">*</span> <span class="n">v</span><span class="p">),</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">TAU</span> <span class="o">*</span> <span class="n">v</span><span class="p">),</span>
+            <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">u</span><span class="p">)</span>
+        <span class="p">]),</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="n">paraboloid</span> <span class="o">=</span> <span class="n">ParametricSurface</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">*</span><span class="n">u</span><span class="p">,</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">*</span><span class="n">u</span><span class="p">,</span>
+            <span class="n">u</span><span class="o">**</span><span class="mi">2</span>
+        <span class="p">]),</span>
+        <span class="n">v_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">TAU</span><span class="p">),</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="n">para_hyp</span> <span class="o">=</span> <span class="n">ParametricSurface</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+            <span class="n">u</span><span class="p">,</span>
+            <span class="n">v</span><span class="p">,</span>
+            <span class="n">u</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+        <span class="p">]),</span>
+        <span class="n">u_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
+        <span class="n">v_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="n">cone</span> <span class="o">=</span> <span class="n">ParametricSurface</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+            <span class="n">u</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">v</span><span class="p">),</span>
+            <span class="n">u</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">v</span><span class="p">),</span>
+            <span class="n">u</span>
+        <span class="p">]),</span>
+        <span class="n">u_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
+        <span class="n">v_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">TAU</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="n">sphere</span> <span class="o">=</span> <span class="n">ParametricSurface</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+            <span class="mf">1.5</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">u</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">v</span><span class="p">),</span>
+            <span class="mf">1.5</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">u</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">v</span><span class="p">),</span>
+            <span class="mf">1.5</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+        <span class="p">]),</span>
+        <span class="c1">#Resolution of the surfaces</span>
+        <span class="n">u_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span>
+        <span class="n">v_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">TAU</span><span class="p">),</span>
+    <span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">axes_3d</span><span class="p">,</span><span class="n">surface</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">Transform</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span> <span class="n">paraboloid</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">Transform</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span> <span class="n">para_hyp</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">Transform</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span> <span class="n">cone</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">Transform</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span> <span class="n">sphere</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/MC5.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="utilities">
+<h2>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fix-mobject-to-camera">
+<h3>Fix Mobject to camera<a class="headerlink" href="#fix-mobject-to-camera" title="Permalink to this headline">¶</a></h3>
+<p>Using <code class="docutils literal notranslate"><span class="pre">ThreeDScene.add_fixed_in_frame_mobjects</span></code> you make mobs always look at the screen fixed.</p>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0;
+     overflow: hidden; max-width: 100%; height: auto;
+     border-width: 4px; border-style: solid; border-color: red;
+ ">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/MC6.mp4" type="video/mp4">
+ </video>
+</div>
+<br/></div>
+<div class="section" id="arrow3d">
+<h3>Arrow3D<a class="headerlink" href="#arrow3d" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">axes_3d</span> <span class="o">=</span> <span class="n">ThreeDAxes</span><span class="p">(</span>
+        <span class="c1"># unit_size=1 in Z axis</span>
+        <span class="n">z_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
+        <span class="n">z_length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_camera_orientation</span><span class="p">(</span><span class="n">phi</span><span class="o">=</span><span class="mi">70</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span><span class="n">theta</span><span class="o">=</span><span class="mi">240</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">)</span>
+    <span class="c1"># Arrows3Ds are surfaces, so the more you add, the longer it will take to render.</span>
+    <span class="n">main_line</span>        <span class="o">=</span> <span class="n">Arrow3D</span><span class="p">(</span><span class="n">ORIGIN</span><span class="p">,</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">OUT</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">GREEN</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span><span class="n">base_radius</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+    <span class="n">vertical_line</span>    <span class="o">=</span> <span class="n">Arrow3D</span><span class="p">(</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+    <span class="n">horizontal_line</span>  <span class="o">=</span> <span class="n">Arrow3D</span><span class="p">(</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+    <span class="n">fall_line</span>        <span class="o">=</span> <span class="n">Arrow3D</span><span class="p">(</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">axes_3d</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="n">OUT</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">axes_3d</span><span class="p">,</span>
+        <span class="n">main_line</span><span class="p">,</span>
+        <span class="n">vertical_line</span><span class="p">,</span>
+        <span class="n">horizontal_line</span><span class="p">,</span>
+        <span class="n">fall_line</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">move_camera</span><span class="p">(</span><span class="n">theta</span><span class="o">=</span><span class="mi">30</span><span class="o">*</span><span class="n">DEGREES</span><span class="p">,</span><span class="n">run_time</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/MC8.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_14_basic_updaters.html" class="btn btn-neutral float-right" title="Basic Updaters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="_12_2d_graphs.html" class="btn btn-neutral float-left" title="Basic 2D Graphs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Vázquez.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

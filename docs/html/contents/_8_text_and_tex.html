@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Text and Tex &mdash; ManimCE Professional Course - Basics  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Transformations" href="_9_transformations.html" />
+    <link rel="prev" title="Groups and VGroups" href="_7_groups.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_2_basic_mobjects.html">Basic attributes of Mobjects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_3_camera_options.html">Basic Camera and render settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_4_layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_5_rate_functions.html">Rate functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_6_assets.html">Import assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_7_groups.html">Groups and VGroups</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Text and Tex</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#text">Text</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fonts">Fonts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-use-it">How to use it</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#as-array">As array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#line-spacing">Line spacing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#slant-and-weight">Slant and Weight</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#text-to">Text to *</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#markuptext">MarkupText</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tex">Tex</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#templates">Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enviroments">Enviroments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tex-as-array">Tex as array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tex-to-color-map">Tex to color map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mathtex">MathTex</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_9_transformations.html">Transformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_10_methods_as_animations.html">Methods as animations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_11_manim_utils.html">Manim utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_12_2d_graphs.html">Basic 2D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_13_3d_graphs.html">Basic 3D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ManimCE Professional Course - Basics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Text and Tex</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/contents/_8_text_and_tex.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="text-and-tex">
+<h1>Text and Tex<a class="headerlink" href="#text-and-tex" title="Permalink to this headline">¶</a></h1>
+<p>There are three ways to create texts in Manim:</p>
+<ul class="simple">
+<li><p>With system fonts: <code class="docutils literal notranslate"><span class="pre">Text</span></code>.</p></li>
+<li><p>With PangoMarkup: <code class="docutils literal notranslate"><span class="pre">MarkupText</span></code>.</p></li>
+<li><p>With LaTeX: <code class="docutils literal notranslate"><span class="pre">Tex</span></code> and <code class="docutils literal notranslate"><span class="pre">MathTex</span></code>.</p></li>
+</ul>
+<p>The simplest is with <code class="docutils literal notranslate"><span class="pre">Text</span></code>, so we’ll start with that.</p>
+<div class="section" id="text">
+<h2>Text<a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fonts">
+<h3>Fonts<a class="headerlink" href="#fonts" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Text</span></code> is a subclass of <code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code>. The text is rendered using <strong>Pango</strong> and uses the fonts you have installed.</p>
+<p>To see all the fonts you can use the command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -c <span class="s2">&quot;import manimpango; from pprint import pprint; pprint(manimpango.list_fonts())&quot;</span>
+</pre></div>
+</div>
+<p>It will give you an output like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Academy Engraved LET&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Al Bayan&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Al Nile&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Al Tarikh&#39;</span><span class="p">,</span>
+<span class="s1">&#39;American Typewriter&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Andale Mono&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Apple Braille&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Apple Chancery&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Apple Color Emoji&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Apple SD Gothic Neo&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Apple Symbols&#39;</span><span class="p">,</span>
+<span class="s1">&#39;AppleGothic&#39;</span><span class="p">,</span>
+<span class="s1">&#39;AppleMyungjo&#39;</span><span class="p">,</span>
+<span class="o">....</span>
+<span class="o">....</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>If you use a shell like BASH (or similar) you can do something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;import manimpango; from pprint import pprint; pprint(manimpango.list_fonts())&quot;</span> <span class="o">|</span> <span class="n">grep</span> <span class="o">-</span><span class="n">i</span> <span class="n">arial</span>
+</pre></div>
+</div>
+<p>To filter your search.</p>
+</div>
+<div class="section" id="how-to-use-it">
+<h3>How to use it<a class="headerlink" href="#how-to-use-it" title="Permalink to this headline">¶</a></h3>
+<p>Since it is an <code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code>, then you can use all the methods of the VMobjects, i.e. set the <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code>, <code class="docutils literal notranslate"><span class="pre">fill_opacity</span></code>, etc. By default the stroke is 0, but you can change that yourself.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>I invite you to change the color, stroke width, fill color, stroke color, etc. Either using methods after the instance, or at the time of the instance.</p>
+<p>To indicate the font we want to use, we can indicate it in the “font” parameter:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="s2">&quot;Arial&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="as-array">
+<h3>As array<a class="headerlink" href="#as-array" title="Permalink to this headline">¶</a></h3>
+<p>Text can be understood as SVG arrays, and thanks to this you can select each letter:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="s2">&quot;Arial&quot;</span><span class="p">)</span>
+    <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">RED</span><span class="p">)</span>
+    <span class="n">t</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">TEAL</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/tx1.png" src="../_images/tx1.png" />
+</details>
+<br/></div>
+<div class="section" id="line-spacing">
+<h3>Line spacing<a class="headerlink" href="#line-spacing" title="Permalink to this headline">¶</a></h3>
+<p>If the text is long enough you can use triple quotes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+<span class="sd">        Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s,</span>
+<span class="sd">        when an unknown printer took a galley of type and scrambled it to make a</span>
+<span class="sd">        type specimen book.</span>
+<span class="sd">        &quot;&quot;&quot;</span><span class="p">,</span>
+        <span class="n">line_spacing</span><span class="o">=</span><span class="mf">1.3</span> <span class="c1"># space between lines</span>
+    <span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_width</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">RED</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/tx2.png" src="../_images/tx2.png" />
+</details>
+<br/><p>But if you want to do it in a single line, you can do it using <code class="docutils literal notranslate"><span class="pre">\n</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
+        <span class="s2">&quot;Lorem Ipsum is simply</span><span class="se">\n</span><span class="s2">dummy text of the printing&quot;</span><span class="p">,</span>
+        <span class="n">line_spacing</span><span class="o">=</span><span class="mf">1.3</span> <span class="c1"># space between lines</span>
+    <span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_width</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/tx3.png" src="../_images/tx3.png" />
+</details>
+<br/></div>
+<div class="section" id="slant-and-weight">
+<h3>Slant and Weight<a class="headerlink" href="#slant-and-weight" title="Permalink to this headline">¶</a></h3>
+<p>Slant is the style of the Text, and it can be NORMAL (the default), <em>ITALIC</em> or <em>OBLIQUE</em>. Usually, for many fonts both <em>ITALIC</em> and <em>OBLIQUE</em> look similar, but <em>ITALIC</em> uses Roman Style, whereas <em>OBLIQUE</em> uses Italic Style.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
+        <span class="s2">&quot;Lorem Ipsum is simply</span><span class="se">\n</span><span class="s2">dummy text of the printing&quot;</span><span class="p">,</span>
+        <span class="n">line_spacing</span><span class="o">=</span><span class="mf">1.3</span><span class="p">,</span> <span class="c1"># space between lines</span>
+        <span class="n">slant</span><span class="o">=</span><span class="n">ITALIC</span>
+    <span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_width</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/tx4.png" src="../_images/tx4.png" />
+</details>
+<br/><p>The different types of weight can be obtained from ManimPango:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">manimpango</span> <span class="k">as</span> <span class="nn">mp</span>
+    <span class="n">weight_list</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="nb">sorted</span><span class="p">(</span>
+            <span class="p">{</span>
+                <span class="n">weight</span><span class="p">:</span> <span class="n">mp</span><span class="o">.</span><span class="n">Weight</span><span class="p">(</span><span class="n">weight</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+                <span class="k">for</span> <span class="n">weight</span> <span class="ow">in</span> <span class="n">mp</span><span class="o">.</span><span class="n">Weight</span>
+            <span class="p">}</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="p">)</span>
+
+    <span class="n">grp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+        <span class="n">Text</span><span class="p">(</span><span class="n">weight</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">weight</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="s2">&quot;Open Sans&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">weight</span> <span class="ow">in</span> <span class="n">weight_list</span>
+    <span class="p">])</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+    <span class="n">grp</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_height</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grp</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/tx5.png" src="../_images/tx5.png" />
+</details>
+<br/></div>
+<div class="section" id="text-to">
+<h3>Text to *<a class="headerlink" href="#text-to" title="Permalink to this headline">¶</a></h3>
+<p>There are some functions that allow us to manipulate sections of text in a simple way, however, if there are repetitions of text, these functions may not behave correctly.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">grp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
+        <span class="c1"># Text to color</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="n">t2c</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;[1:-1]&quot;</span><span class="p">:</span> <span class="n">BLUE</span><span class="p">}),</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span><span class="n">t2c</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;rl&quot;</span><span class="p">:</span> <span class="n">RED</span><span class="p">}),</span>
+        <span class="c1"># Text to font</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Manim&quot;</span><span class="p">,</span><span class="n">t2f</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;an&quot;</span><span class="p">:</span> <span class="s2">&quot;Open Sans&quot;</span><span class="p">}),</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Manim&quot;</span><span class="p">,</span><span class="n">t2f</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;[2:-1]&quot;</span><span class="p">:</span> <span class="s2">&quot;Open Sans&quot;</span><span class="p">}),</span>
+        <span class="c1"># Text to gradient</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="n">t2g</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;[1:-1]&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="n">GREEN</span><span class="p">)}),</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span><span class="n">t2g</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;World&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">RED</span><span class="p">,</span><span class="n">BLUE</span><span class="p">)}),</span>
+        <span class="c1"># Text to slant</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Manim&quot;</span><span class="p">,</span><span class="n">t2s</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;an&quot;</span><span class="p">:</span> <span class="n">ITALIC</span><span class="p">}),</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Manim&quot;</span><span class="p">,</span><span class="n">t2s</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;[2:-1]&quot;</span><span class="p">:</span> <span class="n">ITALIC</span><span class="p">}),</span>
+        <span class="c1"># Text to weight</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Manim&quot;</span><span class="p">,</span><span class="n">t2w</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;an&quot;</span><span class="p">:</span> <span class="n">THIN</span><span class="p">},</span> <span class="n">font</span><span class="o">=</span><span class="s2">&quot;Open Sans&quot;</span><span class="p">),</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Manim&quot;</span><span class="p">,</span><span class="n">t2w</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;[2:]&quot;</span><span class="p">:</span> <span class="n">HEAVY</span><span class="p">},</span> <span class="n">font</span><span class="o">=</span><span class="s2">&quot;Open Sans&quot;</span><span class="p">),</span>
+        <span class="c1"># Ligature</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;fl ligature&quot;</span><span class="p">,</span><span class="n">font_size</span><span class="o">=</span><span class="mi">40</span><span class="p">),</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;fl ligature&quot;</span><span class="p">,</span> <span class="n">disable_ligatures</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">40</span><span class="p">),</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">arrange_in_grid</span><span class="p">(</span><span class="n">cols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.4</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grp</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/tx6.png" src="../_images/tx6.png" />
+</details>
+<br/></div>
+</div>
+<div class="section" id="markuptext">
+<h2>MarkupText<a class="headerlink" href="#markuptext" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">MarkupText</span></code> is a class that uses <strong>PangoMarkup</strong>, language similar to <strong>HTML</strong> that allows us to modify the text with <strong>XML</strong> tags, if you understand <strong>HTML or **XML</strong> then it will be easy for you to understand this class.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">MarkupText</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s1">&#39;Normal &lt;i&gt;Italic&lt;/i&gt; &lt;b&gt;Bold&lt;/b&gt; &lt;u&gt;Underline&lt;/u&gt; &lt;span foreground=&quot;</span><span class="si">{</span><span class="n">BLUE</span><span class="si">}</span><span class="s1">&quot;&gt;Blue text&lt;/span&gt;&#39;</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>I recommend reading the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.svg.text_mobject.MarkupText.html#manim.mobject.svg.text_mobject.MarkupText">official documentation</a> if you want to learn how to use this tool as it has many configurations.</p>
+<details>
+<summary> Show result </summary><img alt="../_images/tx7.png" src="../_images/tx7.png" />
+</details>
+<br/></div>
+<div class="section" id="tex">
+<h2>Tex<a class="headerlink" href="#tex" title="Permalink to this headline">¶</a></h2>
+<p>This is the most complex class, not only because it is the one with the most options, but because LaTeX is a world of its own.</p>
+<p>If you do not have knowledge of LaTeX I recommend that you watch a 1-2 hour tutorial on the internet.</p>
+<div class="section" id="templates">
+<h3>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h3>
+<p>As you should know, to use LaTeX you must include the libraries you want to use, by default, Manim uses this template:</p>
+<div class="highlight-tex notranslate"><div class="highlight"><pre><span></span><span class="k">\usepackage</span><span class="na">[english]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>amsmath<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>amssymb<span class="nb">}</span>
+</pre></div>
+</div>
+<p>But you can add, remove or modify predefined templates, you can see the predefined templates <a class="reference external" href="https://github.com/ManimCommunity/manim/blob/8c9ae5bb2a7d06a110e6871cd29339e8b2fe05ca/manim/utils/tex_templates.py#L81">here</a>.</p>
+<p>If you want to do it manually you must follow these steps:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a new TexTemplate</span>
+<span class="n">my_template</span> <span class="o">=</span> <span class="n">TexTemplate</span><span class="p">()</span>
+
+<span class="c1"># Add new preambles (can be more)</span>
+<span class="n">my_template</span><span class="o">.</span><span class="n">add_to_preamble</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\newcommand{\st}[2]{{\tt S}_{\rm #1}^{\rm #2}}&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create a new subclass with your template</span>
+<span class="k">class</span> <span class="nc">MyTex</span><span class="p">(</span><span class="n">Tex</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">tex_template</span><span class="o">=</span><span class="n">my_template</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">TestMyTexTemplate</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">MyTex</span><span class="p">(</span><span class="s2">&quot;$\st{sub-index}{super-index}$&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/tx8.png" src="../_images/tx8.png" />
+</details>
+<br/><p>What Manim renders is the following:</p>
+<div class="highlight-tex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[preview]</span><span class="nb">{</span>standalone<span class="nb">}</span>
+
+<span class="k">\usepackage</span><span class="na">[english]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>amsmath<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>amssymb<span class="nb">}</span>
+
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\st</span><span class="nb">}</span>[2]<span class="nb">{{</span><span class="k">\tt</span> S<span class="nb">}_{</span><span class="k">\rm</span> #1<span class="nb">}^{</span><span class="k">\rm</span> #2<span class="nb">}}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+<span class="s">$</span><span class="nv">\st</span><span class="nb">{sub</span><span class="o">-</span><span class="nb">index}{super</span><span class="o">-</span><span class="nb">index}</span><span class="s">$</span>
+<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<p>You can add as many preambles as you want.</p>
+</div>
+<div class="section" id="enviroments">
+<h3>Enviroments<a class="headerlink" href="#enviroments" title="Permalink to this headline">¶</a></h3>
+<p>Also, if you want, you can create enviroments, I use a lot an enviroment that allows me to control the width of the justified paragraph.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyTex</span><span class="p">(</span><span class="n">Tex</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">j_width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">tex_environment</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">begin</span><span class="si">{tabular}</span><span class="s2">{p{</span><span class="si">%s</span><span class="s2"> cm}}&quot;</span><span class="o">%</span><span class="n">j_width</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">TestEnviroment</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">TEX</span> <span class="o">=</span> <span class="s2">&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s&quot;</span>
+        <span class="n">t1</span> <span class="o">=</span> <span class="n">MyTex</span><span class="p">(</span><span class="n">TEX</span><span class="p">)</span>
+        <span class="n">t2</span> <span class="o">=</span> <span class="n">MyTex</span><span class="p">(</span><span class="n">TEX</span><span class="p">,</span> <span class="n">j_width</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+        <span class="n">t3</span> <span class="o">=</span> <span class="n">MyTex</span><span class="p">(</span><span class="n">TEX</span><span class="p">,</span> <span class="n">j_width</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+        <span class="n">grp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">,</span><span class="n">t3</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+        <span class="n">grp</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_height</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grp</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/tx9.png" src="../_images/tx9.png" />
+</details>
+<br/><p>You can find all the exported files in <code class="docutils literal notranslate"><span class="pre">media/Tex</span></code>.</p>
+</div>
+<div class="section" id="tex-as-array">
+<h3>Tex as array<a class="headerlink" href="#tex-as-array" title="Permalink to this headline">¶</a></h3>
+<p>Like <code class="docutils literal notranslate"><span class="pre">Text</span></code>, <code class="docutils literal notranslate"><span class="pre">Tex</span></code> is an array of several SVGs, but this one is a bit more complex.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Tex</span></code> not only accepts a single string, you can add as many strings as you want:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t1</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
+    <span class="c1">#              |  Note the space</span>
+    <span class="c1">#              v</span>
+    <span class="n">t2</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span><span class="p">,</span><span class="s2">&quot;world&quot;</span><span class="p">,</span><span class="s2">&quot;!&quot;</span><span class="p">)</span>
+    <span class="n">grp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span><span class="n">aligned_edge</span><span class="o">=</span><span class="n">LEFT</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grp</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This means that if we want to select only one element of <code class="docutils literal notranslate"><span class="pre">Tex</span></code> there are two possibilities.</p>
+<p>If we want to select the third “l” of both texts then we must understand the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tex(&quot;Hello world!&quot;)</span>
+<span class="c1"># returns a container, and that container</span>
+<span class="c1"># contains another container with the letters,</span>
+<span class="c1"># we can see it as:</span>
+<span class="c1"># [[&#39;H&#39;,&#39;e&#39;,&#39;l&#39;,&#39;l&#39;,&#39;o&#39;,&#39;w&#39;,&#39;o&#39;,&#39;r&#39;,&#39;l&#39;,&#39;d&#39;,&#39;!&#39;]] (Blanks don&#39;t count in Tex)</span>
+<span class="c1"># So, if you want to select the 3rd &quot;l&quot; you must do:</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
+        <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">RED</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+
+<span class="c1"># Tex(&quot;Hello &quot;,&quot;world&quot;,&quot;!&quot;)</span>
+<span class="c1"># returns a container with 3 containers:</span>
+<span class="c1"># [[&#39;H&#39;,&#39;e&#39;,&#39;l&#39;,&#39;l&#39;,&#39;o&#39;],[&#39;w&#39;,&#39;o&#39;,&#39;r&#39;,&#39;l&#39;,&#39;d&#39;],[&#39;!&#39;]]</span>
+<span class="c1"># So, if you want to select the 3rd &quot;l&quot; you must do:</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span><span class="p">,</span><span class="s2">&quot;world&quot;</span><span class="p">,</span><span class="s2">&quot;!&quot;</span><span class="p">)</span>
+        <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">RED</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/tx11.png" src="../_images/tx11.png" />
+</details>
+<br/><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This topic will be important when we do formula transformations.</p>
+</div>
+</div>
+<div class="section" id="tex-to-color-map">
+<h3>Tex to color map<a class="headerlink" href="#tex-to-color-map" title="Permalink to this headline">¶</a></h3>
+<p>This is equivalent to <code class="docutils literal notranslate"><span class="pre">t2c</span></code>, it works well if your text is simple, but if you use enviroments or your <code class="docutils literal notranslate"><span class="pre">Tex</span></code> is very complex, it will most likely not work, so you should use it with discretion.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span>
+        <span class="s2">&quot;Hello my &quot;</span><span class="p">,</span><span class="s2">&quot;world&quot;</span><span class="p">,</span>
+        <span class="n">tex_to_color_map</span><span class="o">=</span><span class="p">{</span>
+            <span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="n">RED</span><span class="p">,</span>
+            <span class="s2">&quot;wor&quot;</span><span class="p">:</span> <span class="n">ORANGE</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary><img alt="../_images/tx12.png" src="../_images/tx12.png" />
+</details>
+<br/></div>
+<div class="section" id="mathtex">
+<h3>MathTex<a class="headerlink" href="#mathtex" title="Permalink to this headline">¶</a></h3>
+<p>If <code class="docutils literal notranslate"><span class="pre">Tex</span></code> is LaTeX in normal mode, then <code class="docutils literal notranslate"><span class="pre">MathTex</span></code> is LaTeX in math mode, that is, <code class="docutils literal notranslate"><span class="pre">MathTex(&quot;formula&quot;)</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">Tex(&quot;$$formula$$&quot;)</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_9_transformations.html" class="btn btn-neutral float-right" title="Transformations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="_7_groups.html" class="btn btn-neutral float-left" title="Groups and VGroups" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Vázquez.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

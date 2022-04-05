@@ -1,0 +1,698 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Transformations &mdash; ManimCE Professional Course - Basics  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Methods as animations" href="_10_methods_as_animations.html" />
+    <link rel="prev" title="Text and Tex" href="_8_text_and_tex.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_2_basic_mobjects.html">Basic attributes of Mobjects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_3_camera_options.html">Basic Camera and render settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_4_layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_5_rate_functions.html">Rate functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_6_assets.html">Import assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_7_groups.html">Groups and VGroups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_8_text_and_tex.html">Text and Tex</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Transformations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#transform">Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#replacementtransform">ReplacementTransform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transform-vs-replacementtransform">Transform vs ReplacementTransform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fadetransform">FadeTransform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transformmatchingshapes">TransformMatchingShapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transformmatchingtex">TransformMatchingTex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transform-using-indexes">Transform using indexes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_10_methods_as_animations.html">Methods as animations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_11_manim_utils.html">Manim utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_12_2d_graphs.html">Basic 2D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_13_3d_graphs.html">Basic 3D Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ManimCE Professional Course - Basics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Transformations</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/contents/_9_transformations.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="transformations">
+<h1>Transformations<a class="headerlink" href="#transformations" title="Permalink to this headline">¶</a></h1>
+<p>The transformations are classified into two:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Transform</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ReplacementTransform</span></code></p></li>
+</ul>
+<p>All other animations in this style are derived from these two.</p>
+<div class="section" id="transform">
+<h2>Transform<a class="headerlink" href="#transform" title="Permalink to this headline">¶</a></h2>
+<p>To understand the transformations, we must first understand that each instance of a Mobject has a special identifier that differentiates it from the others, thus, two instances of the same Mobject will have different identifiers.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">d1</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">()</span>
+    <span class="n">d2</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">()</span>
+    <span class="n">d3</span> <span class="o">=</span> <span class="n">d1</span>
+    <span class="n">d4</span> <span class="o">=</span> <span class="n">d2</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;id(d1) = f</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;id(d2) = f</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">d2</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;id(d3) = f</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">d3</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;id(d4) = f</span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">d4</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Results (The values change on every computer or session):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">id</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span> <span class="o">=</span> <span class="n">f5547969504</span>
+<span class="nb">id</span><span class="p">(</span><span class="n">d2</span><span class="p">)</span> <span class="o">=</span> <span class="n">f5548828560</span>
+<span class="nb">id</span><span class="p">(</span><span class="n">d3</span><span class="p">)</span> <span class="o">=</span> <span class="n">f5547969504</span>
+<span class="nb">id</span><span class="p">(</span><span class="n">d4</span><span class="p">)</span> <span class="o">=</span> <span class="n">f5534488176</span>
+</pre></div>
+</div>
+<p>You can see that even though <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d2</span></code> are instances of the same <code class="docutils literal notranslate"><span class="pre">Mobject</span></code> (<code class="docutils literal notranslate"><span class="pre">Dot</span></code>) but they have different <strong>id</strong>. But, <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d3</span></code> have the same <strong>id</strong>, that means, that both values point to the same place in memory, so it is the same to modify <code class="docutils literal notranslate"><span class="pre">d1</span></code> or <code class="docutils literal notranslate"><span class="pre">d3</span></code>, since it is exactly the same object, only with a different name. <code class="docutils literal notranslate"><span class="pre">d4</span></code> is an object created from <code class="docutils literal notranslate"><span class="pre">d2</span></code>, but they are not the same object.</p>
+<p>This is not something special from Manim, all objects are like that.</p>
+<p>Something similar happens in transformations.</p>
+<p>Transform <strong>needs two and only two</strong> <code class="docutils literal notranslate"><span class="pre">Mobjects</span></code>, the <strong>object to transform</strong> and the <strong>target</strong>.
+Transform copies the <strong>properties</strong> of the <strong>target</strong> and passes them to the <strong>object to be transformed</strong>, but does not modify the target, it only modifies the <strong>object to transform</strong>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">obj</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span>
+    <span class="n">t_a</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+    <span class="n">t_b</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+    <span class="n">t_c</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+    <span class="n">t_d</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Transform</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="n">t_a</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Transform</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="n">t_b</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Transform</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="n">t_c</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Transform</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="n">t_d</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+    <span class="n">t_grp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">t_a</span><span class="p">,</span><span class="n">t_b</span><span class="p">,</span><span class="n">t_c</span><span class="p">,</span><span class="n">t_d</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">t_grp</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>It is easy to notice here that neither <code class="docutils literal notranslate"><span class="pre">t_a</span></code>, <code class="docutils literal notranslate"><span class="pre">t_b</span></code>, <code class="docutils literal notranslate"><span class="pre">t_c</span></code> nor <code class="docutils literal notranslate"><span class="pre">t_d</span></code> changed their value, the only Mobject that changed was <code class="docutils literal notranslate"><span class="pre">obj</span></code>.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+<video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+    <source src="../_static/basic_videos/tr1.mp4" type="video/mp4">
+</video>
+</div>
+<br/></div>
+<div class="section" id="replacementtransform">
+<h2>ReplacementTransform<a class="headerlink" href="#replacementtransform" title="Permalink to this headline">¶</a></h2>
+<p>It is equivalent to Transform, with the detail that ReplacementTransform does change the content of the target.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">obj</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span>
+    <span class="n">t_a</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+    <span class="n">t_b</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+    <span class="n">t_c</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+    <span class="n">t_d</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="n">t_a</span><span class="p">))</span>
+    <span class="c1"># self.play(ReplacementTransform(obj,t_b)) # &lt;- This not works</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">t_a</span><span class="p">,</span><span class="n">t_b</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">t_b</span><span class="p">,</span><span class="n">t_c</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">t_c</span><span class="p">,</span><span class="n">t_d</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+    <span class="n">t_grp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="n">t_a</span><span class="p">,</span><span class="n">t_b</span><span class="p">,</span><span class="n">t_c</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">t_grp</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+<video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+    <source src="../_static/basic_videos/tr2.mp4" type="video/mp4">
+</video>
+</div>
+<br/><p>You can notice that, while in <code class="docutils literal notranslate"><span class="pre">Transform</span></code> we always use the same object in the first argument, <code class="docutils literal notranslate"><span class="pre">ReplacementTransform</span></code> does change its first argument.</p>
+</div>
+<div class="section" id="transform-vs-replacementtransform">
+<h2>Transform vs ReplacementTransform<a class="headerlink" href="#transform-vs-replacementtransform" title="Permalink to this headline">¶</a></h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+<video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+    <source src="../_static/basic_videos/TransformExplanation.mp4" type="video/mp4">
+</video>
+</div>
+<br/></div>
+<div class="section" id="fadetransform">
+<h2>FadeTransform<a class="headerlink" href="#fadetransform" title="Permalink to this headline">¶</a></h2>
+<p>It is equivalent to Transform, only that instead of interpolating bézier curves, it uses a <code class="docutils literal notranslate"><span class="pre">FadeIn</span></code> and <code class="docutils literal notranslate"><span class="pre">FadeOut</span></code> to the Mobjects to transform:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">c</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">FadeTransform</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs1.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>This animation is especially useful when we transform formulas or text that does not have the same style. For example, if we use transform in this animation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t1</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;e^&quot;</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">frac{-it</span><span class="se">\\</span><span class="s2">pi}{</span><span class="se">\\</span><span class="s2">omega}&quot;</span><span class="p">)</span>
+    <span class="n">t2</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">frac{-it</span><span class="se">\\</span><span class="s2">pi}{</span><span class="se">\\</span><span class="s2">omega}&quot;</span><span class="p">)</span>
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mf">0.8</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">t1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span><span class="n">t2</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">6</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs2.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>You can see that the transformation does not look good, this is because, although it is the same text, the letters have slightly different sizes and shapes, for this we can use <code class="docutils literal notranslate"><span class="pre">FadeTransform</span></code>, in this case we will use <code class="docutils literal notranslate"><span class="pre">FadeTransformPieces</span></code>, which allows us to transform each <strong>submobject</strong> (Mobjects inside other Mobjects) using <code class="docutils literal notranslate"><span class="pre">FadeTransform</span></code>. That is, <code class="docutils literal notranslate"><span class="pre">FadeTransformPieces</span></code> will transform each letter using <code class="docutils literal notranslate"><span class="pre">FadeTransform</span></code>. If we used <code class="docutils literal notranslate"><span class="pre">FadeTransform</span></code> then it would apply to the entire formula.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t1</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;e^&quot;</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">frac{-it</span><span class="se">\\</span><span class="s2">pi}{</span><span class="se">\\</span><span class="s2">omega}&quot;</span><span class="p">)</span>
+    <span class="n">t2</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">frac{-it</span><span class="se">\\</span><span class="s2">pi}{</span><span class="se">\\</span><span class="s2">omega}&quot;</span><span class="p">)</span>
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mf">0.8</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">FadeTransformPieces</span><span class="p">(</span><span class="n">t1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span><span class="n">t2</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">4</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs3.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="transformmatchingshapes">
+<h2>TransformMatchingShapes<a class="headerlink" href="#transformmatchingshapes" title="Permalink to this headline">¶</a></h2>
+<p>This animation try to transform groups by matching the shape of their submobjects.</p>
+<p>Two submobjects match if the hash of their point coordinates after normalization (i.e., after translation to the origin, fixing the submobject height at 1 unit, and rounding the coordinates to three decimal places) matches.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">shuffle</span>
+    <span class="k">def</span> <span class="nf">get_mobs</span><span class="p">():</span>
+        <span class="n">mob</span> <span class="o">=</span> <span class="p">[</span><span class="n">Square</span><span class="p">(),</span><span class="n">Circle</span><span class="p">(),</span><span class="n">Triangle</span><span class="p">(),</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)]</span>
+        <span class="n">shuffle</span><span class="p">(</span><span class="n">mob</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mob</span>
+
+    <span class="n">grp1</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="n">get_mobs</span><span class="p">())</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+    <span class="n">grp2</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="n">get_mobs</span><span class="p">())</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">grp1</span><span class="p">,</span><span class="n">grp2</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grp1</span><span class="p">,</span><span class="n">grp2</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">TransformMatchingShapes</span><span class="p">(</span>
+            <span class="n">grp1</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span> <span class="n">grp2</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs4.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>Other example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">source</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">&quot;the morse code&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">&quot;here come dots&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+    <span class="n">kw</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;run_time&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;path_arc&quot;</span><span class="p">:</span> <span class="n">PI</span> <span class="o">/</span> <span class="mi">2</span><span class="p">}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">TransformMatchingShapes</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">TransformMatchingShapes</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs5.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="transformmatchingtex">
+<h2>TransformMatchingTex<a class="headerlink" href="#transformmatchingtex" title="Permalink to this headline">¶</a></h2>
+<p>It is equivalent to the previous transformation, and what it does is transform each <code class="docutils literal notranslate"><span class="pre">tex_string</span></code>. It is recommended to separate each tex_string that you want to isolate for the transformation, there are two ways, using an array with the strings to isolate.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">isolate_tex</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span><span class="s2">&quot;y&quot;</span><span class="p">,</span><span class="s2">&quot;3&quot;</span><span class="p">,</span><span class="s2">&quot;=&quot;</span><span class="p">]</span>
+    <span class="n">t1</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;x+y=3&quot;</span><span class="p">,</span><span class="n">substrings_to_isolate</span><span class="o">=</span><span class="n">isolate_tex</span><span class="p">)</span>
+    <span class="n">t2</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;x=3-y&quot;</span><span class="p">,</span><span class="n">substrings_to_isolate</span><span class="o">=</span><span class="n">isolate_tex</span><span class="p">)</span>
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">t2</span><span class="o">.</span><span class="n">align_to</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">LEFT</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t1</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">TransformMatchingTex</span><span class="p">(</span>
+            <span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">,</span>
+            <span class="c1"># Try removing this dict</span>
+            <span class="n">key_map</span><span class="o">=</span><span class="p">{</span>
+                <span class="s2">&quot;+&quot;</span><span class="p">:</span><span class="s2">&quot;-&quot;</span>
+            <span class="p">}</span>
+        <span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">4</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs6.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>Or using this format:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">t1</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;{{x}}+{{y}}={{4}}&quot;</span><span class="p">)</span>
+    <span class="n">t2</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;{{x}}={{4}}-{{y}}&quot;</span><span class="p">)</span>
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">t2</span><span class="o">.</span><span class="n">align_to</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">LEFT</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t1</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">TransformMatchingTex</span><span class="p">(</span>
+            <span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">,</span>
+            <span class="c1"># Try removing this dictionary</span>
+            <span class="n">key_map</span><span class="o">=</span><span class="p">{</span>
+                <span class="s2">&quot;+&quot;</span><span class="p">:</span><span class="s2">&quot;-&quot;</span>
+            <span class="p">}</span>
+        <span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">4</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs7.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>Use the key_map dictionary to specify symbols that you want to transform into others.</p>
+<p>In general, this transformation works well for simple formulas, but for more complex formulas we will need to use indexes.</p>
+<p>This fail with a little complex formulas (roots, fractions, etc):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">isolate_tex</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="s2">&quot;c&quot;</span><span class="p">,</span><span class="s2">&quot;=&quot;</span><span class="p">]</span>
+    <span class="n">t1</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;a </span><span class="se">\\</span><span class="s2">times b = c&quot;</span><span class="p">,</span><span class="n">substrings_to_isolate</span><span class="o">=</span><span class="n">isolate_tex</span><span class="p">)</span>
+    <span class="n">t2</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;a = { c </span><span class="se">\\</span><span class="s2">over b }&quot;</span><span class="p">,</span><span class="n">substrings_to_isolate</span><span class="o">=</span><span class="n">isolate_tex</span><span class="p">)</span>
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">t2</span><span class="o">.</span><span class="n">align_to</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">LEFT</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t1</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="n">TransformMatchingTex</span><span class="p">(</span>
+            <span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">,</span>
+            <span class="c1"># This not works</span>
+            <span class="n">key_map</span><span class="o">=</span><span class="p">{</span>
+                <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">times&quot;</span><span class="p">:</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">over&quot;</span>
+            <span class="p">}</span>
+        <span class="p">),</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">4</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs8.mp4" type="video/mp4">
+ </video>
+</details>
+<br/></div>
+<div class="section" id="transform-using-indexes">
+<h2>Transform using indexes<a class="headerlink" href="#transform-using-indexes" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes the formulas we want to transform are very complex, so <code class="docutils literal notranslate"><span class="pre">TransformMatchingShapes</span></code> or <code class="docutils literal notranslate"><span class="pre">TransformMatchingTex</span></code> won’t work, so the only alternative is to use <code class="docutils literal notranslate"><span class="pre">Transform</span></code> with <strong>subindexes</strong>.</p>
+<p>For this, we need to identify each index of each formula, we can do that using Manim itself.</p>
+<p>Using this function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_sub_indexes</span><span class="p">(</span><span class="n">tex</span><span class="p">):</span>
+    <span class="n">ni</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">()</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="n">cycle</span><span class="p">([</span><span class="n">RED</span><span class="p">,</span><span class="n">TEAL</span><span class="p">,</span><span class="n">GREEN</span><span class="p">,</span><span class="n">BLUE</span><span class="p">,</span><span class="n">PURPLE</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tex</span><span class="p">)):</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="nb">next</span><span class="p">(</span><span class="n">colors</span><span class="p">))</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.7</span><span class="p">)</span>
+        <span class="n">n</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">tex</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">DOWN</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+        <span class="n">ni</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ni</span>
+</pre></div>
+</div>
+<p>We can identify the subindexes of each formular, for example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1">#                           Why this?    |</span>
+    <span class="c1">#                                        v</span>
+    <span class="n">source</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">sqrt{</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{8}</span><span class="s2">}&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}</span><span class="s2">{2</span><span class="se">\\</span><span class="s2">sqrt</span><span class="si">{2}</span><span class="s2">}&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="c1"># If you ask yourself this, go back to &quot;Tex as array&quot;</span>
+    <span class="c1"># section in the &quot;Text and Tex&quot; chapter</span>
+
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">source</span><span class="p">,</span><span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">source_ind</span> <span class="o">=</span> <span class="n">get_sub_indexes</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+    <span class="n">target_ind</span> <span class="o">=</span> <span class="n">get_sub_indexes</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="n">source</span><span class="p">,</span> <span class="n">source_ind</span><span class="p">,</span>
+        <span class="n">target</span><span class="p">,</span> <span class="n">target_ind</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/subindexes.png" src="../_images/subindexes.png" />
+<p>Now all we have to do is relate them.</p>
+<img alt="../_images/subindexes2.png" src="../_images/subindexes2.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="p">[</span><span class="n">root</span> <span class="n">v</span><span class="p">]</span>    <span class="o">--&gt;</span> <span class="mi">3</span> <span class="p">[</span><span class="n">root</span> <span class="n">v</span><span class="p">]</span>
+<span class="mi">1</span> <span class="p">[</span><span class="n">root</span> <span class="n">top</span><span class="p">]</span>  <span class="o">--&gt;</span> <span class="mi">4</span> <span class="p">[</span><span class="n">root</span> <span class="n">top</span><span class="p">]</span>
+<span class="mi">2</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>         <span class="o">--&gt;</span> <span class="mi">0</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="mi">3</span> <span class="p">[</span><span class="n">fraq</span> <span class="n">line</span><span class="p">]</span> <span class="o">--&gt;</span> <span class="mi">1</span> <span class="p">[</span><span class="n">fraq</span> <span class="n">line</span><span class="p">]</span>
+<span class="mi">4</span> <span class="p">[</span><span class="mi">8</span><span class="p">]</span>         <span class="o">--&gt;</span> <span class="mi">2</span> <span class="p">[</span><span class="mi">2</span> <span class="n">left</span><span class="p">],</span> <span class="mi">5</span> <span class="p">[</span><span class="mi">2</span> <span class="n">right</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>We can do it in many ways, one of those could be:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">source</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">sqrt{</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{8}</span><span class="s2">}&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}</span><span class="s2">{2</span><span class="se">\\</span><span class="s2">sqrt</span><span class="si">{2}</span><span class="s2">}&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">source</span><span class="p">,</span><span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+    <span class="n">transform_index</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+       <span class="c1"># | | | | | | &lt;   Note that we repeat the index 4 twice,</span>
+       <span class="c1"># v v v v v v     since the &quot;8&quot; is going to transform</span>
+        <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="c1">#  into two different symbols.</span>
+    <span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="o">*</span><span class="p">[</span>
+            <span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">source</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">target</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">transform_index</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs9.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>We notice that the 8 does not transform well, because it is transforming into 2 different symbols, what we can do is duplicate it using a copy, a simple way would be:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">source</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">sqrt{</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{8}</span><span class="s2">}&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}</span><span class="s2">{2</span><span class="se">\\</span><span class="s2">sqrt</span><span class="si">{2}</span><span class="s2">}&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">source</span><span class="p">,</span><span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+    <span class="n">transform_index</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="s2">&quot;r4&quot;</span><span class="p">],</span>
+       <span class="c1"># | | | | |  |</span>
+       <span class="c1"># v v v v v  v</span>
+        <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+    <span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="o">*</span><span class="p">[</span>
+            <span class="c1"># Try replacing &quot;ReplacementTransform&quot; with &quot;FadeTransform&quot;</span>
+            <span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">source</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">target</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">int</span> <span class="k">else</span>
+            <span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">source</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">:])]</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span><span class="n">target</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">transform_index</span><span class="p">)</span>
+        <span class="p">],</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs10.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>Following the same example we can continue adding conditionals to do things like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">source</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">sqrt{</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{8}</span><span class="s2">}&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}</span><span class="s2">{2</span><span class="se">\\</span><span class="s2">sqrt</span><span class="si">{2}</span><span class="s2">}&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">VGroup</span><span class="p">(</span><span class="n">source</span><span class="p">,</span><span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+    <span class="n">transform_index</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s2">&quot;f0&quot;</span><span class="p">,</span><span class="s2">&quot;f1&quot;</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="s2">&quot;r4&quot;</span><span class="p">],</span>
+       <span class="c1">#  |    |   | | |  |</span>
+       <span class="c1">#  v    v   v v v  v</span>
+        <span class="p">[</span> <span class="mi">3</span><span class="p">,</span>   <span class="mi">4</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+    <span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+        <span class="o">*</span><span class="p">[</span>
+            <span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">source</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">target</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">int</span> <span class="k">else</span>
+            <span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">source</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">:])]</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span><span class="n">target</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;r&quot;</span> <span class="k">else</span>
+            <span class="n">FadeTransform</span><span class="p">(</span><span class="n">source</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">:])],</span><span class="n">target</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">transform_index</span><span class="p">)</span>
+        <span class="p">],</span>
+        <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+    <span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<details>
+<summary> Show result </summary>
+ <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+ <video allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+     <source src="../_static/basic_videos/trs11.mp4" type="video/mp4">
+ </video>
+</details>
+<br/><p>In a later workshop we will teach a method to make this process simpler.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="_10_methods_as_animations.html" class="btn btn-neutral float-right" title="Methods as animations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="_8_text_and_tex.html" class="btn btn-neutral float-left" title="Text and Tex" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Vázquez.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
