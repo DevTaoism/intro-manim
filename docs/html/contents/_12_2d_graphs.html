@@ -1,75 +1,36 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Basic 2D Graphs &mdash; ManimCE Professional Course - Basics  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+  <title>Basic 2D Graphs &mdash; Intro To Manim  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Basic 3D Graphs" href="_13_3d_graphs.html" />
     <link rel="prev" title="Manim utilities" href="_11_manim_utils.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
-          
-
-          
+            <a href="../index.html" class="icon icon-home"> Intro To Manim
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -77,18 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
@@ -125,79 +75,38 @@
 <li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">ManimCE Professional Course - Basics</a>
-        
+          <a href="../index.html">Intro To Manim</a>
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Basic 2D Graphs</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/contents/_12_2d_graphs.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="basic-2d-graphs">
-<h1>Basic 2D Graphs<a class="headerlink" href="#basic-2d-graphs" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="basic-2d-graphs">
+<h1>Basic 2D Graphs<a class="headerlink" href="#basic-2d-graphs" title="Permalink to this headline"></a></h1>
 <p>In the previous versions of Manim there was a special scene called <code class="docutils literal notranslate"><span class="pre">GraphScene</span></code>, however, in the most recent versions it is no longer necessary, since all the functionalities of <code class="docutils literal notranslate"><span class="pre">GraphScene</span></code> were transferred to the <code class="docutils literal notranslate"><span class="pre">Axes</span></code> class, so we can have as many graphs as we want in the same scene (which could not be done in <code class="docutils literal notranslate"><span class="pre">GraphScene</span></code>).</p>
-<div class="section" id="axes">
-<h2>Axes<a class="headerlink" href="#axes" title="Permalink to this headline">¶</a></h2>
+<section id="axes">
+<h2>Axes<a class="headerlink" href="#axes" title="Permalink to this headline"></a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">Axes</span></code> are made up of two <code class="docutils literal notranslate"><span class="pre">NumberLines</span></code>, and you can configure each axis with all the <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code> options. To define the axes the main thing is to define the scales and the size of the axes.</p>
-<div class="section" id="configurations">
-<h3>Configurations<a class="headerlink" href="#configurations" title="Permalink to this headline">¶</a></h3>
+<section id="configurations">
+<h3>Configurations<a class="headerlink" href="#configurations" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
     <span class="c1">#    [start,end,step]</span>
     <span class="n">x_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
@@ -267,9 +176,9 @@
 <details>
 <summary> Show result </summary><img alt="../_images/axes2.png" src="../_images/axes2.png" />
 </details>
-<br/></div>
-<div class="section" id="get-coord-from-axes">
-<h3>Get coord from axes<a class="headerlink" href="#get-coord-from-axes" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="get-coord-from-axes">
+<h3>Get coord from axes<a class="headerlink" href="#get-coord-from-axes" title="Permalink to this headline"></a></h3>
 <p>There are two concepts to understand, the “coords” reference system and the “points” reference system.</p>
 <ul class="simple">
 <li><p><strong>Points</strong>: It is the reference system of the camera, and therefore it is absolute, we could say that it is our inertial system, the fixed system.</p></li>
@@ -298,10 +207,10 @@
      <source src="../_static/basic_videos/p2cExplanation.mp4" type="video/mp4">
  </video>
  </div>
-<br/></div>
-</div>
-<div class="section" id="line-graph">
-<h2>Line graph<a class="headerlink" href="#line-graph" title="Permalink to this headline">¶</a></h2>
+<br/></section>
+</section>
+<section id="line-graph">
+<h2>Line graph<a class="headerlink" href="#line-graph" title="Permalink to this headline"></a></h2>
 <p>Making graphs with points should be easy for the student, we only need to make a polyline by changing the reference system using <code class="docutils literal notranslate"><span class="pre">c2p</span></code>, it is left as an exercise.</p>
 <details style="border-width: 2px; border-style: solid; border-color: blue;">
 <summary> Show solution </summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -344,9 +253,9 @@
 <details>
 <summary> Show result </summary><img alt="../_images/axes3.png" src="../_images/axes3.png" />
 </details>
-<br/></div>
-<div class="section" id="use-text-instead-numbers-in-labels">
-<h2>Use Text instead numbers in labels<a class="headerlink" href="#use-text-instead-numbers-in-labels" title="Permalink to this headline">¶</a></h2>
+<br/></section>
+<section id="use-text-instead-numbers-in-labels">
+<h2>Use Text instead numbers in labels<a class="headerlink" href="#use-text-instead-numbers-in-labels" title="Permalink to this headline"></a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">x_labels</span> <span class="o">=</span> <span class="p">[</span>
         <span class="s2">&quot;-</span><span class="se">\\</span><span class="s2">frac{3</span><span class="se">\\</span><span class="s2">pi}</span><span class="si">{2}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="c1">#  -3pi/2</span>
@@ -378,11 +287,11 @@
 <details>
 <summary> Show result </summary><img alt="../_images/axes5.png" src="../_images/axes5.png" />
 </details>
-<br/></div>
-<div class="section" id="f-x-plots">
-<h2><span class="math notranslate nohighlight">\(f(x)\)</span> plots<a class="headerlink" href="#f-x-plots" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="resolution">
-<h3>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="f-x-plots">
+<h2><span class="math notranslate nohighlight">\(f(x)\)</span> plots<a class="headerlink" href="#f-x-plots" title="Permalink to this headline"></a></h2>
+<section id="resolution">
+<h3>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline"></a></h3>
 <p>The plots are only approximations by means of bézier curves, so it is good to indicate the resolution of the graph:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="c1"># Define axes</span>
@@ -412,18 +321,18 @@
 <details>
 <summary> Show result </summary><img alt="../_images/axes6.png" src="../_images/axes6.png" />
 </details>
-<br/></div>
-<div class="section" id="style">
-<h3>Style<a class="headerlink" href="#style" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="style">
+<h3>Style<a class="headerlink" href="#style" title="Permalink to this headline"></a></h3>
 <p>The plots are like any VMobject, so it accepts <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code>, <code class="docutils literal notranslate"><span class="pre">stroke_color</span></code>, it can be converted to <code class="docutils literal notranslate"><span class="pre">DashedVMobject</span></code>, etc.</p>
-</div>
-<div class="section" id="more-methods">
-<h3>More methods<a class="headerlink" href="#more-methods" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="more-methods">
+<h3>More methods<a class="headerlink" href="#more-methods" title="Permalink to this headline"></a></h3>
 <p>This is another VMobject that has many more options, you already have the knowledge to be able to read the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.coordinate_systems.CoordinateSystem.html#coordinatesystem">official documentation</a>.</p>
-</div>
-</div>
-<div class="section" id="parametric-functions">
-<h2>Parametric functions<a class="headerlink" href="#parametric-functions" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="parametric-functions">
+<h2>Parametric functions<a class="headerlink" href="#parametric-functions" title="Permalink to this headline"></a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="c1"># Define axes</span>
     <span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
@@ -459,14 +368,14 @@
 <details>
 <summary> Show result </summary><img alt="../_images/axes7.png" src="../_images/axes7.png" />
 </details>
-<br/></div>
-<div class="section" id="numberplane">
-<h2>NumberPlane<a class="headerlink" href="#numberplane" title="Permalink to this headline">¶</a></h2>
+<br/></section>
+<section id="numberplane">
+<h2>NumberPlane<a class="headerlink" href="#numberplane" title="Permalink to this headline"></a></h2>
 <p>It is the same as <code class="docutils literal notranslate"><span class="pre">Axes</span></code> but with background lines, it is ideal for making linear transformations, which we will see in the next course.</p>
 <p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.coordinate_systems.NumberPlane.html">Official documentation</a>.</p>
-</div>
-<div class="section" id="transform-riemann-rectangles">
-<h2>Transform Riemann rectangles<a class="headerlink" href="#transform-riemann-rectangles" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="transform-riemann-rectangles">
+<h2>Transform Riemann rectangles<a class="headerlink" href="#transform-riemann-rectangles" title="Permalink to this headline"></a></h2>
 <p>With <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.coordinate_systems.CoordinateSystem.html?highlight=riemann#manim.mobject.coordinate_systems.CoordinateSystem.get_riemann_rectangles">this</a> we can do it using:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
@@ -510,55 +419,38 @@
      <source src="../_static/basic_videos/axes9.mp4" type="video/mp4">
  </video>
 </details>
-<br/></div>
-</div>
+<br/></section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="_13_3d_graphs.html" class="btn btn-neutral float-right" title="Basic 3D Graphs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="_11_manim_utils.html" class="btn btn-neutral float-left" title="Manim utilities" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="_13_3d_graphs.html" class="btn btn-neutral float-right" title="Basic 3D Graphs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2021, Alexander Vázquez.
-
-    </p>
+    <p>&#169; Copyright 2022, DevTaoism.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

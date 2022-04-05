@@ -1,74 +1,35 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Manim utilities &mdash; ManimCE Professional Course - Basics  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+  <title>Manim utilities &mdash; Intro To Manim  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Basic 2D Graphs" href="_12_2d_graphs.html" />
     <link rel="prev" title="Methods as animations" href="_10_methods_as_animations.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
-          
-
-          
+            <a href="../index.html" class="icon icon-home"> Intro To Manim
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,18 +37,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
@@ -154,78 +104,37 @@
 <li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">ManimCE Professional Course - Basics</a>
-        
+          <a href="../index.html">Intro To Manim</a>
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Manim utilities</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/contents/_11_manim_utils.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="manim-utilities">
-<h1>Manim utilities<a class="headerlink" href="#manim-utilities" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="manim-utilities">
+<h1>Manim utilities<a class="headerlink" href="#manim-utilities" title="Permalink to this headline"></a></h1>
 <p>In this chapter we will learn some methods and classes that are quite useful to make our animations, here we will conclude all the <strong>class animations</strong>.</p>
-<div class="section" id="helpful-methods">
-<h2>Helpful methods<a class="headerlink" href="#helpful-methods" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="interpolate-color">
-<h3><code class="docutils literal notranslate"><span class="pre">.interpolate_color</span></code><a class="headerlink" href="#interpolate-color" title="Permalink to this headline">¶</a></h3>
+<section id="helpful-methods">
+<h2>Helpful methods<a class="headerlink" href="#helpful-methods" title="Permalink to this headline"></a></h2>
+<section id="interpolate-color">
+<h3><code class="docutils literal notranslate"><span class="pre">.interpolate_color</span></code><a class="headerlink" href="#interpolate-color" title="Permalink to this headline"></a></h3>
 <p>As its name implies, it gives you an interpolation between two colors, you can see the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.utils.color.html?highlight=interpolate_color#manim.utils.color.interpolate_color">official documentation</a> to see its definition and the algorithm, You can see in the same documentation other functions related to color in case you want to learn more.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">dots</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">Dot</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)])</span>\
@@ -253,15 +162,15 @@
 <details>
 <summary> Show result </summary><img alt="../_images/mu1.png" src="../_images/mu1.png" />
 </details>
-<br/></div>
-<div class="section" id="set-points">
-<h3><code class="docutils literal notranslate"><span class="pre">.set_points</span></code><a class="headerlink" href="#set-points" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="set-points">
+<h3><code class="docutils literal notranslate"><span class="pre">.set_points</span></code><a class="headerlink" href="#set-points" title="Permalink to this headline"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For this section we are going to use the <strong>grid</strong> that you created in previous chapters, and it will help us to understand this method.</p>
 </div>
-<div class="section" id="as-corners">
-<h4><code class="docutils literal notranslate"><span class="pre">_as_corners</span></code><a class="headerlink" href="#as-corners" title="Permalink to this headline">¶</a></h4>
+<section id="as-corners">
+<h4><code class="docutils literal notranslate"><span class="pre">_as_corners</span></code><a class="headerlink" href="#as-corners" title="Permalink to this headline"></a></h4>
 <p>The way to make a polyline using the coordinates of the screen we can do the following:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">sg</span> <span class="o">=</span> <span class="n">ScreenGrid</span><span class="p">()</span> <span class="c1"># Here is your Grid</span>
@@ -290,9 +199,9 @@
 <details>
 <summary> Show result </summary><img alt="../_images/mu4.png" src="../_images/mu4.png" />
 </details>
-<br/></div>
-<div class="section" id="smoothly">
-<h4><code class="docutils literal notranslate"><span class="pre">_smoothly</span></code><a class="headerlink" href="#smoothly" title="Permalink to this headline">¶</a></h4>
+<br/></section>
+<section id="smoothly">
+<h4><code class="docutils literal notranslate"><span class="pre">_smoothly</span></code><a class="headerlink" href="#smoothly" title="Permalink to this headline"></a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">sg</span> <span class="o">=</span> <span class="n">ScreenGrid</span><span class="p">()</span> <span class="c1"># Here is your Grid</span>
     <span class="n">sg</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
@@ -320,10 +229,10 @@
 <details>
 <summary> Show result </summary><img alt="../_images/mu5.png" src="../_images/mu5.png" />
 </details>
-<br/></div>
-</div>
-<div class="section" id="point-from-proportion">
-<h3><code class="docutils literal notranslate"><span class="pre">.point_from_proportion</span></code><a class="headerlink" href="#point-from-proportion" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+</section>
+<section id="point-from-proportion">
+<h3><code class="docutils literal notranslate"><span class="pre">.point_from_proportion</span></code><a class="headerlink" href="#point-from-proportion" title="Permalink to this headline"></a></h3>
 <p>This is an exclusive method for VMobjects, especially for paths (lines and curves).</p>
 <p>Think VMobject (a curve) as a <strong>road</strong>, as you travel the road you can tell the <strong>percentage</strong> you have completed. Using this analogy with curves (paths) you can locate a point in a percentage of the path using <code class="docutils literal notranslate"><span class="pre">point_from_proportion</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -442,9 +351,9 @@
 <details>
 <summary> Show result </summary><img alt="../_images/mu6.png" src="../_images/mu6.png" />
 </details>
-<br/></div>
-<div class="section" id="get-subcurve">
-<h3><code class="docutils literal notranslate"><span class="pre">.get_subcurve</span></code><a class="headerlink" href="#get-subcurve" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="get-subcurve">
+<h3><code class="docutils literal notranslate"><span class="pre">.get_subcurve</span></code><a class="headerlink" href="#get-subcurve" title="Permalink to this headline"></a></h3>
 <p>Using the concept of <code class="docutils literal notranslate"><span class="pre">point_from_proportion</span></code>, we can get a part of a VMobject by specifying the starting and ending percentage:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">coord</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
@@ -471,9 +380,9 @@
 <details>
 <summary> Show result </summary><img alt="../_images/mu6_2.png" src="../_images/mu6_2.png" />
 </details>
-<br/></div>
-<div class="section" id="set-color-by-tex">
-<h3><code class="docutils literal notranslate"><span class="pre">.set_color_by_tex</span></code><a class="headerlink" href="#set-color-by-tex" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="set-color-by-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">.set_color_by_tex</span></code><a class="headerlink" href="#set-color-by-tex" title="Permalink to this headline"></a></h3>
 <p>In the Tex section we saw that there is an argument that allows us to color certain text, but sometimes we need to color certain parts afterwards, for this we use this method. However, to achieve this effectively we have to isolate the text as we saw it in <code class="docutils literal notranslate"><span class="pre">TransformMatchingTex</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">equation</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span>
@@ -505,9 +414,9 @@
 <summary> Show result </summary><img alt="../_images/mu8.png" src="../_images/mu8.png" />
 </details>
 <br/><p>We could have done this using <code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> in <code class="docutils literal notranslate"><span class="pre">MathTex</span></code> instance, but sometimes you will want to color certain parts in different parts of the code, and in this way it can be achieved. But remember that if your formulas are too complex then they will not work.</p>
-</div>
-<div class="section" id="save-state-and-restore">
-<h3><code class="docutils literal notranslate"><span class="pre">.save_state</span></code> and <code class="docutils literal notranslate"><span class="pre">Restore</span></code><a class="headerlink" href="#save-state-and-restore" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="save-state-and-restore">
+<h3><code class="docutils literal notranslate"><span class="pre">.save_state</span></code> and <code class="docutils literal notranslate"><span class="pre">Restore</span></code><a class="headerlink" href="#save-state-and-restore" title="Permalink to this headline"></a></h3>
 <p>This is a very simple method, basically it is about creating a temporary copy in a time state of a Mobject, and after applying certain modifications to it, using <code class="docutils literal notranslate"><span class="pre">Restore</span></code> we can return to the point where we saved the state.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">FRAME_WIDTH</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">frame_width</span>
@@ -539,9 +448,9 @@
      <source src="../_static/basic_videos/mu1.mp4" type="video/mp4">
  </video>
 </details>
-<br/></div>
-<div class="section" id="surround">
-<h3><code class="docutils literal notranslate"><span class="pre">.surround</span></code><a class="headerlink" href="#surround" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="surround">
+<h3><code class="docutils literal notranslate"><span class="pre">.surround</span></code><a class="headerlink" href="#surround" title="Permalink to this headline"></a></h3>
 <p>This method allows us to <strong>fit</strong> a Mobject in another, this method will be useful when we use indication animations.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">formula</span> <span class="o">=</span> <span class="n">MathTex</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span><span class="s2">&quot;=&quot;</span><span class="p">,</span><span class="s2">&quot;y&quot;</span><span class="p">,</span><span class="s2">&quot;+&quot;</span><span class="p">,</span><span class="s2">&quot;3&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
@@ -560,9 +469,9 @@
 <details>
 <summary> Show result </summary><img alt="../_images/mu20.png" src="../_images/mu20.png" />
 </details>
-<br/></div>
-<div class="section" id="add-background-rectangle">
-<h3><code class="docutils literal notranslate"><span class="pre">.add_background_rectangle</span></code><a class="headerlink" href="#add-background-rectangle" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="add-background-rectangle">
+<h3><code class="docutils literal notranslate"><span class="pre">.add_background_rectangle</span></code><a class="headerlink" href="#add-background-rectangle" title="Permalink to this headline"></a></h3>
 <p>It is similar to surround, with the difference that this method adds the background to the Mobject.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">number_plane</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">(</span><span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
@@ -586,18 +495,18 @@
 <details>
 <summary> Show result </summary><img alt="../_images/mu21.png" src="../_images/mu21.png" />
 </details>
-<br/></div>
-<div class="section" id="more-methods">
-<h3>More methods<a class="headerlink" href="#more-methods" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="more-methods">
+<h3>More methods<a class="headerlink" href="#more-methods" title="Permalink to this headline"></a></h3>
 <p>If you want to see all the missing methods of the VMobjects you can read the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.VMobject.html?highlight=VMobject#vmobject">official documentation</a>.</p>
-</div>
-</div>
-<div class="section" id="helpful-vmobjects">
-<h2>Helpful VMobjects<a class="headerlink" href="#helpful-vmobjects" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="lines-and-arrows">
-<h3>Lines and Arrows<a class="headerlink" href="#lines-and-arrows" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="line">
-<h4>Line<a class="headerlink" href="#line" title="Permalink to this headline">¶</a></h4>
+</section>
+</section>
+<section id="helpful-vmobjects">
+<h2>Helpful VMobjects<a class="headerlink" href="#helpful-vmobjects" title="Permalink to this headline"></a></h2>
+<section id="lines-and-arrows">
+<h3>Lines and Arrows<a class="headerlink" href="#lines-and-arrows" title="Permalink to this headline"></a></h3>
+<section id="line">
+<h4>Line<a class="headerlink" href="#line" title="Permalink to this headline"></a></h4>
 <p>It is equivalent to polyline, only that this VMobject only receives two points, the initial or final.
 A special parameter of the lines is a buffer, which allows us to add a space between the endpoints.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -614,9 +523,9 @@ A special parameter of the lines is a buffer, which allows us to add a space bet
 <summary> Show result </summary><img alt="../_images/mu9.png" src="../_images/mu9.png" />
 </details>
 <br/><p>Since the lines are a VMobject, then it accepts all the properties of the VMobjects.</p>
-</div>
-<div class="section" id="arrows">
-<h4>Arrows<a class="headerlink" href="#arrows" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="arrows">
+<h4>Arrows<a class="headerlink" href="#arrows" title="Permalink to this headline"></a></h4>
 <p>The arrows are similar to the lines, although they have a default buff, I’ll leave you some examples here:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">get_size</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
@@ -695,14 +604,14 @@ They can learn more in the <a class="reference external" href="https://docs.mani
      <source src="../_static/basic_videos/mu2.mp4" type="video/mp4">
  </video>
 </details>
-<br/></div>
-<div class="section" id="get-unit-vector">
-<h4><code class="docutils literal notranslate"><span class="pre">.get_unit_vector</span></code><a class="headerlink" href="#get-unit-vector" title="Permalink to this headline">¶</a></h4>
+<br/></section>
+<section id="get-unit-vector">
+<h4><code class="docutils literal notranslate"><span class="pre">.get_unit_vector</span></code><a class="headerlink" href="#get-unit-vector" title="Permalink to this headline"></a></h4>
 <p>Both lines and arrows have two very useful methods called <code class="docutils literal notranslate"><span class="pre">.get_vector()</span></code> and <code class="docutils literal notranslate"><span class="pre">.get_unit_vector()</span></code>, which, as its name says, returns the vector and unit vector of the line/arrow, we will use it in the next section.</p>
-</div>
-</div>
-<div class="section" id="braces">
-<h3>Braces<a class="headerlink" href="#braces" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="braces">
+<h3>Braces<a class="headerlink" href="#braces" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">start</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
     <span class="n">end</span>   <span class="o">=</span> <span class="n">Dot</span><span class="p">([</span> <span class="mi">2</span><span class="p">,</span>  <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
@@ -729,9 +638,9 @@ They can learn more in the <a class="reference external" href="https://docs.mani
 <details>
 <summary> Show result </summary><img alt="../_images/mu11.png" src="../_images/mu11.png" />
 </details>
-<br/></div>
-<div class="section" id="decimalnumber">
-<h3>DecimalNumber<a class="headerlink" href="#decimalnumber" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="decimalnumber">
+<h3>DecimalNumber<a class="headerlink" href="#decimalnumber" title="Permalink to this headline"></a></h3>
 <p>This class might seem very redundant, since it is used to write values, generally measurements (meters, seconds, etc), but they will make more sense when we see <strong>updaters</strong>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">dgrp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -752,9 +661,9 @@ They can learn more in the <a class="reference external" href="https://docs.mani
 <p class="admonition-title">Note</p>
 <p>There is a subclass of <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code>, which is <code class="docutils literal notranslate"><span class="pre">Integer</span></code>, and as the name suggests, it has no decimal part.</p>
 </div>
-</div>
-<div class="section" id="numberline">
-<h3>NumberLine<a class="headerlink" href="#numberline" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="numberline">
+<h3>NumberLine<a class="headerlink" href="#numberline" title="Permalink to this headline"></a></h3>
 <p>This is another very useful VMobject, and the base from which the graphs are built.
 But it has so many configuration options that it is best to read the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.number_line.NumberLine.html#manim.mobject.number_line.NumberLine">official documentation</a>.</p>
 <p>The most important thing to know is that the numbers are created using <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code> and that there is a method that allows us to obtain a value according to the <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code> measure, that is <code class="docutils literal notranslate"><span class="pre">NumberLine.n2p(number)</span></code>.</p>
@@ -813,9 +722,9 @@ But it has so many configuration options that it is best to read the <a class="r
 <details>
 <summary> Show result </summary><img alt="../_images/mu13.png" src="../_images/mu13.png" />
 </details>
-<br/></div>
-<div class="section" id="matrix">
-<h3>Matrix<a class="headerlink" href="#matrix" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="matrix">
+<h3>Matrix<a class="headerlink" href="#matrix" title="Permalink to this headline"></a></h3>
 <p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.matrix.html?highlight=Matrix#module-manim.mobject.matrix">Official documentation.</a></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">m0</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([</span>
@@ -857,9 +766,9 @@ But it has so many configuration options that it is best to read the <a class="r
 <details>
 <summary> Show result </summary><img alt="../_images/mu14.png" src="../_images/mu14.png" />
 </details>
-<br/></div>
-<div class="section" id="tables">
-<h3>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="tables">
+<h3>Tables<a class="headerlink" href="#tables" title="Permalink to this headline"></a></h3>
 <p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.table.html?highlight=Tables">Official documentation.</a></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="c1"># Table -------------------------------------------------</span>
@@ -922,21 +831,21 @@ But it has so many configuration options that it is best to read the <a class="r
 <details>
 <summary> Show result </summary><img alt="../_images/mu15.png" src="../_images/mu15.png" />
 </details>
-<br/></div>
-<div class="section" id="arcs">
-<h3>Arcs<a class="headerlink" href="#arcs" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="arcs">
+<h3>Arcs<a class="headerlink" href="#arcs" title="Permalink to this headline"></a></h3>
 <p>There are mainly thre types of Arcs:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.geometry.Angle.html">Angle</a></p></li>
 <li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.geometry.Arc.html">Arc</a></p></li>
 <li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.geometry.ArcBetweenPoints.html">ArcBetweenPoints</a></p></li>
 </ul>
-<div class="section" id="angle">
-<h4>Angle<a class="headerlink" href="#angle" title="Permalink to this headline">¶</a></h4>
+<section id="angle">
+<h4>Angle<a class="headerlink" href="#angle" title="Permalink to this headline"></a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">Angle</span></code> has good documentation, I recommend that you see it, there are many examples, for the other two we are going to explain them here.</p>
-</div>
-<div class="section" id="arc">
-<h4>Arc<a class="headerlink" href="#arc" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="arc">
+<h4>Arc<a class="headerlink" href="#arc" title="Permalink to this headline"></a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">number_plane</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">(</span><span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 
@@ -962,9 +871,9 @@ But it has so many configuration options that it is best to read the <a class="r
 <details>
 <summary> Show result </summary><img alt="../_images/mu16.png" src="../_images/mu16.png" />
 </details>
-<br/></div>
-<div class="section" id="arcbetweenpoints">
-<h4>ArcBetweenPoints<a class="headerlink" href="#arcbetweenpoints" title="Permalink to this headline">¶</a></h4>
+<br/></section>
+<section id="arcbetweenpoints">
+<h4>ArcBetweenPoints<a class="headerlink" href="#arcbetweenpoints" title="Permalink to this headline"></a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">number_plane</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">(</span><span class="n">axis_config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;include_numbers&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 
@@ -987,10 +896,10 @@ But it has so many configuration options that it is best to read the <a class="r
 <details>
 <summary> Show result </summary><img alt="../_images/mu17.png" src="../_images/mu17.png" />
 </details>
-<br/></div>
-</div>
-<div class="section" id="codemobject">
-<h3>CodeMobject<a class="headerlink" href="#codemobject" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+</section>
+<section id="codemobject">
+<h3>CodeMobject<a class="headerlink" href="#codemobject" title="Permalink to this headline"></a></h3>
 <p>This have many options, I recommend reading the <a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.mobject.svg.code_mobject.Code.html?highlight=Code">official documentation</a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyScene</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -1024,9 +933,9 @@ But it has so many configuration options that it is best to read the <a class="r
 <details>
 <summary> Show result </summary><img alt="../_images/mu18.png" src="../_images/mu18.png" />
 </details>
-<br/></div>
-<div class="section" id="dashedvmobject">
-<h3>DashedVMobject<a class="headerlink" href="#dashedvmobject" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="dashedvmobject">
+<h3>DashedVMobject<a class="headerlink" href="#dashedvmobject" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">dvgrp</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
         <span class="n">DashedVMobject</span><span class="p">(</span><span class="n">Triangle</span><span class="p">()),</span>
@@ -1040,9 +949,9 @@ But it has so many configuration options that it is best to read the <a class="r
 <details>
 <summary> Show result </summary><img alt="../_images/mu19.png" src="../_images/mu19.png" />
 </details>
-<br/></div>
-<div class="section" id="cutout">
-<h3>Cutout<a class="headerlink" href="#cutout" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="cutout">
+<h3>Cutout<a class="headerlink" href="#cutout" title="Permalink to this headline"></a></h3>
 <p>It creates holes in a VMobject using other VMobjects.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">holes</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
@@ -1063,16 +972,16 @@ But it has so many configuration options that it is best to read the <a class="r
      <source src="../_static/basic_videos/mu19.mp4" type="video/mp4">
  </video>
 </details>
-<br/></div>
-<div class="section" id="other-mobjects">
-<h3>Other Mobjects<a class="headerlink" href="#other-mobjects" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="other-mobjects">
+<h3>Other Mobjects<a class="headerlink" href="#other-mobjects" title="Permalink to this headline"></a></h3>
 <p>There are more Mobjects, each new version Mobjects are added and bugs are corrected for those that already exist. I recommend reading the <a class="reference external" href="https://docs.manim.community/en/stable/reference_index/mobjects.html">official documentation</a> to learn more. In this chapter I showed you the most common ones and the ones that you are going to use the most in your animations.</p>
-</div>
-</div>
-<div class="section" id="more-class-animations">
-<h2>More Class Animations<a class="headerlink" href="#more-class-animations" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="creation">
-<h3>Creation<a class="headerlink" href="#creation" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="more-class-animations">
+<h2>More Class Animations<a class="headerlink" href="#more-class-animations" title="Permalink to this headline"></a></h2>
+<section id="creation">
+<h3>Creation<a class="headerlink" href="#creation" title="Permalink to this headline"></a></h3>
 <p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.creation.html">Official documentation</a>.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.creation.AddTextLetterByLetter.html#manim.animation.creation.AddTextLetterByLetter">AddTextLetterByLetter</a>: Add letter by letter without animation (like a typewriter), you can control the time between letters.</p></li>
@@ -1089,9 +998,9 @@ But it has so many configuration options that it is best to read the <a class="r
 <p class="admonition-title">Note</p>
 <p>If you find that few options, don’t worry, we’ll learn to create our own creation animations later.</p>
 </div>
-</div>
-<div class="section" id="indication">
-<h3>Indication<a class="headerlink" href="#indication" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="indication">
+<h3>Indication<a class="headerlink" href="#indication" title="Permalink to this headline"></a></h3>
 <p>These animations generate a temporary transformation that is intended to highlight a Mobject.</p>
 <p><a class="reference external" href="https://docs.manim.community/en/stable/reference/manim.animation.indication.html">Official documentation of each one</a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -1141,60 +1050,43 @@ But it has so many configuration options that it is best to read the <a class="r
 <p class="admonition-title">Note</p>
 <p>Again, if you think that there are few animations, we will learn how to create your own animations of this type.</p>
 </div>
-</div>
-<div class="section" id="remove">
-<h3>Remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="remove">
+<h3>Remove<a class="headerlink" href="#remove" title="Permalink to this headline"></a></h3>
 <p>They are basically the same as the creation ones, but with an inverted <code class="docutils literal notranslate"><span class="pre">rate_func=lambda</span> <span class="pre">t:</span> <span class="pre">func(1-t)</span></code>, like <code class="docutils literal notranslate"><span class="pre">Uncreate</span></code> or <code class="docutils literal notranslate"><span class="pre">Unwrite</span></code>.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="_12_2d_graphs.html" class="btn btn-neutral float-right" title="Basic 2D Graphs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="_10_methods_as_animations.html" class="btn btn-neutral float-left" title="Methods as animations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="_12_2d_graphs.html" class="btn btn-neutral float-right" title="Basic 2D Graphs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2021, Alexander Vázquez.
-
-    </p>
+    <p>&#169; Copyright 2022, DevTaoism.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

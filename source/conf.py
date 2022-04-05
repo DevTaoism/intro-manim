@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ManimCE Professional Course - Basics'
-copyright = '2021, Alexander Vázquez'
-author = 'Alexander Vázquez'
+project = 'Intro To Manim'
+copyright = '2022, DevTaoism'
+author = 'TheoremOfBeethoven'
 
 
 # -- General configuration ---------------------------------------------------

@@ -1,74 +1,35 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Basic 3D Graphs &mdash; ManimCE Professional Course - Basics  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+  <title>Basic 3D Graphs &mdash; Intro To Manim  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Basic Updaters" href="_14_basic_updaters.html" />
     <link rel="prev" title="Basic 2D Graphs" href="_12_2d_graphs.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> ManimCE Professional Course - Basics
-          
-
-          
+            <a href="../index.html" class="icon icon-home"> Intro To Manim
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,18 +37,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="_0_installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="_1_basic_elements.html">Basic elements</a></li>
@@ -118,79 +68,38 @@
 <li class="toctree-l1"><a class="reference internal" href="_14_basic_updaters.html">Basic Updaters</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">ManimCE Professional Course - Basics</a>
-        
+          <a href="../index.html">Intro To Manim</a>
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Basic 3D Graphs</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/contents/_13_3d_graphs.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="basic-3d-graphs">
-<h1>Basic 3D Graphs<a class="headerlink" href="#basic-3d-graphs" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="basic-3d-graphs">
+<h1>Basic 3D Graphs<a class="headerlink" href="#basic-3d-graphs" title="Permalink to this headline"></a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If you are going to create very complex 3D animations, it is not recommended to use Manim, there are other much better tools, such as <a class="reference external" href="https://www.blender.org/">Blender</a>. Use Manim when you really need it. In addition to the fact that a powerful computer is needed to be able to perform these scenes, if not, the rendering of the videos will be excessively slow. In later versions of Manim, the version with OpenGL will be available, which will allow us to use animations with the 3D camera much faster.</p>
 </div>
-<div class="section" id="setting-camera">
-<h2>Setting camera<a class="headerlink" href="#setting-camera" title="Permalink to this headline">¶</a></h2>
+<section id="setting-camera">
+<h2>Setting camera<a class="headerlink" href="#setting-camera" title="Permalink to this headline"></a></h2>
 <p>In order to graph 3D scenes we need to activate the 3D camera, this is very simple, we just have to build our scenes using <code class="docutils literal notranslate"><span class="pre">ThreeDScene</span></code> instead of <code class="docutils literal notranslate"><span class="pre">Scene</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">My3DScene</span><span class="p">(</span><span class="n">ThreeDScene</span><span class="p">):</span>
     <span class="k">pass</span>
@@ -218,9 +127,9 @@
      <source src="../_static/basic_videos/_3DCamera.mp4" type="video/mp4">
  </video>
 </div>
-<br/></div>
-<div class="section" id="moving-camera">
-<h2>Moving camera<a class="headerlink" href="#moving-camera" title="Permalink to this headline">¶</a></h2>
+<br/></section>
+<section id="moving-camera">
+<h2>Moving camera<a class="headerlink" href="#moving-camera" title="Permalink to this headline"></a></h2>
 <p>Note that by default <code class="docutils literal notranslate"><span class="pre">theta=-90*DEGREES</span></code>.</p>
  <div style="position: relative; padding-bottom: 56.25%; height: 0;
      overflow: hidden; max-width: 100%; height: auto;
@@ -239,9 +148,9 @@
      <source src="../_static/basic_videos/MC2.mp4" type="video/mp4">
  </video>
 </div>
-<br/></div>
-<div class="section" id="threedaxes">
-<h2>ThreeDAxes<a class="headerlink" href="#threedaxes" title="Permalink to this headline">¶</a></h2>
+<br/></section>
+<section id="threedaxes">
+<h2>ThreeDAxes<a class="headerlink" href="#threedaxes" title="Permalink to this headline"></a></h2>
 <p>If you are going to graph <strong>surfaces</strong>, the axes must have a <code class="docutils literal notranslate"><span class="pre">unit_size=1</span></code>, that is, each unit of the camera must be a unit of the graphs, this is because ThreeDAxes does not have a method to create surfaces, so the surfaces use the camera’s units of measure.</p>
 <p>If you are only going to graph parametric curves or vectors you can use any <code class="docutils literal notranslate"><span class="pre">unit_size</span></code>, you only have to be careful in the Z axis, since <code class="docutils literal notranslate"><span class="pre">Axes.c2p</span></code> does not contemplate the Z coordinate:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -261,9 +170,9 @@
 <details>
 <summary> Show result </summary><img alt="../_images/MC3.png" src="../_images/MC3.png" />
 </details>
-<br/></div>
-<div class="section" id="parametric-functions">
-<h2>Parametric functions<a class="headerlink" href="#parametric-functions" title="Permalink to this headline">¶</a></h2>
+<br/></section>
+<section id="parametric-functions">
+<h2>Parametric functions<a class="headerlink" href="#parametric-functions" title="Permalink to this headline"></a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">axes_3d</span> <span class="o">=</span> <span class="n">ThreeDAxes</span><span class="p">()</span>
     <span class="n">func</span> <span class="o">=</span> <span class="n">axes_3d</span><span class="o">.</span><span class="n">get_parametric_curve</span><span class="p">(</span>
@@ -295,9 +204,9 @@
      <source src="../_static/basic_videos/MC4.mp4" type="video/mp4">
  </video>
 </details>
-<br/></div>
-<div class="section" id="surfaces">
-<h2>Surfaces<a class="headerlink" href="#surfaces" title="Permalink to this headline">¶</a></h2>
+<br/></section>
+<section id="surfaces">
+<h2>Surfaces<a class="headerlink" href="#surfaces" title="Permalink to this headline"></a></h2>
 <p>If you are going to graph <strong>Surfaces</strong> then it is necessary to normalize all <code class="docutils literal notranslate"><span class="pre">unit_size</span></code> on the axes to 1.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">axes_3d</span> <span class="o">=</span> <span class="n">ThreeDAxes</span><span class="p">(</span>
@@ -385,11 +294,11 @@
      <source src="../_static/basic_videos/MC5.mp4" type="video/mp4">
  </video>
 </details>
-<br/></div>
-<div class="section" id="utilities">
-<h2>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="fix-mobject-to-camera">
-<h3>Fix Mobject to camera<a class="headerlink" href="#fix-mobject-to-camera" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="utilities">
+<h2>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline"></a></h2>
+<section id="fix-mobject-to-camera">
+<h3>Fix Mobject to camera<a class="headerlink" href="#fix-mobject-to-camera" title="Permalink to this headline"></a></h3>
 <p>Using <code class="docutils literal notranslate"><span class="pre">ThreeDScene.add_fixed_in_frame_mobjects</span></code> you make mobs always look at the screen fixed.</p>
  <div style="position: relative; padding-bottom: 56.25%; height: 0;
      overflow: hidden; max-width: 100%; height: auto;
@@ -399,9 +308,9 @@
      <source src="../_static/basic_videos/MC6.mp4" type="video/mp4">
  </video>
 </div>
-<br/></div>
-<div class="section" id="arrow3d">
-<h3>Arrow3D<a class="headerlink" href="#arrow3d" title="Permalink to this headline">¶</a></h3>
+<br/></section>
+<section id="arrow3d">
+<h3>Arrow3D<a class="headerlink" href="#arrow3d" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">axes_3d</span> <span class="o">=</span> <span class="n">ThreeDAxes</span><span class="p">(</span>
         <span class="c1"># unit_size=1 in Z axis</span>
@@ -434,56 +343,39 @@
      <source src="../_static/basic_videos/MC8.mp4" type="video/mp4">
  </video>
 </details>
-<br/></div>
-</div>
-</div>
+<br/></section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="_14_basic_updaters.html" class="btn btn-neutral float-right" title="Basic Updaters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="_12_2d_graphs.html" class="btn btn-neutral float-left" title="Basic 2D Graphs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="_14_basic_updaters.html" class="btn btn-neutral float-right" title="Basic Updaters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2021, Alexander Vázquez.
-
-    </p>
+    <p>&#169; Copyright 2022, DevTaoism.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
