@@ -11,8 +11,9 @@
 .. role:: underbold
     :class: underbold
 
-ManimCE Professional Course
+Intro To Manim - ManimCE Professional Course
 ===========================================
+`Course Introduction video <https://www.youtube.com/watch?v=RN8el9uNioc&t=13s>`_
 
 Contents
 =============
