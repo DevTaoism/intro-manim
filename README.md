@@ -20,7 +20,7 @@
 
 # Intro To Manim - ManimCE Professional Course
 
-[Introduction Video](https://www.youtube.com/watch?v=RN8el9uNioc&t=13s)
+[Course Introduction Video](https://www.youtube.com/watch?v=RN8el9uNioc&t=13s)
 
 ## Contents
 
